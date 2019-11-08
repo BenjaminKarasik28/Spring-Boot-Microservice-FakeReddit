@@ -1,1 +1,1 @@
-# Spring-Boot-Miroservice-FakeReddit
+# Spring-Boot-Microservice-FakeReddit
