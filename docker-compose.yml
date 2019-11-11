@@ -47,3 +47,15 @@ services:
     command: 'mvn spring-boot:run'
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+  comment-api:
+    image: maven:3.6.1-jdk-8
+    ports:
+      - '8083:8083'
+    working_dir: /app
+    volumes:
+      - ./comment-api:/app
+    depends_on:
+      - eureka
+    command: 'mvn spring-boot:run'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
