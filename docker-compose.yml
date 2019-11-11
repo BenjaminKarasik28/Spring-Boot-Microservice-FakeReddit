@@ -23,3 +23,15 @@ services:
     command: 'mvn spring-boot:run'
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+  users-api:
+    image: maven:3.6.1-jdk-8
+    ports:
+      - '8081:8081'
+    working_dir: /app
+    volumes:
+      - ./user-api:/app
+    depends_on:
+      - eureka
+    command: 'mvn spring-boot:run'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
