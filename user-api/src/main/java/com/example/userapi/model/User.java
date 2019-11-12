@@ -6,6 +6,18 @@ import javax.persistence.*;
 @Table(name = "users")
 public class User {
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="profile_id")
+    private Profile profile;
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
+
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +28,9 @@ public class User {
 
     @Column(name = "password")
     private String password;
+
+    @Column(name = "email", unique = true)
+    private String email;
 
     public User() {}
 
@@ -41,5 +56,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
