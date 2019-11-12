@@ -8,5 +8,6 @@ public interface UserService extends UserDetailsService {
 
     public String userLogin(User user);
     public String userSignup(User user);
+    public User addRole(String username, int roleId);
 
 }

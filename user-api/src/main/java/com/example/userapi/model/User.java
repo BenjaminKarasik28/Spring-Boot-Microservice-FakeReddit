@@ -1,10 +1,33 @@
 package com.example.userapi.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
 public class User {
+
+    @ManyToMany(fetch = FetchType.LAZY,
+            cascade = {CascadeType.DETACH,
+                    CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinTable(name = "user_role",
+            joinColumns = {@JoinColumn(name = "user_id")},
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private List<UserRole> roles;
+
+    public List<UserRole> getRoles(){ return roles; }
+
+    public void setRoles(List<UserRole> roles) { this.roles = roles; }
+
+    public List<UserRole> addRole(UserRole userRole){
+        if(userRole == null)
+            roles = new ArrayList<>();
+        roles.add(userRole);
+
+        return roles;
+    }
+
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="profile_id")
