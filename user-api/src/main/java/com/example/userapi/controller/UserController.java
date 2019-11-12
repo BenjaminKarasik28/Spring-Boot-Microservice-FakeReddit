@@ -1,8 +1,10 @@
 package com.example.userapi.controller;
 
+import com.example.userapi.model.JwtResponse;
 import com.example.userapi.model.User;
 import com.example.userapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,16 +22,12 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public User login(@RequestBody User user) {
-        return userService.userLogin(user);
+    public ResponseEntity<?> userLogin(@RequestBody User user) {
+        return ResponseEntity.ok(new JwtResponse(userService.userLogin(user)));
     }
-
 
     @PostMapping("/signup")
-    public User signup(@RequestBody User user) {
-        return userService.userSignup(user);
+    public ResponseEntity<?> userSignup(@RequestBody User newUser) {
+        return ResponseEntity.ok(new JwtResponse(userService.userSignup(newUser)));
     }
-
-
-
 }
