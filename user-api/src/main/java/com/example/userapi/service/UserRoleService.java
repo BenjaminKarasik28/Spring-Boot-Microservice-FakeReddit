@@ -13,5 +13,5 @@ public interface UserRoleService {
 
     public UserRole getRole(String roleName);
 
-    public User getUser(String username);
+    public User getUser(String email);
 }

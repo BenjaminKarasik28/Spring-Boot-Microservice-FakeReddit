@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
 public class UserRepository {
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    public UserBean getUserByUsername(String username) {
-        String sql = "SELECT * FROM users WHERE username = ?";
-        return jdbcTemplate.queryForObject(sql, new Object[]{username}, (rs, rowNum) ->
+    public UserBean getUserByEmail(String email) {
+        String sql = "SELECT * FROM users WHERE email = ?";
+        return jdbcTemplate.queryForObject(sql, new Object[]{email}, (rs, rowNum) ->
                 new UserBean(
                         rs.getLong("id"),
                         rs.getString("email"),

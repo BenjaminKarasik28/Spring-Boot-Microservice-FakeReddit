@@ -22,10 +22,11 @@ public class UserService implements UserDetailsService {
     @Autowired
     UserRepository userRepository;
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         System.out.println("loadUser");
-        UserBean user = userRepository.getUserByUsername(username);
-        System.out.println(user.getUsername());
+        UserBean user = userRepository.getUserByEmail(email);
+
+        
         if(user==null)
             throw new UsernameNotFoundException("User null");
         return new org.springframework.security.core.userdetails.User(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()),

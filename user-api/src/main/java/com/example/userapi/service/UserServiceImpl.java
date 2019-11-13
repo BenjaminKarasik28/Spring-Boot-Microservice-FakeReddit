@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<String> userLogin(User user) {
-        User newUser = userRepository.findByUsername(user.getUsername());
+        User newUser = userRepository.findByEmail(user.getEmail());
 
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
             return Arrays.asList( jwtUtil.generateToken(user.getUsername()), newUser.getUsername());
@@ -79,17 +79,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User addRole(String username, int roleId) {
+    public User addRole(String email, int roleId) {
         UserRole userRole = userRoleRepository.findById(roleId).get();
-        User user = userRepository.findByUsername(username);
+        User user = userRepository.findByEmail(email);
         user.addRole(userRole);
 
         return userRepository.save(user);
     }
 
     @Override
-    public User getUser(String username) {
-        return userRepository.findByUsername(username);
+    public User getUser(String email) {
+        return userRepository.findByEmail(email);
     }
 
 

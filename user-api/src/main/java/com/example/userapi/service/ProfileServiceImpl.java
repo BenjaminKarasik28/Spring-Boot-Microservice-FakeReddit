@@ -20,8 +20,8 @@ public class ProfileServiceImpl implements ProfileService {
     UserRepository userRepository;
 
     @Override
-    public Profile createProfile(String username, Profile newProfile) {
-        User user = userRepository.findByUsername(username);
+    public Profile createProfile(String email, Profile newProfile) {
+        User user = userRepository.findByEmail(email);
         user.setProfile(newProfile);
 
         return profileRepository.save(newProfile);

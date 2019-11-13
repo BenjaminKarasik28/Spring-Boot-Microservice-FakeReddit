@@ -35,7 +35,7 @@ public class UserRoleServiceImpl implements UserRoleService {
     }
 
     @Override
-    public User getUser(String username) {
-        return userRepository.findByUsername(username);
+    public User getUser(String email) {
+        return userRepository.findByEmail(email);
     }
 }
