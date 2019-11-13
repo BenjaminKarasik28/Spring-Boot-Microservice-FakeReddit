@@ -1,6 +1,6 @@
 package com.example.apigateway.config;
 
-import com.example.userapi.service.UserService;
+import com.example.apigateway.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
