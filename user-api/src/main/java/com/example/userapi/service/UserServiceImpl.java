@@ -40,12 +40,6 @@ public class UserServiceImpl implements UserService {
     PasswordEncoder bCryptPasswordEncoder;
 
 
-    //add the below
-//    @Bean
-//    public PasswordEncoder encoder() {
-//        return new BCryptPasswordEncoder();
-//    }
-
     @Autowired
     JwtUtil jwtUtil;
 
@@ -80,12 +74,27 @@ public class UserServiceImpl implements UserService {
         return authorities;
     }
 
+
     @Override
     public String userSignup(User newUser) {
-        UserRole userRole = userRoleService.getRole(newUser.getRoles().get(0).getName());
-//        UserRole userRole = userRoleService.getRole(newUser.getUserRole().getName()));
-        newUser.addRole(userRole);
 
+//        newUser.getRoles().forEach(role -> {
+//            UserRole userRole = userRoleRepository.findByName(role.getName());
+//            newUser.addRole(userRole);
+//        });
+//
+//        newUser.getRoles().forEach(role -> {
+//            if(role.getId() == 0)
+//                newUser.getRoles().remove(role);
+//        });
+//
+        UserRole userRole = userRoleRepository.findByName("ROLE_USER");
+        if(userRole == null) {
+            userRole = new UserRole();
+            userRole.setName("ROLE_USER");
+            userRoleService.createRole(userRole);
+        }
+        newUser.addRole(userRole);
 
         // comment below line out
         newUser.setPassword(bCryptPasswordEncoder.encode(newUser.getPassword()));
@@ -94,13 +103,7 @@ public class UserServiceImpl implements UserService {
             UserDetails userDetails = loadUserByUsername(newUser.getUsername());
             return jwtUtil.generateToken(userDetails);
         }
-        // add in below code
-//        newUser.setPassword(encoder().encode(newUser.getPassword()));
-//        User savedUser = userRepository.save(newUser);
-//        if(userRepository.save(newUser) != null){
-//            UserDetails userDetails = loadUserByUsername(newUser.getUsername());
-//            return jwtUtil.generateToken(userDetails);
-//        }
+
         return null;
     }
 
