@@ -21,7 +21,7 @@ public class User {
     public void setRoles(List<UserRole> roles) { this.roles = roles; }
 
     public List<UserRole> addRole(UserRole userRole){
-        if(userRole == null)
+        if(roles == null)
             roles = new ArrayList<>();
         roles.add(userRole);
 

@@ -50,10 +50,10 @@ public class UserServiceImpl implements UserService {
     JwtUtil jwtUtil;
 
     @Override
-    public String userLogin(User user){
+    public String userLogin(User user) {
         User newUser = userRepository.findByUsername(user.getUsername());
 
-        if(newUser != null && bCryptPasswordEncoder.matches(user.getPassword(), newUser.getPassword())){
+        if (newUser != null && bCryptPasswordEncoder.matches(user.getPassword(), newUser.getPassword())) {
             UserDetails userDetails = loadUserByUsername(newUser.getUsername());
             return jwtUtil.generateToken(userDetails);
         }
@@ -65,14 +65,14 @@ public class UserServiceImpl implements UserService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username);
 
-        if(user==null)
+        if (user == null)
             throw new UsernameNotFoundException("User null");
 
         return new org.springframework.security.core.userdetails.User(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()),
                 true, true, true, true, new ArrayList<>());
     }
 
-    private List<GrantedAuthority> getGrantedAuthorities(User user){
+    private List<GrantedAuthority> getGrantedAuthorities(User user) {
         List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 
         //authorities.add(new SimpleGrantedAuthority(user.getUserRole().getName()));
@@ -83,13 +83,14 @@ public class UserServiceImpl implements UserService {
     @Override
     public String userSignup(User newUser) {
         UserRole userRole = userRoleService.getRole(newUser.getRoles().get(0).getName());
+//        UserRole userRole = userRoleService.getRole(newUser.getUserRole().getName()));
         newUser.addRole(userRole);
 
 
         // comment below line out
         newUser.setPassword(bCryptPasswordEncoder.encode(newUser.getPassword()));
 
-        if(userRepository.save(newUser) != null){
+        if (userRepository.save(newUser) != null) {
             UserDetails userDetails = loadUserByUsername(newUser.getUsername());
             return jwtUtil.generateToken(userDetails);
         }
@@ -111,7 +112,13 @@ public class UserServiceImpl implements UserService {
 
         return userRepository.save(user);
     }
+
+    @Override
+    public User getUser(String username) {
+        return userRepository.findByUsername(username);
+    }
 }
+
 
 
 

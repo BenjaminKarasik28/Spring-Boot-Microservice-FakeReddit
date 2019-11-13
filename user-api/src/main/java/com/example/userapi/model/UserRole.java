@@ -6,16 +6,18 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "user_role")
+@Table(name = "role")
 public class UserRole {
 
+//    @JsonIgnore
+//    @ManyToMany(fetch = FetchType.LAZY,
+//            cascade = {CascadeType.DETACH,
+//                    CascadeType.MERGE, CascadeType.REFRESH})
     @JsonIgnore
-    @ManyToMany(fetch = FetchType.LAZY,
-            cascade = {CascadeType.DETACH,
-                    CascadeType.MERGE, CascadeType.REFRESH})
-    @JoinTable(name = "user_role",
-            joinColumns = {@JoinColumn(name = "role_id")},
-            inverseJoinColumns = @JoinColumn(name = "user_id"))
+    @ManyToMany(mappedBy="roles")
+//    @JoinTable(name = "user_role",
+//            joinColumns = {@JoinColumn(name = "role_id")},
+//            inverseJoinColumns = @JoinColumn(name = "user_id"))
     private List<User> users;
 
     public List<User> getUsers(){ return users; }
@@ -27,7 +29,7 @@ public class UserRole {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = true)
     private String name;
 
     public UserRole() {}
