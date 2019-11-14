@@ -27,8 +27,30 @@ public class ProfileServiceImpl implements ProfileService {
         return profileRepository.save(newProfile);
     }
 
+//    @Override
+//    public Profile getProfile(String username) {
+//        return profileRepository.findProfileByUsername(username);
+//    }
+
     @Override
-    public Profile getProfile(String username) {
-        return profileRepository.findProfileByUsername(username);
+    public Profile getProfile(String email) {
+        return profileRepository.findProfileByEmail(email);
     }
+
+    @Override
+    public Profile updateProfile(String email, Profile updateProfile) {
+        User user = userRepository.findByEmail(email);
+        Profile profile = userRepository.findByEmail(email).getProfile();
+
+        if(updateProfile.getAddress() != null) profile.setAddress(updateProfile.getAddress());
+        if(updateProfile.getMobile() != null) profile.setMobile(updateProfile.getMobile());
+        if(updateProfile.getEmail() != null) profile.setEmail(updateProfile.getEmail());
+
+        profileRepository.save(profile);
+        user.setProfile(profile);
+
+        return updateProfile;
+    }
+
+
 }
