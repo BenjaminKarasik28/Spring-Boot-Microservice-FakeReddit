@@ -19,7 +19,11 @@ public class Post {
     @Column
     private String description;
 
+    @Column
     private String username;
+
+    @Column
+    private Long userId;
 
     public Post() {
     }
@@ -40,6 +44,7 @@ public class Post {
         this.title = title;
     }
 
+
     public String getDescription() {
         return description;
     }
@@ -54,5 +59,21 @@ public class Post {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public Long getPostId() {
+        return postId;
+    }
+
+    public void setPostId(Long postId) {
+        this.postId = postId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

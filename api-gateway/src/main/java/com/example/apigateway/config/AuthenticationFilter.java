@@ -29,7 +29,7 @@ public class AuthenticationFilter extends ZuulFilter {
     @Override
     public boolean shouldFilter() {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        if(username != "anonUser") return true;
+        if(username != "anonymousUser") return true;
         else return false;
     }
 

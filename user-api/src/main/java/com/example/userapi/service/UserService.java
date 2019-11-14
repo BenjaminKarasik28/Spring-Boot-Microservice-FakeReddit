@@ -2,7 +2,7 @@ package com.example.userapi.service;
 
 
 import com.example.userapi.model.User;
-import org.springframework.security.core.userdetails.UserDetailsService;
+//import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;
 
