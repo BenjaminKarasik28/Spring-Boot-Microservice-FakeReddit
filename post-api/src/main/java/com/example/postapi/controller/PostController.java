@@ -24,9 +24,9 @@ public class PostController {
         return postService.getAllPosts();
     }
 
-    @GetMapping("/{userId}")
-    public Iterable<Post> getAllPostById(@RequestHeader("userId") Long userId) {
-        return postService.getAllPostById(userId);
+    @GetMapping("/{username}")
+    public Iterable<Post> getAllPostById(@RequestHeader("username") String username) {
+        return postService.getAllPostsByUsername(username);
     }
 
     @DeleteMapping("/{postId}")

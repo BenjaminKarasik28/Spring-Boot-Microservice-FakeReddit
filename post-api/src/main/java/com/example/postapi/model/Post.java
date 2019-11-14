@@ -22,8 +22,6 @@ public class Post {
     @Column
     private String username;
 
-    @Column
-    private Long userId;
 
     public Post() {
     }
@@ -69,11 +67,4 @@ public class Post {
         this.postId = postId;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
 }

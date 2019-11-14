@@ -12,7 +12,7 @@ public interface PostService {
 
     public Iterable<Post> getAllPosts();
 
-    public Iterable<Post> getAllPostById(Long userId);
+    public Iterable<Post> getAllPostsByUsername(String username);
 
     public void deletePostbyId(Long postId);
 
