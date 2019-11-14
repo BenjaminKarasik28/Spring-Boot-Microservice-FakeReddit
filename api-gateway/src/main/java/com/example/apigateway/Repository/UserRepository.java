@@ -19,4 +19,14 @@ public class UserRepository {
                         rs.getString("password")
                 ));
     }
+    public UserBean findByUsername(String username) {
+        String sql = "SELECT * FROM users WHERE username = ?";
+        return jdbcTemplate.queryForObject(sql, new Object[]{username}, (rs, rowNum) ->
+                new UserBean(
+                        rs.getLong("id"),
+                        rs.getString("email"),
+                        rs.getString("username"),
+                        rs.getString("password")
+                ));
+    }
 }

@@ -1,6 +1,8 @@
 package com.example.apigateway.config;
 
 
+import com.example.apigateway.Bean.UserBean;
+import com.example.apigateway.Repository.UserRepository;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,23 +11,43 @@ import org.springframework.stereotype.Component;
 @Component
 public class AuthenticationFilter extends ZuulFilter {
 
+    @Autowired
+    UserRepository userRepository;
+
     @Override
     public String filterType() {
         return "pre";
     }
+
     @Override
     public int filterOrder() {
         return 1;
     }
+
+
+
     @Override
     public boolean shouldFilter() {
-        return true;
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        if(username != "anonUser") return true;
+        else return false;
     }
+
     @Override
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        ctx.addZuulRequestHeader("username", username);
+        UserBean user = null;
+
+        if (userRepository.findByUsername(username) !=null) {
+            user = userRepository.findByUsername(username);
+
+            username = SecurityContextHolder.getContext().getAuthentication().getName();
+            ctx.addZuulRequestHeader("username", username);
+            String userId = String.valueOf(user.getId());
+            ctx.addZuulRequestHeader("userId", userId);
+        }
+
         return null;
     }
 }

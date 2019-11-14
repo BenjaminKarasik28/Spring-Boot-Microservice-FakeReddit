@@ -19,7 +19,6 @@ public class Post {
     @Column
     private String description;
 
-    @Column(nullable = false)
     private String username;
 
     public Post() {
@@ -48,7 +47,7 @@ public class Post {
     public void setDescription(String description) {
         this.description = description;
     }
-    
+
     public String getUsername() {
         return username;
     }

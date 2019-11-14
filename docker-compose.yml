@@ -3,6 +3,7 @@ version: '3'
 services:
   eureka:
     image: maven:3.6.1-jdk-8
+    #build: ./eureka-server
     ports:
       - '8761:8761'
     working_dir: /app
@@ -13,6 +14,7 @@ services:
       - SPRING_PROFILES_ACTIVE=dev
   api-gateway:
     image: maven:3.6.1-jdk-8
+    #build: ./api-gateway
     ports:
       - '8080:8080'
     working_dir: /app
@@ -33,6 +35,7 @@ services:
      - POSTGRES_DB=redditmicro
   users-api:
     image: maven:3.6.1-jdk-8
+    #build: ./user-api
     ports:
       - '8081:8081'
     working_dir: /app
@@ -45,6 +48,7 @@ services:
       - SPRING_PROFILES_ACTIVE=dev
   post-api:
     image: maven:3.6.1-jdk-8
+    #build: ./post-api
     ports:
       - '8082:8082'
     working_dir: /app
@@ -57,6 +61,7 @@ services:
       - SPRING_PROFILES_ACTIVE=dev
   comment-api:
     image: maven:3.6.1-jdk-8
+    #build: ./comment-api
     ports:
       - '8083:8083'
     working_dir: /app
