@@ -34,5 +34,6 @@ public class PostController {
         postService.deletePostbyId(postId);
     }
 
+    //TODO: add method to delete all the comments once Post is deleted
 
 }

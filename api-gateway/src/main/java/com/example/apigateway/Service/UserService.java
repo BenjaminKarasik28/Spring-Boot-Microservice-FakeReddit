@@ -1,7 +1,6 @@
 package com.example.apigateway.Service;
 
 import com.example.apigateway.Bean.UserBean;
-
 import com.example.apigateway.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,15 +17,13 @@ public class UserService implements UserDetailsService {
     @Autowired
     @Qualifier("encoder")
     PasswordEncoder bCryptPasswordEncoder;
-
     @Autowired
     UserRepository userRepository;
     @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         System.out.println("loadUser");
-        UserBean user = userRepository.getUserByEmail(email);
+        UserBean user = userRepository.findByUsername(username);
 
-        
         if(user==null)
             throw new UsernameNotFoundException("User null");
         return new org.springframework.security.core.userdetails.User(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()),

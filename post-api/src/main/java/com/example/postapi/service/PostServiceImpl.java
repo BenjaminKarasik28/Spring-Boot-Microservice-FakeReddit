@@ -31,7 +31,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public Iterable<Post> getAllPostById(Long userId) {
 
-       return postRepository.findAllById(Collections.singleton(userId));
+       return postRepository.findAllByUserId(userId);
 
     }
 
