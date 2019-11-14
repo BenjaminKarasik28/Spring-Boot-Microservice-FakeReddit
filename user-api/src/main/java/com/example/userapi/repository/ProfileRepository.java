@@ -11,4 +11,8 @@ public interface ProfileRepository extends CrudRepository<Profile, Long>{
 
     @Query("from Profile up inner join User u on u.username = ?1 and up.id = u.profile.id")
     public Profile findProfileByUsername(String username);
+
+    @Query("from Profile up inner join User u on u.email = ?1 and up.id = u.profile.id")
+    public Profile findProfileByEmail(String email);
+
 }
