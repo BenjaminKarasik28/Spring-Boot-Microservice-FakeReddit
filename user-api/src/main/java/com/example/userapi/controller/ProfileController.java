@@ -21,4 +21,6 @@ public class ProfileController {
     public Profile createUserProfile(@PathVariable String username, @RequestBody Profile userProfile) {
         return profileService.createProfile(username, userProfile);
     }
+
+
 }
