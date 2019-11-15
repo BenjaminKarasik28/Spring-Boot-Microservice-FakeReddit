@@ -2,19 +2,21 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer info:
-MAINTAINER GA <admin@xyz.com>
+MAINTAINER stchen1012 <stchen1012@gmail.com>
 
 # Add a volume pointing to /tmp:
 VOLUME /tmp
 
-# Make port 8080 available to the world outside this container:
-EXPOSE 8080
+# Make port 8761 available to the world outside this container:
+EXPOSE 8761
 
 # The application's JAR file:
 ARG JAR_FILE=target/eureka-server-0.0.1-SNAPSHOT.jar
 
 # Add the application's JAR to the container:
 ADD ${JAR_FILE} eureka-server.jar
+
+COPY ./src/main/resources/*.properties /config/
 
 # Run the jar file:
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/eureka-server.jar"]

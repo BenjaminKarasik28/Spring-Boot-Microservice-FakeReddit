@@ -1,0 +1,8 @@
+applications:
+- name: docker-eureka
+  memory: 512M
+  instances: 1
+  env:
+    SPRING_PROFILES_ACTIVE: pcf
+  docker:
+    image: stchen1012/tracy-eureka-server
