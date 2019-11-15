@@ -32,7 +32,7 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 - User stories
 - ERD
 
-**11/12 and 11/13 **
+**11/12 and 11/13**
 - User-api microservice
 - User profile and roles
 - Add security
