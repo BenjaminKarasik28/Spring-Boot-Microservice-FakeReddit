@@ -25,7 +25,6 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public PostComment getAllCommentsByPostId(Long postId) {
        Iterable<Comment> commentList = commentRepository.findAllByPostId(postId);
-
        PostComment postComment =new PostComment();
        postComment.setPostComment(commentList);
        return postComment;
@@ -35,5 +34,11 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public void deleteByCommentId(Long commentId) {
         commentRepository.deleteById(commentId);
+    }
+
+    @Override
+    public Long deletePostAndComments(Long postId) {
+        return commentRepository.deleteByPostId(postId);
+
     }
 }

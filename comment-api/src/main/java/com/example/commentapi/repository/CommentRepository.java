@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface CommentRepository extends CrudRepository<Comment, Long> {
     public Iterable<Comment> findAllByPostId(Long postId);
 //    public Iterable<Comment> findCommentsByPostId(Long postId);
+    public Long deleteByPostId(Long PostId);
 }
