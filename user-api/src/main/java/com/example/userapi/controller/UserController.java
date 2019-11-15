@@ -5,10 +5,7 @@ import com.example.userapi.model.User;
 import com.example.userapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -29,5 +26,18 @@ public class UserController {
     @PostMapping("/signup")
     public ResponseEntity<?> userSignup(@RequestBody User newUser) {
         return ResponseEntity.ok(new JwtResponse(userService.userSignup(newUser)));
+    }
+
+    //TODO: add method so delete should also delete the role, profile, posts and comments of users
+    @DeleteMapping("/{username}")
+    public void deleteUserByUsername(@PathVariable String username) {
+        userService.deleteUserByUsername(username);
+    }
+
+
+    //TODO: hash password
+    @PutMapping("/{username}")
+    public User updateUser(@PathVariable String username, @RequestBody User user) {
+        return userService.updateUser(username, user);
     }
 }
