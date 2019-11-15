@@ -51,4 +51,4 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 
 ## ERD 
 
-![erd] (https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD.png)
+![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD.png)
