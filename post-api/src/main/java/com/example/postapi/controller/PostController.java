@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 public class PostController {
 
-    RestTemplate restTemplate = new RestTemplate();
+
 
     @Autowired
     PostService postService;
@@ -33,17 +33,12 @@ public class PostController {
     public Iterable<Post> getAllPostById(@RequestHeader("username") String username) {
         return postService.getAllPostsByUsername(username);
     }
-
     @GetMapping("/{postId}/comment")
     public PostComment getCommentsByPostId(@PathVariable Long postId){
+        return postService.getAllCommentsByPostId(postId);
+        //return restTemplate.getForObject("http://localhost:8083/" + postId +"/list", PostComment.class);
 
-        String hello = restTemplate.getForObject("http://localhost:8083/hello", String.class);
-        System.out.println(hello);
 
-        System.out.println(postId);
-        PostComment postComment = restTemplate.getForObject("http://localhost:8083/" + postId +"/list", PostComment.class);
-        System.out.println(postComment.getPostComment());
-        return postComment;
     }
 
 
