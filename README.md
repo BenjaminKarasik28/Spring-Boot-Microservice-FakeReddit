@@ -51,7 +51,7 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 
 
 ## System Architecture
-![erd]https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture.png
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture.png)
 
 
 ## ERD 
