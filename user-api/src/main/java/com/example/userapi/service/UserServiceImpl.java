@@ -90,9 +90,22 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByEmail(email);
     }
 
+    @Override
+    public void deleteUserByUsername(String username) {
+        User savedUser = userRepository.findByUsername(username);
+        userRepository.delete(savedUser);
+    }
 
+    @Override
+    public User updateUser(String username, User user) {
+        User savedUser = userRepository.findByUsername(username);
+
+        if(user.getUsername() != null) savedUser.setUsername(user.getUsername());
+        if(user.getEmail() != null) savedUser.setEmail(user.getEmail());
+        if(user.getPassword() != null) savedUser.setPassword(encoder().encode(user.getPassword()));
+        return userRepository.save(savedUser);
+    }
 }
-
 
 
 
