@@ -11,9 +11,9 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
-    @PostMapping("/comment")
-    public Comment createComment(@RequestBody Comment comment, @RequestHeader("username") String username) {
-        return commentService.createComment(comment, username);
+    @PostMapping("/comment/{postId}")
+    public Comment createComment(@RequestBody Comment comment, @RequestHeader("username") String username, @PathVariable Long postId) {
+        return commentService.createComment(comment, username, postId);
     }
 
 
