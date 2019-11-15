@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
         User newUser = userRepository.findByEmail(user.getEmail());
 
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
-            return Arrays.asList( jwtUtil.generateToken(user.getUsername()), newUser.getUsername());
+            return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
         }
 
         return null;
@@ -49,16 +49,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<String> userSignup(User newUser) {
 
-//        newUser.getRoles().forEach(role -> {
-//            UserRole userRole = userRoleRepository.findByName(role.getName());
-//            newUser.addRole(userRole);
-//        });
-//
-//        newUser.getRoles().forEach(role -> {
-//            if(role.getId() == 0)
-//                newUser.getRoles().remove(role);
-//        });
-//
         UserRole userRole = userRoleRepository.findByName("ROLE_USER");
         if (userRole == null) {
             userRole = new UserRole();

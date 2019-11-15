@@ -36,8 +36,6 @@ public class PostController {
     @GetMapping("/{postId}/comment")
     public PostComment getCommentsByPostId(@PathVariable Long postId){
         return postService.getAllCommentsByPostId(postId);
-        //return restTemplate.getForObject("http://localhost:8083/" + postId +"/list", PostComment.class);
-
 
     }
 
@@ -47,6 +45,6 @@ public class PostController {
         postService.deletePostbyId(postId);
     }
 
-    //TODO: add method to delete all the comments once Post is deleted
+
 
 }

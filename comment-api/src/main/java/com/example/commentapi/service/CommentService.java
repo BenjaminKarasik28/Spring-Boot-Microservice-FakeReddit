@@ -2,6 +2,7 @@ package com.example.commentapi.service;
 
 import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.PostComment;
+import org.springframework.http.HttpStatus;
 
 public interface CommentService {
 

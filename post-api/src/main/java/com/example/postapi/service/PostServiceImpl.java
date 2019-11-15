@@ -4,6 +4,7 @@ import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -39,8 +40,11 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public void deletePostbyId(Long postId) {
+    public Long deletePostbyId(Long postId) {
+        restTemplate.delete("http://localhost:8083/post/" + postId);
+
         postRepository.deleteById(postId);
+        return postId;
     }
 
     @Override
