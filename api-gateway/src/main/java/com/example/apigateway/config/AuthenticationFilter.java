@@ -13,14 +13,20 @@ public class AuthenticationFilter extends ZuulFilter {
     public String filterType() {
         return "pre";
     }
+
     @Override
     public int filterOrder() {
         return 1;
     }
+
     @Override
     public boolean shouldFilter() {
+//        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+//        if(username.equals("anonymousUser"))
+//            return false;
         return true;
     }
+
     @Override
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();

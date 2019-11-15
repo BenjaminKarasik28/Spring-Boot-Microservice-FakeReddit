@@ -2,9 +2,12 @@ package com.example.commentapi.service;
 
 
 import com.example.commentapi.model.Comment;
+import com.example.commentapi.model.PostComment;
 import com.example.commentapi.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -20,8 +23,13 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public Iterable<Comment> getAllCommentsByPostId(Long postId) {
-        return commentRepository.findAllByPostId(postId);
+    public PostComment getAllCommentsByPostId(Long postId) {
+       Iterable<Comment> commentList = commentRepository.findAllByPostId(postId);
+
+       PostComment postComment =new PostComment();
+       postComment.setPostComment(commentList);
+       return postComment;
+
     }
 
     @Override
