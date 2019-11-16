@@ -1,0 +1,9 @@
+applications:
+- name: docker-api-gateway
+  memory: 512M
+  instances: 1
+  env:
+    SPRING_PROFILES_ACTIVE: pcf
+  docker:
+    image: stchen1012/tracy-api-gateway:1
+  timeout: 180
