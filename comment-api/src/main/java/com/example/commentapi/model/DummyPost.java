@@ -1,37 +1,12 @@
-package com.example.postapi.model;
+package com.example.commentapi.model;
 
-
-
-import javax.persistence.*;
-
-@Entity
-@Table(name="post")
-public class Post {
-
-    @Id
-    @Column(name = "post_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long postId;
-
-    @Column
+public class DummyPost {
     private String title;
-
-    @Column
     private String description;
-
-    @Column
     private String username;
+    private Long id;
 
-
-    public Post() {
-    }
-
-    public Long getId() {
-        return postId;
-    }
-
-    public void setId(Long postId) {
-        this.postId = postId;
+    public DummyPost() {
     }
 
     public String getTitle() {
@@ -41,7 +16,6 @@ public class Post {
     public void setTitle(String title) {
         this.title = title;
     }
-
 
     public String getDescription() {
         return description;
@@ -59,5 +33,11 @@ public class Post {
         this.username = username;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

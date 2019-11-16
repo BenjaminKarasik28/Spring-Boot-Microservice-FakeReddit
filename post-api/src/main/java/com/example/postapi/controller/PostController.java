@@ -1,14 +1,12 @@
 package com.example.postapi.controller;
 
-import com.example.postapi.model.DummyComment;
 import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -38,6 +36,13 @@ public class PostController {
         return postService.getAllCommentsByPostId(postId);
 
     }
+
+    @GetMapping("/post/{postId}")
+    public Optional<Post> getPostById(@PathVariable Long postId){
+        return postService.getPostById(postId);
+    }
+
+
 
 
     @DeleteMapping("/{postId}")

@@ -4,12 +4,9 @@ import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -45,11 +42,17 @@ public class PostServiceImpl implements PostService {
 
         postRepository.deleteById(postId);
         return postId;
+
     }
 
     @Override
     public PostComment getAllCommentsByPostId(Long postId) {
         return restTemplate.getForObject("http://localhost:8083/" + postId +"/list", PostComment.class);
+    }
+
+    @Override
+    public Optional<Post> getPostById(Long postId) {
+        return postRepository.findById(postId);
     }
 
 
