@@ -13,7 +13,6 @@ import java.util.Optional;
 public class PostController {
 
 
-
     @Autowired
     PostService postService;
 
@@ -31,7 +30,7 @@ public class PostController {
     public Iterable<Post> getAllPostById(@RequestHeader("username") String username) {
         return postService.getAllPostsByUsername(username);
     }
-    @GetMapping("/{postId}/comment")
+    @GetMapping("/comment/{postId}")
     public PostComment getCommentsByPostId(@PathVariable Long postId){
         return postService.getAllCommentsByPostId(postId);
 
@@ -41,8 +40,6 @@ public class PostController {
     public Optional<Post> getPostById(@PathVariable Long postId){
         return postService.getPostById(postId);
     }
-
-
 
 
     @DeleteMapping("/{postId}")

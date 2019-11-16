@@ -47,7 +47,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostComment getAllCommentsByPostId(Long postId) {
-        return restTemplate.getForObject("http://localhost:8083/" + postId +"/list", PostComment.class);
+        return restTemplate.getForObject("http://localhost:8083/list/" + postId, PostComment.class);
     }
 
     @Override

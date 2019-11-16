@@ -23,7 +23,7 @@ public class CommentController {
     }
 
 
-    @GetMapping("/{postId}/list")
+    @GetMapping("/list/{postId}")
     public PostComment getAllCommentsByPostId(@PathVariable Long postId) {
         return commentService.getAllCommentsByPostId(postId);
     }

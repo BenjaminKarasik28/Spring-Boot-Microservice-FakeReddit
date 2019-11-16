@@ -8,7 +8,7 @@ public class DummyComment {
     }
 
     private String text;
-    private List<DummyComment> commentsByUser;
+    private Long id;
     private Long postId;
     private String username;
 
@@ -20,12 +20,12 @@ public class DummyComment {
         this.text = text;
     }
 
-    public List<DummyComment> getCommentsByUser() {
-        return commentsByUser;
+    public Long getId() {
+        return id;
     }
 
-    public void setCommentsByUser(List<DummyComment> commentsByUser) {
-        this.commentsByUser = commentsByUser;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getPostId() {
