@@ -12,7 +12,33 @@ public class ProfileController {
     @Autowired
     ProfileService profileService;
 
-//    @GetMapping("/{username}")
+    @PostMapping
+    public Profile createProfile(@RequestBody Profile profile, @RequestHeader("username") String username) {
+        return profileService.createProfile(username, profile);
+    }
+
+    @GetMapping("/list")
+    public Profile getProfile(@RequestBody Profile profile, @RequestHeader("username") String username) {
+        return profileService.getProfile(username);
+    }
+
+    @PutMapping("/{email}")
+    public Profile updateUserProfile(@PathVariable String email, @RequestBody Profile updateProfile) {
+        return profileService.updateProfile(email, updateProfile);
+    }
+
+//    @GetMapping("/{email}")
+//    public Profile getUserProfile(@PathVariable String email) {
+//        return profileService.getProfile(email);
+//    }
+//
+//
+//    @PostMapping("/{email}")
+//    public Profile createUserProfile(@PathVariable String email, @RequestBody Profile userProfile) {
+//        return profileService.createProfile(email, userProfile);
+//    }
+
+    //    @GetMapping("/{username}")
 //    public Profile getUserProfile(@PathVariable String username) {
 //        return profileService.getProfile(username);
 //    }
@@ -21,22 +47,4 @@ public class ProfileController {
 //    public Profile createUserProfile(@PathVariable String username, @RequestBody Profile userProfile) {
 //        return profileService.createProfile(username, userProfile);
 //    }
-
-    @GetMapping("/{email}")
-    public Profile getUserProfile(@PathVariable String email) {
-        return profileService.getProfile(email);
-    }
-
-    // To discuss - multiple profiles can be added for user
-    @PostMapping("/{email}")
-    public Profile createUserProfile(@PathVariable String email, @RequestBody Profile userProfile) {
-        return profileService.createProfile(email, userProfile);
-    }
-
-    @PutMapping("/{email}")
-    public Profile updateUserProfile(@PathVariable String email, @RequestBody Profile updateProfile) {
-        return profileService.updateProfile(email, updateProfile);
-    }
-
-
 }
