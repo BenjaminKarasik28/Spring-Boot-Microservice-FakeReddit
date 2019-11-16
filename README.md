@@ -66,5 +66,5 @@ A few challenging implementation aspects of this project:
 
 ## ERD 
 
-![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD.png)
+![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%201.png)
 
