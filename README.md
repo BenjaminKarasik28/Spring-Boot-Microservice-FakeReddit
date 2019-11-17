@@ -61,10 +61,10 @@ A few challenging implementation aspects of this project:
 **Interservice communication** - Since our application is separated into three microservices (User, Post, Comment). We had to figure out how to cascade the appropriate data updates across these services. For example, if a user removes a post then the associated comments with that posts should also be removed. After researching and finding a few options that would allow us to accomplish this such as the @feign approach or utilizing messaging such as RabbitMQ, we decided to go with the RestTemplate approach as it appeared to be a more streamlined method.
 
 ## System Architecture
-![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture.png)
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%201.png)
 
 
 ## ERD 
 
-![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD.png)
+![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%202.png)
 
