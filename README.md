@@ -12,6 +12,7 @@
 
 ## Technologies Used
 - Java / IntelliJ
+- Postgres - to manage relational databases
 - Git / GitHub - to host our code for version control and a shared working repository
 - Pivotal Tracker - to write user stories and keep track of the technical requirements
 - Postman for testing endpoints without a UI
