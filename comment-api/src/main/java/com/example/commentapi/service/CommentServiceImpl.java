@@ -54,5 +54,14 @@ public class CommentServiceImpl implements CommentService {
 
         }
 
+    @Override
+    public Iterable<Comment> getAllComments() {
+        return commentRepository.findAll();
+    }
+
+    @Override
+    public void deleteCommentByUsername(String username){
+        commentRepository.deleteByUsername(username);
+    }
 
 }

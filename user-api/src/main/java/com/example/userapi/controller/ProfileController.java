@@ -27,30 +27,4 @@ public class ProfileController {
     public Profile updateProfile(@RequestBody Profile profile, @RequestHeader("username") String username) {
         return profileService.updateProfile(username, profile);
     }
-
-//    @PutMapping("/{email}")
-//    public Profile updateUserProfile(@PathVariable String email, @RequestBody Profile updateProfile) {
-//        return profileService.updateProfile(email, updateProfile);
-//    }
-
-//    @GetMapping("/{email}")
-//    public Profile getUserProfile(@PathVariable String email) {
-//        return profileService.getProfile(email);
-//    }
-//
-//
-//    @PostMapping("/{email}")
-//    public Profile createUserProfile(@PathVariable String email, @RequestBody Profile userProfile) {
-//        return profileService.createProfile(email, userProfile);
-//    }
-
-    //    @GetMapping("/{username}")
-//    public Profile getUserProfile(@PathVariable String username) {
-//        return profileService.getProfile(username);
-//    }
-//
-//    @PostMapping("/{username}")
-//    public Profile createUserProfile(@PathVariable String username, @RequestBody Profile userProfile) {
-//        return profileService.createProfile(username, userProfile);
-//    }
 }

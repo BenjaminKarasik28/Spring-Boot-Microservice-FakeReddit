@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -39,11 +40,18 @@ public class PostServiceImpl implements PostService {
     @Override
     public Long deletePostbyId(Long postId) {
         restTemplate.delete("http://localhost:8083/post/" + postId);
-
         postRepository.deleteById(postId);
         return postId;
 
     }
+
+    @Override
+    public String deletePostByUsername(String username) {
+        postRepository.deleteByUsername(username);
+        return username;
+
+    }
+
 
     @Override
     public PostComment getAllCommentsByPostId(Long postId) {

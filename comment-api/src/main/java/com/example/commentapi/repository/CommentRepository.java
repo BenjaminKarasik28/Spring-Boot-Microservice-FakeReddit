@@ -8,8 +8,12 @@ import javax.transaction.Transactional;
 
 @Repository
 public interface CommentRepository extends CrudRepository<Comment, Long> {
+
     public Iterable<Comment> findAllByPostId(Long postId);
-//    public Iterable<Comment> findCommentsByPostId(Long postId);
+
     @Transactional
     public Long deleteByPostId(Long PostId);
+
+    @Transactional
+    public void deleteByUsername(String username);
 }

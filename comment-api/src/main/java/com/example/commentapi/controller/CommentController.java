@@ -12,9 +12,10 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
-    @GetMapping("/hello")
-    public String hello(){
-        return "hello";
+    //for testing delete methods
+    @GetMapping("/list")
+    public Iterable<Comment> getAllComments() {
+        return commentService.getAllComments();
     }
 
     @PostMapping("/comment/{postId}")
@@ -38,5 +39,10 @@ public class CommentController {
     public Long deletePostAndComments(@PathVariable Long postId){
         return commentService.deletePostAndComments(postId);
     }
+    @DeleteMapping("/post/name/{username}")
+    public void deleteCommentByUsername(@PathVariable String username){
+        commentService.deleteCommentByUsername(username);
+    }
+
 
 }

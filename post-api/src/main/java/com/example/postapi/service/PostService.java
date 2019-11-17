@@ -16,6 +16,8 @@ public interface PostService {
 
     public Long deletePostbyId(Long postId);
 
+    public String deletePostByUsername(String username);
+
     public PostComment getAllCommentsByPostId(Long postId);
 
     public Optional<Post> getPostById(Long postId);

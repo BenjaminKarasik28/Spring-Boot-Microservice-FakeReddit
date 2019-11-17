@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
@@ -31,6 +32,8 @@ public class UserServiceImpl implements UserService {
     public PasswordEncoder encoder() {
         return new BCryptPasswordEncoder();
     }
+
+    private RestTemplate restTemplate = new RestTemplate();
 
     @Autowired
     JwtUtil jwtUtil;
@@ -82,6 +85,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteUserByUsername(String username) {
+
+        restTemplate.delete("http://localhost:8082/post/" + username);
+        restTemplate.delete("http://localhost:8083/post/name/" + username);
         User savedUser = userRepository.findByUsername(username);
         userRepository.delete(savedUser);
     }

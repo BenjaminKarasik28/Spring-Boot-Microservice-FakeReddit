@@ -15,15 +15,6 @@ public class UserRoleController {
     @Autowired
     UserRoleService userRoleService;
 
-//    @GetMapping("/{rolename}")
-//    public UserRole getRole(@PathVariable String rolename) {
-//        return roleService.getRole(rolename);
-//    }
-//
-//    @PostMapping
-//    public UserRole createRole(@RequestBody UserRole role) {
-//        return roleService.createRole(role);
-//    }
 
     @PostMapping
     public UserRole createRole(@RequestBody UserRole userRole){

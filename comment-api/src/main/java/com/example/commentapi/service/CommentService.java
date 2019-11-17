@@ -10,4 +10,6 @@ public interface CommentService {
     public PostComment getAllCommentsByPostId(Long postId);
     public void deleteByCommentId(Long commentId);
     public Long deletePostAndComments(Long postId);
+    public Iterable<Comment> getAllComments();
+    public void deleteCommentByUsername(String username);
 }
