@@ -17,15 +17,21 @@ public class ProfileController {
         return profileService.createProfile(username, profile);
     }
 
-    @GetMapping("/list")
-    public Profile getProfile(@RequestBody Profile profile, @RequestHeader("username") String username) {
+
+    @GetMapping("/{username}")
+    public Profile getProfile(@RequestHeader("username") String username) {
         return profileService.getProfile(username);
     }
 
-    @PutMapping("/{email}")
-    public Profile updateUserProfile(@PathVariable String email, @RequestBody Profile updateProfile) {
-        return profileService.updateProfile(email, updateProfile);
+    @PutMapping("/{username}")
+    public Profile updateProfile(@RequestBody Profile profile, @RequestHeader("username") String username) {
+        return profileService.updateProfile(username, profile);
     }
+
+//    @PutMapping("/{email}")
+//    public Profile updateUserProfile(@PathVariable String email, @RequestBody Profile updateProfile) {
+//        return profileService.updateProfile(email, updateProfile);
+//    }
 
 //    @GetMapping("/{email}")
 //    public Profile getUserProfile(@PathVariable String email) {
