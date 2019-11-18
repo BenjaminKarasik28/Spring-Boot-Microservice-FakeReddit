@@ -12,6 +12,7 @@
 
 ## Technologies Used
 - Java / IntelliJ
+- Spring-Boot
 - Postgres - to manage relational databases
 - Git / GitHub - to host our code for version control and a shared working repository
 - Pivotal Tracker - to write user stories and keep track of the technical requirements
@@ -21,6 +22,7 @@
 ## Dependencies and Installation
 - Maven
 - Docker
+- Spring-Boot
 
 Refer to the dependencies in the pom.xml file for the following:
 - Spring Boot
