@@ -86,8 +86,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUserByUsername(String username) {
 
-        restTemplate.delete("http://localhost:8082/post/" + username);
-        restTemplate.delete("http://localhost:8083/post/name/" + username);
+        restTemplate.delete("http://post-api:8082/post/" + username);
+        restTemplate.delete("http://comment-api:8083/post/name/" + username);
         User savedUser = userRepository.findByUsername(username);
         userRepository.delete(savedUser);
     }
