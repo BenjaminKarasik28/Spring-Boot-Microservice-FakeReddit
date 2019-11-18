@@ -24,7 +24,7 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public Comment createComment(Comment comment, String username, Long postId) {
 
-        DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
+        DummyPost dummyPost = restTemplate.getForObject("http://post-api:8082/post/" + postId, DummyPost.class);
 
         if(dummyPost.getId().equals(postId)) {
             comment.setPostId(postId);
