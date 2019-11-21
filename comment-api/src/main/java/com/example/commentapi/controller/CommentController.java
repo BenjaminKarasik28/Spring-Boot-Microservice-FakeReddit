@@ -2,12 +2,16 @@ package com.example.commentapi.controller;
 
 import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.PostComment;
+import com.example.commentapi.mq.Sender;
 import com.example.commentapi.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CommentController {
+
+    @Autowired
+    Sender sender;
 
     @Autowired
     CommentService commentService;
@@ -44,5 +48,10 @@ public class CommentController {
         commentService.deleteCommentByUsername(username);
     }
 
+    @GetMapping("/send/{msg}")
+    public String send(@PathVariable String msg){
+        sender.send(msg);
+        return "message sent";
+    }
 
 }

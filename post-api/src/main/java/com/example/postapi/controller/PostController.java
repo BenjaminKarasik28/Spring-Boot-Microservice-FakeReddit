@@ -15,6 +15,7 @@ public class PostController {
 
     @Autowired
     PostService postService;
+    
 
     @PostMapping("/post")
     public Post createPost(@RequestBody Post post, @RequestHeader("username") String username) {
