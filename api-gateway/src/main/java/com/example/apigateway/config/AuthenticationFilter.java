@@ -24,20 +24,56 @@ public class AuthenticationFilter extends ZuulFilter {
         return 1;
     }
 
+//    @Override
+//    public boolean shouldFilter() {
+//        return true;
+//    }
+
+//    @Override
+//    public Object run() {
+//        RequestContext ctx = RequestContext.getCurrentContext();
+//        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+////        UserBean user = userRepository.findByUsername(username);
+////        String email = user.getEmail();
+//
+//        ctx.addZuulRequestHeader("username", username);
+////        ctx.addZuulRequestHeader("email", email);
+//        return null;
+//    }
+
     @Override
     public boolean shouldFilter() {
-        return true;
+//    String username = SecurityContextHolder.getContext().getAuthentication().getName();
+//    if(username != "anonUser") return true;
+//    else return false;
+//    return false;
+
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        System.out.println(username);
+        if (username !="anonymousUser") {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        UserBean user = userRepository.findByUsername(username);
-        String email = user.getEmail();
+        UserBean user = null;
 
-        ctx.addZuulRequestHeader("username", username);
-        ctx.addZuulRequestHeader("email", email);
+        if (userRepository.findByUsername(
+                username) !=null) {
+            user = userRepository.findByUsername(username);
+//            String userId = String.valueOf(user.getId());
+            String email = String.valueOf(user.getEmail());
+//            ctx.addZuulRequestHeader("userId", userId);
+            ctx.addZuulRequestHeader("email", email);
+            System.out.println("This is the email:" + email);
+            ctx.addZuulRequestHeader("username", username);
+        }
+
         return null;
     }
 }
