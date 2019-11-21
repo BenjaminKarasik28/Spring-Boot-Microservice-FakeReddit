@@ -9,8 +9,8 @@
         <module name="post-api" />
         <module name="eureka-server" />
         <module name="api-gateway" />
-        <module name="comment-api" />
         <module name="user-api" />
+        <module name="comment-api" />
       </profile>
     </annotationProcessing>
   </component>
