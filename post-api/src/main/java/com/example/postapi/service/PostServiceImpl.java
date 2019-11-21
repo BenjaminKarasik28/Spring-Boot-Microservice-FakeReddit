@@ -39,7 +39,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Long deletePostbyId(Long postId) {
-        restTemplate.delete("http://comment-api:8083/post/" + postId);
+        restTemplate.delete("http://localhost:8083/post/" + postId);
         postRepository.deleteById(postId);
         return postId;
 
@@ -55,7 +55,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostComment getAllCommentsByPostId(Long postId) {
-        return restTemplate.getForObject("http://comment-api:8083/list/" + postId, PostComment.class);
+        return restTemplate.getForObject("http://localhost:8083/list/" + postId, PostComment.class);
     }
 
     @Override

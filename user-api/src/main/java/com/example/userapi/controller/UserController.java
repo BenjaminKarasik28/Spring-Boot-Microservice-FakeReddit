@@ -28,14 +28,11 @@ public class UserController {
         return ResponseEntity.ok(new JwtResponse(userService.userSignup(newUser)));
     }
 
-    //TODO: add method so delete should also delete the role, profile, posts and comments of users
     @DeleteMapping("/{username}")
     public void deleteUserByUsername(@PathVariable String username) {
         userService.deleteUserByUsername(username);
     }
 
-
-    //TODO: hash password
     @PutMapping("/{username}")
     public User updateUser(@PathVariable String username, @RequestBody User user) {
         return userService.updateUser(username, user);
