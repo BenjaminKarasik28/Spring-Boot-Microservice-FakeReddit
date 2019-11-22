@@ -26,6 +26,7 @@ public class CommentServiceImpl implements CommentService {
 
         DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
 
+
         if(dummyPost.getId().equals(postId)) {
             comment.setPostId(postId);
             comment.setUsername(username);
@@ -70,6 +71,13 @@ public class CommentServiceImpl implements CommentService {
 
         if(comment.getText() != null) savedComment.setText(comment.getText());
         return commentRepository.save(savedComment);
+    }
+
+    @Override
+    public String getEmailbyPostId(Long postId) {
+       String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
+       return email;
+
     }
 
 }

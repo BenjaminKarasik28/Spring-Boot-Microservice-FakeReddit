@@ -13,4 +13,5 @@ public interface CommentService {
     public Iterable<Comment> getAllComments();
     public void deleteCommentByUsername(String username);
     public Comment updateComment (Comment comment, Long commentId);
+    public String getEmailbyPostId(Long postId);
 }

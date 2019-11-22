@@ -33,7 +33,6 @@ public class CommentController {
         return commentService.getAllCommentsByPostId(postId);
     }
 
-
     @DeleteMapping("/{commentId}")
     public void deleteCommentById(@PathVariable Long commentId) {
         commentService.deleteByCommentId(commentId);
@@ -58,6 +57,11 @@ public class CommentController {
     public String send(@PathVariable String msg){
         sender.send(msg);
         return "message sent";
+    }
+
+    @GetMapping("/post/user/{postId}")
+    public String getEmailByPostId(@PathVariable Long postId){
+        return commentService.getEmailbyPostId(postId);
     }
 
 }

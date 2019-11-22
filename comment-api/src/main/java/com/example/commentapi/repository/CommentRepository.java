@@ -1,6 +1,7 @@
 package com.example.commentapi.repository;
 
 import com.example.commentapi.model.Comment;
+import com.example.commentapi.model.PostComment;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -18,4 +19,6 @@ public interface CommentRepository extends CrudRepository<Comment, Long> {
     public void deleteByUsername(String username);
 
     public Comment findByCommentId(Long commentId);
+
+    PostComment findByPostId(Long postId);
 }
