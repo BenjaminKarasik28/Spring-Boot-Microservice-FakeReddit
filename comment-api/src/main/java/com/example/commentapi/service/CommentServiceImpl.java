@@ -5,6 +5,9 @@ import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.DummyPost;
 import com.example.commentapi.model.PostComment;
 import com.example.commentapi.repository.CommentRepository;
+import com.netflix.discovery.converters.Auto;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -19,10 +22,17 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     CommentRepository commentRepository;
 
-    RestTemplate restTemplate = new RestTemplate();
+    @Autowired
+    RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    Queue queue;
+
+    @Auto
+    RestTemplate restTemplate;
 
     @Override
-    public Comment createComment(Comment comment, String username, Long postId) {
+    public String createComment(Comment comment, String username, Long postId) {
 
         DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
 
@@ -30,7 +40,12 @@ public class CommentServiceImpl implements CommentService {
         if(dummyPost.getId().equals(postId)) {
             comment.setPostId(postId);
             comment.setUsername(username);
-            return commentRepository.save(comment);
+            commentRepository.save(comment);
+            String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
+            String message = "This is the poster's email: " + email;
+            rabbitTemplate.convertAndSend(queue.getName(), message);
+            return email;
+
         }
         return null;
     }
