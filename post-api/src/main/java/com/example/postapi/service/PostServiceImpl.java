@@ -73,4 +73,11 @@ public class PostServiceImpl implements PostService {
         return postRepository.save(savedPost);
     }
 
+    @Override
+    public String sendPostIdRestTemplate(Long postId) {
+        Post savedPost = postRepository.findByPostId(postId);
+        String username = savedPost.getUsername();
+        return restTemplate.getForObject("http://localhost:8081/post/" + username, String.class);
+    }
+
 }

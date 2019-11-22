@@ -16,7 +16,6 @@ public class PostController {
     @Autowired
     PostService postService;
 
-
     @PostMapping("/post")
     public Post createPost(@RequestBody Post post, @RequestHeader("username") String username) {
         return postService.createPost(post, username);
@@ -54,5 +53,10 @@ public class PostController {
     @PutMapping("/post/{postId}")
     public Post updatePostById(@PathVariable Long postId, @RequestBody Post post) {
         return postService.updatePost(post, postId);
+    }
+
+    @GetMapping("/user/{postId}")
+    public String sendPostIdRestTemplate(@PathVariable Long postId){
+        return postService.sendPostIdRestTemplate(postId);
     }
 }

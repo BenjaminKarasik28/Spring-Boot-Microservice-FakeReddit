@@ -24,4 +24,6 @@ public interface PostService {
 
     public Post updatePost(Post post, Long postId);
 
+    public String sendPostIdRestTemplate(Long postId);
+
 }
