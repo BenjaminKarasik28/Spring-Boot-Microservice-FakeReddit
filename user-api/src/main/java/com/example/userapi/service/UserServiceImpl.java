@@ -1,6 +1,7 @@
 package com.example.userapi.service;
 
 import com.example.userapi.config.JwtUtil;
+import com.example.userapi.exceptionhandling.IncorrectLoginException;
 import com.example.userapi.model.User;
 import com.example.userapi.model.UserRole;
 import com.example.userapi.repository.UserRepository;
@@ -38,15 +39,26 @@ public class UserServiceImpl implements UserService {
     @Autowired
     JwtUtil jwtUtil;
 
+//    @Override
+//    public List<String> userLogin(User user) {
+//        User newUser = userRepository.findByEmail(user.getEmail());
+//
+//        if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
+//            return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
+//        }
+//
+//        return null;
+//    }
+
     @Override
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());
-
-        if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
-            return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
+        try {
+            encoder().matches(user.getPassword(), newUser.getPassword());
+        } catch(Exception e) {
+            throw new IncorrectLoginException("Incorrect username or password");
         }
-
-        return null;
+        return Arrays.asList( jwtUtil.generateToken(user.getUsername()), newUser.getUsername());
     }
 
     @Override
