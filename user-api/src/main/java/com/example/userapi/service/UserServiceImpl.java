@@ -99,6 +99,7 @@ public class UserServiceImpl implements UserService {
         if(user.getUsername() != null) savedUser.setUsername(user.getUsername());
         if(user.getEmail() != null) savedUser.setEmail(user.getEmail());
         if(user.getPassword() != null) savedUser.setPassword(encoder().encode(user.getPassword()));
+        if(user.getRoles() != null) savedUser.setRoles(user.getRoles());
         return userRepository.save(savedUser);
     }
 }

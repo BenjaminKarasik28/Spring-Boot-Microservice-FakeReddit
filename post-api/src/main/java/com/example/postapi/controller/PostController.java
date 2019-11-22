@@ -15,7 +15,7 @@ public class PostController {
 
     @Autowired
     PostService postService;
-    
+
 
     @PostMapping("/post")
     public Post createPost(@RequestBody Post post, @RequestHeader("username") String username) {
@@ -51,6 +51,8 @@ public class PostController {
     @DeleteMapping("/post/{username}")
     public String deletePostByUsername(@PathVariable String username){return postService.deletePostByUsername(username);}
 
-
-
+    @PutMapping("/post/{postId}")
+    public Post updatePostById(@PathVariable Long postId, @RequestBody Post post) {
+        return postService.updatePost(post, postId);
+    }
 }

@@ -63,5 +63,14 @@ public class PostServiceImpl implements PostService {
         return postRepository.findById(postId);
     }
 
+    @Override
+    public Post updatePost(Post post, Long postId) {
+        Post savedPost = postRepository.findByPostId(postId);
+
+        if(post.getTitle() != null) savedPost.setTitle(post.getTitle());
+        if(post.getDescription() != null) savedPost.setDescription(post.getDescription());
+
+        return postRepository.save(savedPost);
+    }
 
 }

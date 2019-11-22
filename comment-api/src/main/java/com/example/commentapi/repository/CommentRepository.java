@@ -16,4 +16,6 @@ public interface CommentRepository extends CrudRepository<Comment, Long> {
 
     @Transactional
     public void deleteByUsername(String username);
+
+    public Comment findByCommentId(Long commentId);
 }

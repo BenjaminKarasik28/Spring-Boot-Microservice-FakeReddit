@@ -22,4 +22,6 @@ public interface PostService {
 
     public Optional<Post> getPostById(Long postId);
 
+    public Post updatePost(Post post, Long postId);
+
 }

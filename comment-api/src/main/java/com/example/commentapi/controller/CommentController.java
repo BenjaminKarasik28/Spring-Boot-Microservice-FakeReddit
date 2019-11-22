@@ -43,9 +43,15 @@ public class CommentController {
     public Long deletePostAndComments(@PathVariable Long postId){
         return commentService.deletePostAndComments(postId);
     }
+
     @DeleteMapping("/post/name/{username}")
     public void deleteCommentByUsername(@PathVariable String username){
         commentService.deleteCommentByUsername(username);
+    }
+
+    @PutMapping("/{commentId}")
+    public Comment updateComment(@PathVariable Long commentId, @RequestBody Comment comment) {
+        return commentService.updateComment(comment, commentId);
     }
 
     @GetMapping("/send/{msg}")
