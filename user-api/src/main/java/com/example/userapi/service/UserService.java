@@ -14,4 +14,5 @@ public interface UserService {
     public User getUser(String username);
     public void deleteUserByUsername(String username);
     public User updateUser(String username, User user);
+    public String getEmailByUsername(String username);
 }

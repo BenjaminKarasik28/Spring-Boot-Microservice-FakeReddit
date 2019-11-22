@@ -37,4 +37,9 @@ public class UserController {
     public User updateUser(@PathVariable String username, @RequestBody User user) {
         return userService.updateUser(username, user);
     }
+
+    @GetMapping("/post/{username}")
+    public String getEmailFromUsername(@PathVariable String username){
+        return userService.getEmailByUsername(username);
+    }
 }
