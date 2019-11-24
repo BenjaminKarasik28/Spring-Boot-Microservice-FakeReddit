@@ -51,11 +51,12 @@ public class UserControllerTest {
     @Before
     public void intializeUser() {
         user = new User();
-        user.setUsername("test");
+        user.setUsername("batman");
+        user.setPassword("tester");
     }
 
     @Test
-    public void signup_ResponseEntity_Success() throws Exception {
+    public void signup_List_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("/signup")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -76,4 +77,67 @@ public class UserControllerTest {
         return "{ \"username\": \"" + username + "\", " + "\"password\":\"" + password + "\"}";
     }
 
+    @Test
+    public void login_List_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .post("/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(createUserInJson("test", "tester"));
+
+        when(userService.userLogin(any())).thenReturn(Arrays.asList("1234", "test"));
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"username\":\"test\",\"token\":\"1234\"}"))
+                .andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
+    }
+
+    //TODO: test restTemplate calls
+    @Test
+    public void deleteUser_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .delete("/{username}", "test");
+
+        when(userService.deleteUserByUsername(any())).thenReturn((long) 1);
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json("1"))
+                .andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
+    }
+
+    @Test
+    public void getEmailFromUsername_String_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .get("/post/{username}", "test")
+                .accept(MediaType.APPLICATION_JSON);
+
+        when(userService.getEmailByUsername(any())).thenReturn("test@test.com");
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().string("test@test.com"))
+                .andReturn();
+    }
+
+    @Test
+    public void updateUser_User_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .put("/{username}", "test")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"username\":\"batman\"}");
+
+        when(userService.updateUser(any(), any())).thenReturn(user);
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"username\":\"batman\"}"))
+                .andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
+    }
 }

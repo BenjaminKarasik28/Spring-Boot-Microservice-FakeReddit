@@ -127,12 +127,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteUserByUsername(String username) {
+    public Long deleteUserByUsername(String username) {
 
         restTemplate.delete("http://localhost:8082/post/" + username);
         restTemplate.delete("http://localhost:8083/post/name/" + username);
         User savedUser = userRepository.findByUsername(username);
         userRepository.delete(savedUser);
+        return savedUser.getId();
     }
 
     @Override

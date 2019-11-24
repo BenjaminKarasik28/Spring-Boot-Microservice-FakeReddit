@@ -33,8 +33,8 @@ public class UserController {
     }
 
     @DeleteMapping("/{username}")
-    public void deleteUserByUsername(@PathVariable String username) {
-        userService.deleteUserByUsername(username);
+    public Long deleteUserByUsername(@PathVariable String username) {
+        return userService.deleteUserByUsername(username);
     }
 
     @PutMapping("/{username}")
@@ -48,7 +48,7 @@ public class UserController {
     }
 
     @ExceptionHandler
-    public ResponseEntity<ErrorResponse> handleExcption(IncorrectLoginException err){
+    public ResponseEntity<ErrorResponse> handleException(IncorrectLoginException err){
         ErrorResponse error = new ErrorResponse(HttpStatus.UNAUTHORIZED.value(), err.getMessage());
         return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
     }

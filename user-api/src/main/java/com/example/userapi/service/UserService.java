@@ -14,7 +14,7 @@ public interface UserService {
     public List<String> userSignup(User user) throws EmailSignupException, ExistingUserSignupException;
     public User addRole(String username, int roleId);
     public User getUser(String username);
-    public void deleteUserByUsername(String username);
+    public Long deleteUserByUsername(String username);
     public User updateUser(String username, User user);
     public String getEmailByUsername(String username);
 }
