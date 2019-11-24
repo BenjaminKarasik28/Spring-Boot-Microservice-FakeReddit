@@ -7,6 +7,10 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 public class User {
+    /**
+     * Test
+     * @author Tracy
+     */
 
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {CascadeType.DETACH,
@@ -56,7 +60,9 @@ public class User {
     private String password;
 
 
-
+    /**
+     * The default constructor.
+     */
     public User() {}
 
     public Long getId() {
