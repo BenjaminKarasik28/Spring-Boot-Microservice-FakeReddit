@@ -28,7 +28,7 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     Queue queue;
 
-    @Auto
+    @Autowired
     RestTemplate restTemplate;
 
     @Override

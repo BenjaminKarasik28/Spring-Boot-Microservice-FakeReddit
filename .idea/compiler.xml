@@ -2,15 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile name="Annotation profile for Unknown" enabled="true">
+        <sourceOutputDir name="../generated-sources/annotations" />
+        <sourceTestOutputDir name="../generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven-archiver (3)" />
+        <module name="maven-archiver (4)" />
+        <module name="maven-archiver (5)" />
+        <module name="maven-archiver (1)" />
+        <module name="maven-archiver (2)" />
+      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-api" />
+        <module name="comment-api" />
         <module name="eureka-server" />
+        <module name="user-api" />
         <module name="api-gateway" />
         <module name="post-api" />
-        <module name="comment-api" />
+        <module name="email-api" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="comment-api" options="-parameters" />
+      <module name="email-api" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="post-api" options="-parameters" />
       <module name="user-api" options="-parameters" />
