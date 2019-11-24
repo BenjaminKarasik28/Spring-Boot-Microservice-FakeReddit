@@ -1,13 +1,14 @@
 package com.example.userapi.service;
 
 import com.example.userapi.config.JwtUtil;
+import com.example.userapi.exceptionhandling.EmailSignupException;
+import com.example.userapi.exceptionhandling.ExistingUserSignupException;
 import com.example.userapi.exceptionhandling.IncorrectLoginException;
 import com.example.userapi.model.User;
 import com.example.userapi.model.UserRole;
 import com.example.userapi.repository.UserRepository;
 import com.example.userapi.repository.UserRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -50,6 +51,7 @@ public class UserServiceImpl implements UserService {
 //        return null;
 //    }
 
+    //TODO: Maybe catch if user doesn't exist and tell them to sign up?
     @Override
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());
@@ -61,22 +63,51 @@ public class UserServiceImpl implements UserService {
         return Arrays.asList( jwtUtil.generateToken(user.getUsername()), newUser.getUsername());
     }
 
+//    @Override
+//    public List<String> userSignup(User newUser) {
+//
+//        UserRole userRole = userRoleRepository.findByName("ROLE_USER");
+//        if (userRole == null) {
+//            userRole = new UserRole();
+//            userRole.setName("ROLE_USER");
+//            userRoleService.createRole(userRole);
+//        }
+//        newUser.addRole(userRole);
+//
+//        newUser.setPassword(encoder().encode(newUser.getPassword()));
+//
+//        if (userRepository.save(newUser) != null) {
+//            return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
+//
+//        }
+//        return null;
+//    }
+
     @Override
-    public List<String> userSignup(User newUser) {
+    public List<String> userSignup(User newUser) throws EmailSignupException, ExistingUserSignupException {
+        //validate email input
+        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+        try {
+            if(!newUser.getEmail().matches(regex)) {
+                throw new EmailSignupException("Please enter a valid email");
+            }
+            else if(userRepository.findByEmail(newUser.getEmail()) != null) {
+                throw new ExistingUserSignupException("User already exists - please login");
+            }
+            UserRole userRole = userRoleRepository.findByName("ROLE_USER");
+            if (userRole == null) {
+                userRole = new UserRole();
+                userRole.setName("ROLE_USER");
+                userRoleService.createRole(userRole);
+            }
+            newUser.addRole(userRole);
 
-        UserRole userRole = userRoleRepository.findByName("ROLE_USER");
-        if (userRole == null) {
-            userRole = new UserRole();
-            userRole.setName("ROLE_USER");
-            userRoleService.createRole(userRole);
-        }
-        newUser.addRole(userRole);
-
-        newUser.setPassword(encoder().encode(newUser.getPassword()));
-
-        if (userRepository.save(newUser) != null) {
-            return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
-
+            newUser.setPassword(encoder().encode(newUser.getPassword()));
+            if (userRepository.save(newUser) != null) {
+                return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
+            }
+        } finally {
+            System.out.println("test");
         }
         return null;
     }
