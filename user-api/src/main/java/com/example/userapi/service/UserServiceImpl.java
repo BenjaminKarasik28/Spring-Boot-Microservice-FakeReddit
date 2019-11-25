@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService {
         } catch(Exception e) {
             throw new IncorrectLoginException("Incorrect username or password");
         }
-        return Arrays.asList( jwtUtil.generateToken(user.getUsername()), newUser.getUsername());
+        return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
     }
 
 //    @Override
