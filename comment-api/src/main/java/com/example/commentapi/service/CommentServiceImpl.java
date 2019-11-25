@@ -42,8 +42,7 @@ public class CommentServiceImpl implements CommentService {
             comment.setUsername(username);
             commentRepository.save(comment);
             String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
-            String message = "This is the poster's email: " + email;
-            rabbitTemplate.convertAndSend(queue.getName(), message);
+            rabbitTemplate.convertAndSend(queue.getName(), email);
             return email;
 
         }
