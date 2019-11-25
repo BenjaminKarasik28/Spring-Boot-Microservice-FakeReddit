@@ -27,7 +27,7 @@ public class SmtpServerService {
     private MimeMessage draft(String targetEmail) throws AddressException, MessagingException {
         String emailSubject = "Notification from FakeReddit";
         String emailBody = "Somebody commented on your post!";
-        System.out.println("Inside draft");
+
         MimeMessage email = new MimeMessage(session);
         email.setSubject(emailSubject);
         email.setText(emailBody);
@@ -42,11 +42,10 @@ public class SmtpServerService {
         String emailHost = "smtp.gmail.com";
         String pass = "Vpx9yKfc2Z2sF7sw";
         Transport transport = session.getTransport("smtp");
-        System.out.println("im right here");
         transport.connect(emailHost, 587,  fromUser, pass);
 
         MimeMessage emailMessage = draft(target);
-        System.out.println("made it after draft");
+        
 
         transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
         transport.close();
