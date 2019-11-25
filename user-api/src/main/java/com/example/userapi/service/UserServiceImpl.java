@@ -55,12 +55,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());
-        try {
-            encoder().matches(user.getPassword(), newUser.getPassword());
-        } catch(Exception e) {
+        if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
+            return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
+        } else {
             throw new IncorrectLoginException("Incorrect username or password");
         }
-        return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
     }
 
 //    @Override
