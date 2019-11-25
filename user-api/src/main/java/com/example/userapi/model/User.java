@@ -65,6 +65,10 @@ public class User {
      */
     public User() {}
 
+    /**
+     * Gets the ID
+     * @return the auto-generated ID for this book
+     */
     public Long getId() {
         return id;
     }
