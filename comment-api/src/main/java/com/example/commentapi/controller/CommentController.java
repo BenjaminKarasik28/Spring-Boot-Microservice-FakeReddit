@@ -6,6 +6,7 @@ import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.PostComment;
 
 import com.example.commentapi.service.CommentService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,30 +16,21 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class CommentController {
 
-    //    getAllComments
-// *    getAllCommentsByPostId
-//    getEmailByPostId
-//    createComment
-//*    updateComment
-//*    deleteCommentById
-//*   deleteCommentByUsername
-//*    deletePostAndComments
-
-
     @Autowired
     CommentService commentService;
 
-    //for testing delete methods
+    @ApiOperation(value = "Get All Comments", notes = "Returns all comment objects", response = Iterable.class)
     @GetMapping("/list")
     public Iterable<Comment> getAllComments() {
         return commentService.getAllComments();
     }
 
+    @ApiOperation(value = "Get Comments by post Id", notes = "Returns all PostComment objects", response = PostComment.class)
     @GetMapping("/list/{postId}")
     public PostComment getAllCommentsByPostId(@PathVariable Long postId) {
         return commentService.getAllCommentsByPostId(postId);
     }
-
+    @ApiOperation(value = "Get email by post Id", notes = "Returns email by postId", response = String.class)
     @GetMapping("/post/user/{postId}")
     public String getEmailByPostId(@PathVariable Long postId){
         return commentService.getEmailbyPostId(postId);
