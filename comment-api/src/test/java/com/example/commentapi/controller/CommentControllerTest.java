@@ -44,7 +44,7 @@ public class CommentControllerTest {
 
     private List<Comment> sampleCommentList;
 
-    private List<PostComment> samplePostComment;
+    private PostComment samplePostComment;
 
     @InjectMocks
     CommentController commentController;
@@ -71,8 +71,8 @@ public class CommentControllerTest {
                         "user1"
                 )
         );
-
-
+        samplePostComment = new PostComment();
+        samplePostComment.setPostComment(sampleCommentList);
 
     }
 
@@ -90,10 +90,10 @@ public class CommentControllerTest {
         getAllComments_Comment_Success();
     }
 
-//    @Test
-//    public void getAllCommentsByPostId() throws Exception {
-//        getAllCommentsByPostId_Comment_Success();
-//    }
+    @Test
+    public void getAllCommentsByPostId() throws Exception {
+        getAllCommentsByPostId_Comment_Success();
+    }
 
     @Test
     public void getEmailByPostId() throws Exception {
@@ -122,29 +122,30 @@ public class CommentControllerTest {
 //    }
 
 
-//    @Test
-//    public void deletePostAndComments() throws Exception {
-//        deletePostAndComments_Long_Success();
-//    }
-//
-//    private void deletePostAndComments_Long_Success() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .delete("/post/{postId}", 1);
-//
-//        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn();
-//
-//        mockMvc.perform(requestBuilder)
-//                .andExpect(status().isOk())
-//                .andExpect()
-//                .andReturn();
-//
-//    }
 
     private void getAllComments_Comment_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .get("/list");
 
         when(commentService.getAllComments()).thenReturn(sampleCommentList);
+
+        mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json(
+                        "{\n" +
+                        "    \"id\":1,\n" +
+                        "    \"postId\":1,\n" +
+                        "    \"text\": \"some text\",\n" +
+                        "    \"username\": \"user1\"\n" +
+                        "}"))
+                .andReturn();
+    }
+
+    private void getAllCommentsByPostId_Comment_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+            .get("/list/{postId}", 1);
+
+        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn(samplePostComment);
 
         mockMvc.perform(requestBuilder)
                 .andExpect(status().isOk())
@@ -156,15 +157,15 @@ public class CommentControllerTest {
                         "    \"username\": \"user1\"\n" +
                         "}]"))
                 .andReturn();
+
     }
 
-//    private void getAllCommentsByPostId_Comment_Success() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//            .get("/list/{postId}");
-//
-////        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn(sampleCommentList);
-//
+    //    @Test
+//    public void getAllCommentsByPostId() throws Exception {
+//        getAllCommentsByPostId_PostComment();
 //    }
+    //
+
 
     private void getEmailByPostId_String_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
@@ -221,18 +222,23 @@ public class CommentControllerTest {
         commentController.deleteCommentByUsername(anyString());
     }
 
-
     //    @Test
-//    public void getAllCommentsByPostId() throws Exception {
-//        getAllCommentsByPostId_PostComment();
+//    public void deletePostAndComments() throws Exception {
+//        deletePostAndComments_Long_Success();
 //    }
-    //
-//    private void getAllCommentsByPostId_PostComment() throws Exception {
+//
+//    private void deletePostAndComments_Long_Success() throws Exception {
 //        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .get("/list/{postId}", 1);
+//                .delete("/post/{postId}", 1);
 //
-//        when(commentService.getAllCommentsByPostId()).thenReturn();
+//        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn();
+//
+//        mockMvc.perform(requestBuilder)
+//                .andExpect(status().isOk())
+//                .andExpect()
+//                .andReturn();
 //
 //    }
+
 
 }
