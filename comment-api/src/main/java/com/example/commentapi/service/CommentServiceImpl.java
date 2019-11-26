@@ -1,6 +1,7 @@
 package com.example.commentapi.service;
 
 
+import com.example.commentapi.exceptionhandling.BlankCommentException;
 import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.DummyPost;
 import com.example.commentapi.model.PostComment;
@@ -60,21 +61,25 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public String createComment(Comment comment, String username, Long postId) {
+    public String createComment(Comment comment, String username, Long postId) throws BlankCommentException {
 
-        DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
+        if(comment.getText().isEmpty()) {
+            throw new BlankCommentException("Please enter text for your comment");
+        } else {
+            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
 
 
-        if(dummyPost.getId().equals(postId)) {
-            comment.setPostId(postId);
-            comment.setUsername(username);
-            commentRepository.save(comment);
-            String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
-            rabbitTemplate.convertAndSend(queue.getName(), email);
-            return email;
+            if(dummyPost.getId().equals(postId)) {
+                comment.setPostId(postId);
+                comment.setUsername(username);
+                commentRepository.save(comment);
+                String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
+                rabbitTemplate.convertAndSend(queue.getName(), email);
+                return email;
 
+            }
+            return null;
         }
-        return null;
     }
 
     @Override

@@ -1,10 +1,14 @@
 package com.example.commentapi.controller;
 
+import com.example.commentapi.exceptionhandling.BlankCommentException;
+import com.example.commentapi.exceptionhandling.ErrorResponse;
 import com.example.commentapi.model.Comment;
 import com.example.commentapi.model.PostComment;
 
 import com.example.commentapi.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -63,6 +67,12 @@ public class CommentController {
     @DeleteMapping("/post/{postId}")
     public Long deletePostAndComments(@PathVariable Long postId){
         return commentService.deletePostAndComments(postId);
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(BlankCommentException err){
+        ErrorResponse error = new ErrorResponse(HttpStatus.UNAUTHORIZED.value(), err.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
     }
 
 }
