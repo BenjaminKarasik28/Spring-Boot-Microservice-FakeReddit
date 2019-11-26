@@ -1,6 +1,9 @@
 package com.example.userapi.controller;
 
 import com.example.userapi.config.JwtUtil;
+import com.example.userapi.exceptionhandling.EmailSignupException;
+import com.example.userapi.exceptionhandling.ExistingUserSignupException;
+import com.example.userapi.exceptionhandling.IncorrectLoginException;
 import com.example.userapi.model.User;
 import com.example.userapi.service.UserService;
 import org.junit.Before;
@@ -93,6 +96,57 @@ public class UserControllerTest {
 
         System.out.println(result.getResponse().getContentAsString());
     }
+
+    @Test
+    public void IncorrectLoginException_401_Fail() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .post("/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(createUserInJson("test", "tester"));
+
+        when(userService.userLogin(any())).thenThrow(new IncorrectLoginException("Wrong"));
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andExpect(status().isUnauthorized())
+                .andReturn();
+
+    }
+
+
+//    @Test
+//    public void EmailSignupException_401_Fail() throws Exception {
+//        RequestBuilder requestBuilder = MockMvcRequestBuilders
+//                .post("/signup")
+//                .contentType(MediaType.APPLICATION_JSON);
+////                .content(createUserWithEmailInJson("test", "test@test", "tester"));
+//
+//        when(userService.userSignup(any())).thenThrow(new EmailSignupException("Fail"));
+//
+//        MvcResult result = mockMvc.perform(requestBuilder)
+//                .andExpect(status().isUnauthorized())
+//                .andReturn();
+//
+//    }
+//
+//    //This converts to JSON object
+//    private static String createUserWithEmailInJson(String username, String email, String password) {
+//        return "{ \"username\": \"" + username + "\", " + "\"password\":\"" + password + "\", \"email\": \"" + email + "\"}";
+//    }
+//
+//    @Test
+//    public void ExistingUserSignupException_401_Fail() throws Exception {
+//        RequestBuilder requestBuilder = MockMvcRequestBuilders
+//                .post("/signup")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content(createUserWithEmailInJson("test", "test@test.com", "tester"));
+//
+//        when(userService.userSignup(any())).thenThrow(new ExistingUserSignupException("Fail"));
+//
+//        MvcResult result = mockMvc.perform(requestBuilder)
+//                .andExpect(status().isUnauthorized())
+//                .andReturn();
+//
+//    }
 
     //TODO: test restTemplate calls
     @Test
