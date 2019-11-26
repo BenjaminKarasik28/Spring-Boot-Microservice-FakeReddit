@@ -44,7 +44,7 @@ public class CommentControllerTest {
 
     private List<Comment> sampleCommentList;
 
-    private List<Comment> samplePostComment;
+    private List<PostComment> samplePostComment;
 
     @InjectMocks
     CommentController commentController;
@@ -74,12 +74,30 @@ public class CommentControllerTest {
 
 
 
-
     }
+
+    //    getAllComments
+    // *    getAllCommentsByPostId
+    //    getEmailByPostId
+    //    createComment
+    //*    updateComment
+    //*    deleteCommentById
+    //*   deleteCommentByUsername
+    //*    deletePostAndComments
 
     @Test
     public void getAllComments() throws Exception {
         getAllComments_Comment_Success();
+    }
+
+//    @Test
+//    public void getAllCommentsByPostId() throws Exception {
+//        getAllCommentsByPostId_Comment_Success();
+//    }
+
+    @Test
+    public void getEmailByPostId() throws Exception {
+        getEmailByPostId_String_Success();
     }
 
     @Test
@@ -87,10 +105,6 @@ public class CommentControllerTest {
         createComment_Comment_Success();
     }
 
-    @Test
-    public void getEmailByPostId() throws Exception {
-        getEmailByPostId_String_Success();
-    }
 
     @Test
     public void deleteCommentById() throws Exception {
@@ -126,29 +140,6 @@ public class CommentControllerTest {
 //
 //    }
 
-    private void deleteCommentById_Void_Success() throws Exception {
-        RequestBuilder requestBuilder = MockMvcRequestBuilders
-                .delete("/{commentId}", 1);
-
-        commentService.deleteByCommentId(1l);
-
-        verify(commentService, times(1)).deleteByCommentId((long) 1);
-
-    }
-
-
-    private void deleteCommentByUsername_Void_Success() throws Exception {
-        RequestBuilder requestBuilder = MockMvcRequestBuilders
-                .delete("/post/name/{username}", "user1");
-
-        commentService.deleteCommentByUsername("user1");
-
-        verify(commentService, times(1)).deleteCommentByUsername("user1");
-    }
-
-
-
-
     private void getAllComments_Comment_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .get("/list");
@@ -164,6 +155,26 @@ public class CommentControllerTest {
                         "    \"text\": \"some text\",\n" +
                         "    \"username\": \"user1\"\n" +
                         "}]"))
+                .andReturn();
+    }
+
+//    private void getAllCommentsByPostId_Comment_Success() throws Exception {
+//        RequestBuilder requestBuilder = MockMvcRequestBuilders
+//            .get("/list/{postId}");
+//
+////        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn(sampleCommentList);
+//
+//    }
+
+    private void getEmailByPostId_String_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .get("/post/user/{postId}", 1);
+
+        when(commentService.getEmailbyPostId(anyLong())).thenReturn("user1@mail.com");
+
+        mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().string("user1@mail.com"))
                 .andReturn();
     }
 
@@ -184,16 +195,30 @@ public class CommentControllerTest {
                 .andReturn();
     }
 
-    private void getEmailByPostId_String_Success() throws Exception {
+    private void deleteCommentById_Void_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
-                .get("/post/user/{postId}", 1);
+                .delete("/{commentId}", 1);
 
-        when(commentService.getEmailbyPostId(anyLong())).thenReturn("user1@mail.com");
+        commentService.deleteByCommentId(anyLong());
 
-        mockMvc.perform(requestBuilder)
-                .andExpect(status().isOk())
-                .andExpect(content().string("user1@mail.com"))
-                .andReturn();
+        verify(commentService, times(1)).deleteByCommentId(anyLong());
+
+        commentController.deleteCommentById(anyLong());
+
+
+
+    }
+
+
+    private void deleteCommentByUsername_Void_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .delete("/post/name/{username}", "user1");
+
+        commentService.deleteCommentByUsername(anyString());
+
+        verify(commentService, times(1)).deleteCommentByUsername(anyString());
+
+        commentController.deleteCommentByUsername(anyString());
     }
 
 

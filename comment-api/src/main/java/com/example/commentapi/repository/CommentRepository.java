@@ -10,15 +10,34 @@ import javax.transaction.Transactional;
 @Repository
 public interface CommentRepository extends CrudRepository<Comment, Long> {
 
+    //    getAllComments - CR.findAll()
+    // *    getAllCommentsByPostId - CR.findAllByPostId
+    //    getEmailByPostId - RT.getForObject
+    //    createComment - RT.getForObject
+    //*    updateComment - CR.findByCommentId
+    //*    deleteCommentById - CR.deleteByPostId
+    //*   deleteCommentByUsername - CR.deleteByUsername
+    //*    deletePostAndComments - CR.deleteByPostId
+
+
+    //    getAllComments - CR.findAll()
+
     public Iterable<Comment> findAllByPostId(Long postId);
 
-    @Transactional
-    public Long deleteByPostId(Long PostId);
+    //    getEmailByPostId - RT.getForObject
+
+//    PostComment findByPostId(Long postId)
+
+    //    createComment - RT.getForObject
+
+    public Comment findByCommentId(Long commentId);
+
+    //*    deleteCommentById - CR.deleteByPostId
 
     @Transactional
     public void deleteByUsername(String username);
 
-    public Comment findByCommentId(Long commentId);
+    @Transactional
+    public Long deleteByPostId(Long PostId);
 
-    PostComment findByPostId(Long postId);
 }

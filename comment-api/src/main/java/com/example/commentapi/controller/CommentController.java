@@ -7,9 +7,18 @@ import com.example.commentapi.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 public class CommentController {
 
+    //    getAllComments
+// *    getAllCommentsByPostId
+//    getEmailByPostId
+//    createComment
+//*    updateComment
+//*    deleteCommentById
+//*   deleteCommentByUsername
+//*    deletePostAndComments
 
 
     @Autowired
@@ -21,30 +30,19 @@ public class CommentController {
         return commentService.getAllComments();
     }
 
-    @PostMapping("/comment/{postId}")
-    public String createComment(@RequestBody Comment comment, @RequestHeader("username") String username, @PathVariable Long postId) {
-        return commentService.createComment(comment, username, postId);
-    }
-
-
     @GetMapping("/list/{postId}")
     public PostComment getAllCommentsByPostId(@PathVariable Long postId) {
         return commentService.getAllCommentsByPostId(postId);
     }
 
-    @DeleteMapping("/{commentId}")
-    public void deleteCommentById(@PathVariable Long commentId) {
-        commentService.deleteByCommentId(commentId);
+    @GetMapping("/post/user/{postId}")
+    public String getEmailByPostId(@PathVariable Long postId){
+        return commentService.getEmailbyPostId(postId);
     }
 
-    @DeleteMapping("/post/{postId}")
-    public Long deletePostAndComments(@PathVariable Long postId){
-        return commentService.deletePostAndComments(postId);
-    }
-
-    @DeleteMapping("/post/name/{username}")
-    public void deleteCommentByUsername(@PathVariable String username){
-        commentService.deleteCommentByUsername(username);
+    @PostMapping("/comment/{postId}")
+    public String createComment(@RequestBody Comment comment, @RequestHeader("username") String username, @PathVariable Long postId) {
+        return commentService.createComment(comment, username, postId);
     }
 
     @PutMapping("/{commentId}")
@@ -52,10 +50,19 @@ public class CommentController {
         return commentService.updateComment(comment, commentId);
     }
 
+    @DeleteMapping("/{commentId}")
+    public void deleteCommentById(@PathVariable Long commentId) {
+        commentService.deleteByCommentId(commentId);
+    }
 
-    @GetMapping("/post/user/{postId}")
-    public String getEmailByPostId(@PathVariable Long postId){
-        return commentService.getEmailbyPostId(postId);
+    @DeleteMapping("/post/name/{username}")
+    public void deleteCommentByUsername(@PathVariable String username){
+        commentService.deleteCommentByUsername(username);
+    }
+
+    @DeleteMapping("/post/{postId}")
+    public Long deletePostAndComments(@PathVariable Long postId){
+        return commentService.deletePostAndComments(postId);
     }
 
 }
