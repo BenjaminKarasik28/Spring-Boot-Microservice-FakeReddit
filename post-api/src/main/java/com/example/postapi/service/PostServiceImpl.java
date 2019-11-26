@@ -1,5 +1,6 @@
 package com.example.postapi.service;
 
+import com.example.postapi.exceptionhandling.BlankPostException;
 import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.repository.PostRepository;
@@ -19,10 +20,20 @@ public class PostServiceImpl implements PostService {
     PostRepository postRepository;
 
 
+//    @Override
+//    public Post createPost(Post post, String username) {
+//        post.setUsername(username);
+//        return postRepository.save(post);
+//    }
+
     @Override
-    public Post createPost(Post post, String username) {
-        post.setUsername(username);
+    public Post createPost(Post post, String username) throws BlankPostException {
+        if(post.getTitle().isEmpty() || post.getDescription().isEmpty()) {
+            throw new BlankPostException("Please enter both a title and description");
+        } else {
+            post.setUsername(username);
         return postRepository.save(post);
+        }
     }
 
     @Override

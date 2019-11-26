@@ -1,9 +1,13 @@
 package com.example.postapi.controller;
 
+import com.example.postapi.exceptionhandling.BlankPostException;
+import com.example.postapi.exceptionhandling.ErrorResponse;
 import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -58,5 +62,11 @@ public class PostController {
     @GetMapping("/user/{postId}")
     public String sendPostIdRestTemplate(@PathVariable Long postId){
         return postService.sendPostIdRestTemplate(postId);
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(BlankPostException err){
+        ErrorResponse error = new ErrorResponse(HttpStatus.UNAUTHORIZED.value(), err.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
     }
 }
