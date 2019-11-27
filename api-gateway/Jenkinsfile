@@ -25,14 +25,14 @@ pipeline {
             }
         }
         stage('Coverage') {
-            steps {
-                sh 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
-            }
-            post {
-              always {
-                cobertura coberturaReportFile: 'target/site/cobertura/coverage.xml'
+                    steps {
+                        sh 'mvn clean package jacoco:report'
+                    }
+                    post {
+                        always {
+                            publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
+                        }
+                    }
                 }
-            }
-        }
     }
 }
