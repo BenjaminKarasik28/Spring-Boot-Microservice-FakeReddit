@@ -26,11 +26,11 @@ pipeline {
         }
         stage('Coverage') {
             steps {
-                sh 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
+                sh 'mvn clean package jacoco:report'
             }
             post {
-              always {
-                cobertura coberturaReportFile: 'target/site/cobertura/coverage.xml'
+                always {
+                    publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
                 }
             }
         }
