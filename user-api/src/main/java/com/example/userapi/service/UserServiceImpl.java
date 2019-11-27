@@ -40,46 +40,17 @@ public class UserServiceImpl implements UserService {
     @Autowired
     JwtUtil jwtUtil;
 
-//    @Override
-//    public List<String> userLogin(User user) {
-//        User newUser = userRepository.findByEmail(user.getEmail());
-//
-//        if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
-//            return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
-//        }
-//
-//        return null;
-//    }
 
     @Override
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());
+        System.out.println(user.getPassword() + " " + newUser.getPassword());
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
             return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
         } else {
             throw new IncorrectLoginException("Incorrect username or password");
         }
     }
-
-//    @Override
-//    public List<String> userSignup(User newUser) {
-//
-//        UserRole userRole = userRoleRepository.findByName("ROLE_USER");
-//        if (userRole == null) {
-//            userRole = new UserRole();
-//            userRole.setName("ROLE_USER");
-//            userRoleService.createRole(userRole);
-//        }
-//        newUser.addRole(userRole);
-//
-//        newUser.setPassword(encoder().encode(newUser.getPassword()));
-//
-//        if (userRepository.save(newUser) != null) {
-//            return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
-//
-//        }
-//        return null;
-//    }
 
     @Override
     public List<String> userSignup(User newUser) throws EmailSignupException, ExistingUserSignupException {
@@ -115,7 +86,6 @@ public class UserServiceImpl implements UserService {
         UserRole userRole = userRoleRepository.findById(roleId).get();
         User user = userRepository.findByEmail(email);
         user.addRole(userRole);
-
         return userRepository.save(user);
     }
 

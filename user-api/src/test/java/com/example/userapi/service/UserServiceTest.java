@@ -11,11 +11,13 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import sun.security.util.Password;
 
 import javax.inject.Inject;
 
+import java.beans.Encoder;
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,6 +44,9 @@ public class UserServiceTest {
 
     @Mock
     private PasswordEncoder bCryptPasswordEncoder;
+
+    @Mock
+    private PasswordEncoder encoder;
 
     @Mock
     private JwtUtil jwtUtil;
@@ -72,33 +77,15 @@ public class UserServiceTest {
         assertEquals(actualToken.get(0), expectedToken);
     }
 
+//    @Test
+//    public void login_List_Success() {
+//        String expectedToken = "12345";
+//        when(userRepository.findByEmail(any())).thenReturn(user);
+////        when(encoder().matches(any(),any())).thenReturn(true);
+//        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(true);
+//        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
+//        List<String> actualToken = userService.userLogin(user);
+//        assertEquals(actualToken.get(0), expectedToken);
+//    }
 
 }
-
-//    public List<String> userSignup(User newUser) throws EmailSignupException, ExistingUserSignupException {
-//        //validate email input
-//        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
-//        try {
-//            if(!newUser.getEmail().matches(regex)) {
-//                throw new EmailSignupException("Please enter a valid email");
-//            }
-//            else if(userRepository.findByEmail(newUser.getEmail()) != null) {
-//                throw new ExistingUserSignupException("User already exists - please login");
-//            }
-//            UserRole userRole = userRoleRepository.findByName("ROLE_USER");
-//            if (userRole == null) {
-//                userRole = new UserRole();
-//                userRole.setName("ROLE_USER");
-//                userRoleService.createRole(userRole);
-//            }
-//            newUser.addRole(userRole);
-//
-//            newUser.setPassword(encoder().encode(newUser.getPassword()));
-//            if (userRepository.save(newUser) != null) {
-//                return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
-//            }
-//        } finally {
-//            System.out.println("test");
-//        }
-//        return null;
-//    }
