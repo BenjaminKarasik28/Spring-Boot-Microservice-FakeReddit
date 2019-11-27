@@ -74,16 +74,17 @@ public class CommentControllerTest {
         samplePostComment = new PostComment();
         samplePostComment.setPostComment(sampleCommentList);
 
+
     }
 
     //    getAllComments
-    // *    getAllCommentsByPostId
+    //     getAllCommentsByPostId
     //    getEmailByPostId
     //    createComment
-    //*    updateComment
-    //*    deleteCommentById
-    //*   deleteCommentByUsername
-    //*    deletePostAndComments
+    //    updateComment
+    //   deleteCommentById
+    //   deleteCommentByUsername
+    //    deletePostAndComments
 
     @Test
     public void getAllComments() throws Exception {
@@ -105,6 +106,11 @@ public class CommentControllerTest {
         createComment_Comment_Success();
     }
 
+    @Test
+    public void updateComment() throws Exception {
+        updateComment_Comment_Success();
+    }
+
 
     @Test
     public void deleteCommentById() throws Exception {
@@ -116,10 +122,12 @@ public class CommentControllerTest {
         deleteCommentByUsername_Void_Success();
     }
 
-//    @DeleteMapping("/post/{postId}")
-//    public Long deletePostAndComments(@PathVariable Long postId){
-//        return commentService.deletePostAndComments(postId);
-//    }
+        @Test
+    public void deletePostAndComments() throws Exception {
+        deletePostAndComments_Long_Success();
+    }
+
+
 
 
 
@@ -131,13 +139,13 @@ public class CommentControllerTest {
 
         mockMvc.perform(requestBuilder)
                 .andExpect(status().isOk())
-                .andExpect(content().json(
+                .andExpect(content().json("[" +
                         "{\n" +
                         "    \"id\":1,\n" +
                         "    \"postId\":1,\n" +
                         "    \"text\": \"some text\",\n" +
                         "    \"username\": \"user1\"\n" +
-                        "}"))
+                        "}]"))
                 .andReturn();
     }
 
@@ -147,24 +155,11 @@ public class CommentControllerTest {
 
         when(commentService.getAllCommentsByPostId(anyLong())).thenReturn(samplePostComment);
 
-        mockMvc.perform(requestBuilder)
-                .andExpect(status().isOk())
-                .andExpect(content().json("[" +
-                        "{\n" +
-                        "    \"id\":1,\n" +
-                        "    \"postId\":1,\n" +
-                        "    \"text\": \"some text\",\n" +
-                        "    \"username\": \"user1\"\n" +
-                        "}]"))
-                .andReturn();
+        commentController.getAllCommentsByPostId(1L);
+
+        assertNotNull(samplePostComment);
 
     }
-
-    //    @Test
-//    public void getAllCommentsByPostId() throws Exception {
-//        getAllCommentsByPostId_PostComment();
-//    }
-    //
 
 
     private void getEmailByPostId_String_Success() throws Exception {
@@ -196,6 +191,29 @@ public class CommentControllerTest {
                 .andReturn();
     }
 
+    private void updateComment_Comment_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .put("/{commentId}", 1)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\n" +
+                        "\t\"text\" : \"some text\"\n" +
+                        "}");
+
+        when(commentService.updateComment(any(), anyLong())).thenReturn(sampleComment);
+
+        mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json(
+                        "{\n" +
+                        "    \"id\":1,\n" +
+                        "    \"postId\":1,\n" +
+                        "    \"text\": \"some text\",\n" +
+                        "    \"username\": \"user1\"\n" +
+                        "}"))
+                .andReturn();
+
+    }
+
     private void deleteCommentById_Void_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .delete("/{commentId}", 1);
@@ -222,23 +240,18 @@ public class CommentControllerTest {
         commentController.deleteCommentByUsername(anyString());
     }
 
-    //    @Test
-//    public void deletePostAndComments() throws Exception {
-//        deletePostAndComments_Long_Success();
-//    }
-//
-//    private void deletePostAndComments_Long_Success() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .delete("/post/{postId}", 1);
-//
-//        when(commentService.getAllCommentsByPostId(anyLong())).thenReturn();
-//
-//        mockMvc.perform(requestBuilder)
-//                .andExpect(status().isOk())
-//                .andExpect()
-//                .andReturn();
-//
-//    }
+
+    private void deletePostAndComments_Long_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .delete("/post/{postId}", 1);
+
+        commentService.deletePostAndComments(anyLong());
+
+        verify(commentService, times(1)).deletePostAndComments(anyLong());
+
+        commentController.deletePostAndComments(anyLong());
+
+    }
 
 
 }
