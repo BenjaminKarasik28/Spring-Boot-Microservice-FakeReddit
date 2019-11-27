@@ -51,7 +51,6 @@ public class UserServiceImpl implements UserService {
 //        return null;
 //    }
 
-    //TODO: Maybe catch if user doesn't exist and tell them to sign up?
     @Override
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());

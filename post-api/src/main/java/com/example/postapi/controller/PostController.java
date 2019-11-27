@@ -66,7 +66,7 @@ public class PostController {
 
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleException(BlankPostException err){
-        ErrorResponse error = new ErrorResponse(HttpStatus.UNAUTHORIZED.value(), err.getMessage());
-        return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
+        ErrorResponse error = new ErrorResponse(HttpStatus.BAD_REQUEST.value(), err.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
     }
 }

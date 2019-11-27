@@ -107,7 +107,7 @@ public class UserControllerTest {
         when(userService.userLogin(any())).thenThrow(new IncorrectLoginException("Wrong"));
 
         MvcResult result = mockMvc.perform(requestBuilder)
-                .andExpect(status().isUnauthorized())
+                .andExpect(status().isBadRequest())
                 .andReturn();
 
     }

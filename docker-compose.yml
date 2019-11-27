@@ -1,6 +1,11 @@
 version: '3'
 
 services:
+  rabbitmq:
+    image: "rabbitmq:management"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
   eureka:
     image: maven:3.6.1-jdk-8
 #    build: ./eureka-server
@@ -88,6 +93,8 @@ services:
     command: 'mvn spring-boot:run'
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+    links:
+      - rabbitmq
   email-api:
     image: maven:3.6.1-jdk-8
     #    build: ./email-api
@@ -101,5 +108,5 @@ services:
     command: 'mvn spring-boot:run'
     environment:
       - SPRING_PROFILES_ACTIVE=dev
-
-
+    links:
+      - rabbitmq
