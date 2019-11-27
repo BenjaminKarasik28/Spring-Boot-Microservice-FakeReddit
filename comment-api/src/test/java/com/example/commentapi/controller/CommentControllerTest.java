@@ -223,9 +223,6 @@ public class CommentControllerTest {
         verify(commentService, times(1)).deleteByCommentId(anyLong());
 
         commentController.deleteCommentById(anyLong());
-
-
-
     }
 
 

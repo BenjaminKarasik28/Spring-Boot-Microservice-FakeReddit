@@ -1,13 +1,21 @@
 package com.example.apigateway;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.Assert.assertEquals;
+
 @SpringBootTest
-class ZuulGatewayApplicationTests {
+public class ZuulGatewayApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
+	}
+
+	@Test
+	public void testTest(){
+		assertEquals(1, 1);
+
 	}
 
 }
