@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dspring.profiles.active=test'
+                sh 'mvn test'
             }
             post {
                 always {
@@ -26,11 +26,11 @@ pipeline {
         }
         stage('Coverage') {
             steps {
-                sh 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
+                sh 'mvn clean package jacoco:report'
             }
             post {
-              always {
-                cobertura coberturaReportFile: 'target/site/cobertura/coverage.xml'
+                always {
+                    publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
                 }
             }
         }
