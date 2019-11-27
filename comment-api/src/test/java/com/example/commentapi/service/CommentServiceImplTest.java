@@ -22,6 +22,7 @@ package com.example.commentapi.service;
         import com.example.commentapi.model.Comment;
         import com.example.commentapi.model.DummyPost;
         import com.example.commentapi.model.PostComment;
+        import org.springframework.web.client.RestTemplate;
 
         import java.util.Arrays;
         import java.util.Collections;
@@ -43,10 +44,13 @@ public class CommentServiceImplTest {
 
     private Iterable<Comment> sampleCommentList;
 
-    private List<Comment> samplePostComment;
+    private PostComment samplePostComment;
 
     @InjectMocks
     CommentServiceImpl commentServiceImpl;
+
+    @Mock
+    RestTemplate restTemplate;
 
     @Mock
     CommentRepository commentRepository;
@@ -71,16 +75,19 @@ public class CommentServiceImplTest {
                 )
         );
 
+        samplePostComment = new PostComment();
+        samplePostComment.setPostComment(sampleCommentList);
+
     }
 
     //    getAllComments
-    // *    getAllCommentsByPostId
+    //    getAllCommentsByPostId
     //    getEmailByPostId
-    //    createComment
+    //*    createComment
     //*    updateComment
-    //*    deleteCommentById
-    //*   deleteCommentByUsername
-    //*    deletePostAndComments
+    //    deleteCommentById
+    //   deleteCommentByUsername
+    //   deletePostAndComments
 
     @Test
     public void getAllComments() throws Exception {
@@ -93,35 +100,137 @@ public class CommentServiceImplTest {
     }
 
 
+    @Test
+    public void getEmailbyPostId() throws Exception {
+        getEmailbyPostId_Comment_Success();
+    }
 
 
-    //    @Test
-//    public void createComment() throws Exception {
-//        createComment_String_Success();
-//    }
+        @Test
+    public void createComment() throws Exception {
+        createComment_String_Success();
+    }
 
 
+    @Test
+    public void updateComment() throws Exception {
+        updateComment_Comment_Success();
+    }
 
+    @Test
+    public void deleteByCommentId() throws Exception {
+        deleteByCommentId_Comment_Success();
+    }
 
+    @Test
+    public void deleteCommentByUsername() throws Exception {
+        deleteCommentByUsername_Comment_Success();
+    }
+
+    @Test
+    public void deletePostAndComments() throws Exception {
+        deletePostAndComments_Comment_Success();
+    }
 
     private void getAllComments_Comment_Success() throws Exception {
         when(commentRepository.findAll()).thenReturn(sampleCommentList);
 
         Iterable<Comment> actual = commentServiceImpl.getAllComments();
 
-        System.out.println(actual);
-        System.out.println(sampleCommentList);
-
         assertNotNull(actual);
         assertEquals(sampleCommentList, actual);
     }
 
     private void getAllCommentsByPostId_Comment_Success() throws Exception {
+        when(commentRepository.findAllByPostId(anyLong())).thenReturn(sampleCommentList);
+//        when(commentServiceImpl.getAllCommentsByPostId(anyLong())).thenReturn(samplePostComment);
+
+        PostComment actual = commentServiceImpl.getAllCommentsByPostId(1L);
+
+        assertNotNull(actual);
 
     }
 
-    //    private void createComment_String_Success() throws Exception {
+    private void getEmailbyPostId_Comment_Success() throws Exception {
+        when(restTemplate.getForObject("http://localhost:8082/user/" + 1L, String.class)).thenReturn("userEmail");
+
+        String email = commentServiceImpl.getEmailbyPostId(1L);
+
+        assertNotNull(email);
+        assertEquals("userEmail",email);
+
+    }
+
+    private void createComment_String_Success() throws Exception {
+            System.out.println("Create Comment");
+    }
+
+//    @Override
+//    public Comment updateComment(Comment comment, Long commentId) {
+//        Comment savedComment = commentRepository.findByCommentId(commentId);
 //
+//        if(comment.getText() != null) savedComment.setText(comment.getText());
+//        return commentRepository.save(savedComment);
 //    }
+
+    private void updateComment_Comment_Success() throws Exception {
+        when(commentRepository.findByCommentId(anyLong())).thenReturn(sampleComment);
+
+        Comment savedComment = commentRepository.findByCommentId(anyLong());
+
+       commentServiceImpl.updateComment(sampleComment, anyLong());
+
+        commentRepository.save(savedComment);
+
+
+        assertNotNull(savedComment);
+        assertEquals(sampleComment,savedComment);
+
+    }
+
+
+    private void deleteByCommentId_Comment_Success() throws Exception {
+        commentRepository.deleteById(anyLong());
+
+        verify(commentRepository, times(1)).deleteById(anyLong());
+
+        commentServiceImpl.deleteByCommentId(anyLong());
+
+    }
+
+
+    private void deleteCommentByUsername_Comment_Success() throws Exception {
+        commentRepository.deleteByUsername(anyString());
+
+        verify(commentRepository,times(1)).deleteByUsername(anyString());
+
+        commentServiceImpl.deleteCommentByUsername(anyString());
+    }
+
+    //    @Override
+//    public Long deletePostAndComments(Long postId) {
+//        return commentRepository.deleteByPostId(postId);
+//    }
+
+
+    private void deletePostAndComments_Comment_Success() throws Exception {
+        commentRepository.deleteByPostId(anyLong());
+
+        verify(commentRepository, times(1)).deleteByPostId(anyLong());
+
+        commentServiceImpl.deletePostAndComments(anyLong());
+    }
+
+    //    private void deleteCommentById_Void_Success() throws Exception {
+//        RequestBuilder requestBuilder = MockMvcRequestBuilders
+//                .delete("/{commentId}", 1);
+//
+//        commentService.deleteByCommentId(anyLong());
+//
+//        verify(commentService, times(1)).deleteByCommentId(anyLong());
+//
+//        commentController.deleteCommentById(anyLong());
+//    }
+
 
 }
