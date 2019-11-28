@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import sun.security.util.Password;
@@ -31,6 +32,7 @@ public class UserServiceTest {
 
     private User user;
     private UserRole userRole;
+    private User updatedUser;
 
 
     @InjectMocks
@@ -42,11 +44,8 @@ public class UserServiceTest {
     @Mock
     UserRoleRepository userRoleRepository;
 
-    @Mock
+    @MockBean
     private PasswordEncoder bCryptPasswordEncoder;
-
-    @Mock
-    private PasswordEncoder encoder;
 
     @Mock
     private JwtUtil jwtUtil;
@@ -59,6 +58,7 @@ public class UserServiceTest {
         user.setPassword("tester");
         user.setEmail("test@test.com");
 
+
         userRole = new UserRole();
         userRole.setName("ADMIN");
         userRole.setId(1);
@@ -68,7 +68,7 @@ public class UserServiceTest {
 
 
     @Test
-    public void sign_List_SUCCESS() {
+    public void signup_List_SUCCESS() {
         String expectedToken = "12345";
         when(userRoleRepository.findByName(any())).thenReturn(userRole);
         when(userRepository.save(any())).thenReturn(user);
@@ -81,11 +81,20 @@ public class UserServiceTest {
 //    public void login_List_Success() {
 //        String expectedToken = "12345";
 //        when(userRepository.findByEmail(any())).thenReturn(user);
-////        when(encoder().matches(any(),any())).thenReturn(true);
-//        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(true);
 //        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
+//        when(encoder.matches(any(), any())).thenReturn(true);
+////        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(true);
 //        List<String> actualToken = userService.userLogin(user);
 //        assertEquals(actualToken.get(0), expectedToken);
 //    }
+
+    @Test
+    public void getEmailByUsername_String_SUCCESS() {
+        String expectedEmail = "test@test.com";
+        when(userRepository.findByUsername(any())).thenReturn(user);
+        String actualEmail = user.getEmail();
+        assertEquals(expectedEmail, actualEmail);
+
+    }
 
 }

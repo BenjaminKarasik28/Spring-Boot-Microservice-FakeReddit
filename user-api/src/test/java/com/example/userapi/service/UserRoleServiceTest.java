@@ -4,6 +4,7 @@ import com.example.userapi.model.User;
 import com.example.userapi.model.UserRole;
 import com.example.userapi.repository.UserRepository;
 import com.example.userapi.repository.UserRoleRepository;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,12 +12,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -50,6 +51,8 @@ public class UserRoleServiceTest {
         userRole.setId(1);
         userRole.setUsers(Arrays.asList(user));
         user.addRole(userRole);
+        list = new ArrayList<>();
+        list.add(userRole);
 
     }
 
@@ -75,5 +78,12 @@ public class UserRoleServiceTest {
         assertEquals(savedUser.getEmail(), user.getEmail());
     }
 
+    @Test
+    public void listRoles_List_SUCCESS() {
+        when(userRoleRepository.findAll()).thenReturn(list);
+        List<UserRole> newList = userRoleService.listRoles();
+        assertNotNull(newList);
+
+    }
 
 }

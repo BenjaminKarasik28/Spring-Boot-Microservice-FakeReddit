@@ -15,13 +15,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway" target="1.8" />
-      <module name="comment-api" target="1.8" />
-      <module name="eureka-server" target="1.8" />
       <module name="maven-archiver (1)" target="1.5" />
       <module name="maven-archiver (2)" target="1.5" />
-      <module name="post-api" target="1.8" />
-      <module name="user-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

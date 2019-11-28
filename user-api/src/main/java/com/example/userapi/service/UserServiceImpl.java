@@ -43,6 +43,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<String> userLogin(User user) {
+        System.out.println(user.getEmail());
         User newUser = userRepository.findByEmail(user.getEmail());
         System.out.println(user.getPassword() + " " + newUser.getPassword());
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
