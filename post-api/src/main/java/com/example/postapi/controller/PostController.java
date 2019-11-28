@@ -48,7 +48,7 @@ public class PostController {
 
     @DeleteMapping("/{postId}")
     public Long deletePostbyId(@PathVariable Long postId) {
-        postService.deletePostbyId(postId);
+        return postService.deletePostbyId(postId);
     }
 
     @DeleteMapping("/post/{username}")

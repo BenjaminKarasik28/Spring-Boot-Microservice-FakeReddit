@@ -1,0 +1,62 @@
+2019-11-28 07:53:03.777  INFO 38461 --- [main] c.e.commentapi.CommentApiApplication     : The following profiles are active: local
+2019-11-28 07:53:05.190  INFO 38461 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-28 07:53:05.273  INFO 38461 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 1 repository interfaces.
+2019-11-28 07:53:05.584  INFO 38461 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=40aabb9b-2f02-3277-b9ee-d6b1d70ffcc0
+2019-11-28 07:53:05.745  INFO 38461 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 07:53:05.782  INFO 38461 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5b0ecee7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 07:53:06.046  INFO 38461 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-11-28 07:53:06.059  INFO 38461 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-28 07:53:06.060  INFO 38461 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-28 07:53:06.234  INFO 38461 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-28 07:53:06.235  INFO 38461 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2398 ms
+2019-11-28 07:53:06.483  INFO 38461 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-28 07:53:06.700  INFO 38461 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-28 07:53:06.839  INFO 38461 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-28 07:53:06.958  INFO 38461 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-11-28 07:53:07.744  INFO 38461 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-28 07:53:07.897  INFO 38461 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-28 07:53:08.038  INFO 38461 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-28 07:53:08.048  INFO 38461 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-28 07:53:08.817  WARN 38461 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-28 07:53:08.976  WARN 38461 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-11-28 07:53:08.977  INFO 38461 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-28 07:53:08.981  WARN 38461 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-11-28 07:53:08.981  INFO 38461 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-28 07:53:09.161  INFO 38461 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-28 07:53:09.768  INFO 38461 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-11-28 07:53:09.812  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-11-28 07:53:10.303  INFO 38461 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-11-28 07:53:10.303  INFO 38461 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-11-28 07:53:10.429  INFO 38461 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-11-28 07:53:10.430  INFO 38461 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-11-28 07:53:10.633  INFO 38461 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 07:53:10.653  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-11-28 07:53:10.653  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-11-28 07:53:10.654  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-11-28 07:53:10.654  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-11-28 07:53:10.654  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-11-28 07:53:10.654  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-11-28 07:53:10.654  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-11-28 07:53:10.834  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-11-28 07:53:10.837  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-11-28 07:53:10.840  INFO 38461 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-11-28 07:53:10.846  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1574945590844 with initial instances count: 3
+2019-11-28 07:53:10.850  INFO 38461 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMMENT with eureka with status UP
+2019-11-28 07:53:10.852  INFO 38461 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1574945590852, current=UP, previous=STARTING]
+2019-11-28 07:53:10.855  INFO 38461 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMMENT/192.168.0.6:comment:8083: registering service...
+2019-11-28 07:53:10.856  INFO 38461 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-28 07:53:10.895  INFO 38461 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-28 07:53:10.936  INFO 38461 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMMENT/192.168.0.6:comment:8083 - registration status: 204
+2019-11-28 07:53:10.949  INFO 38461 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-28 07:53:11.231  INFO 38461 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-11-28 07:53:11.232  INFO 38461 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2019-11-28 07:53:11.242  INFO 38461 --- [main] c.e.commentapi.CommentApiApplication     : Started CommentApiApplication in 9.334 seconds (JVM running for 10.449)
+2019-11-28 07:58:10.664  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:03:10.679  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:08:10.687  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:13:10.694  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:18:10.712  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:23:10.732  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:28:10.742  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:33:10.756  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-11-28 08:38:10.770  INFO 38461 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
