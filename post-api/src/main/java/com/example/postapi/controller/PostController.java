@@ -31,7 +31,7 @@ public class PostController {
     }
 
     @GetMapping("/{username}")
-    public Iterable<Post> getAllPostById(@RequestHeader("username") String username) {
+    public Iterable<Post> getAllPostByUsername(@RequestHeader("username") String username) {
         return postService.getAllPostsByUsername(username);
     }
     @GetMapping("/comment/{postId}")
@@ -47,7 +47,7 @@ public class PostController {
 
 
     @DeleteMapping("/{postId}")
-    public void deletePostbyId(@PathVariable Long postId) {
+    public Long deletePostbyId(@PathVariable Long postId) {
         postService.deletePostbyId(postId);
     }
 
