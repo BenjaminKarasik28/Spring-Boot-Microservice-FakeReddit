@@ -193,7 +193,5 @@ public class UserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("{\"username\":\"batman\"}"))
                 .andReturn();
-
-        System.out.println(result.getResponse().getContentAsString());
     }
 }

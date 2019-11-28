@@ -48,11 +48,12 @@ public class PostController {
 
     @DeleteMapping("/{postId}")
     public Long deletePostbyId(@PathVariable Long postId) {
-        postService.deletePostbyId(postId);
+        return postService.deletePostbyId(postId);
     }
 
     @DeleteMapping("/post/{username}")
-    public String deletePostByUsername(@PathVariable String username){return postService.deletePostByUsername(username);}
+    public String deletePostByUsername(@PathVariable String username) {
+        return postService.deletePostByUsername(username);}
 
     @PutMapping("/post/{postId}")
     public Post updatePostById(@PathVariable Long postId, @RequestBody Post post) {
