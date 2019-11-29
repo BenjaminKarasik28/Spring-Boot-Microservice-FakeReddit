@@ -129,8 +129,6 @@ public class CommentControllerTest {
 
 
 
-
-
     private void getAllComments_Comment_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .get("/list");

@@ -20,12 +20,6 @@ public class PostServiceImpl implements PostService {
     PostRepository postRepository;
 
 
-//    @Override
-//    public Post createPost(Post post, String username) {
-//        post.setUsername(username);
-//        return postRepository.save(post);
-//    }
-
     @Override
     public Post createPost(Post post, String username) throws BlankPostException {
         if(post.getTitle().isEmpty() || post.getDescription().isEmpty()) {

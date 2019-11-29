@@ -143,7 +143,34 @@ public class PostControllerTest {
                 .andExpect(content().string("Batman"));
     }
 
+    @Test
+    public void updatePost_Post_Success() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .put("/post/" + post.getId())
+                .header("username", "user1")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"title\":\"title\"}");
 
+        when(postService.updatePost(any(), anyLong())).thenReturn(post);
+
+        mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"title\":\"title\"}"))
+                .andReturn();
+
+    }
+
+    @Test
+    public void sendPostIdRestTemplate_Post_Success() throws Exception{
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .get("/user/" + post.getId());
+        when(postService.sendPostIdRestTemplate(anyLong())).thenReturn("username");
+
+         mockMvc.perform(requestBuilder)
+                .andExpect(status().isOk())
+                .andExpect(content().string("username"))
+                .andReturn();
+    }
 
 
 

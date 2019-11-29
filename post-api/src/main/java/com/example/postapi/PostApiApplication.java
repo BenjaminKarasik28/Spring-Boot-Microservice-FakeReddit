@@ -17,10 +17,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class PostApiApplication {
 
-	@RequestMapping("/")
-	public String home() {
-		return "some posts";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(PostApiApplication.class, args);
