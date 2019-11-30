@@ -198,27 +198,27 @@ public class CommentServiceImplTest {
 
     private void createComment_String_Success() throws Exception {
 
-        System.out.println("Create Comment Test");
+//        System.out.println("Create Comment Test");
 
-//            String userEmail = commentServiceImpl.createComment(sampleComment,"user1",sampleDummyPost.getId());
-//
-//            DummyPost dummyPost = sampleDummyPost;
-//            assertNotNull(dummyPost);
-//
-//            Comment comment = sampleComment;
-//            assertNotNull(comment);
-//
-//            when(restTemplate.getForObject("http://localhost:8082/post/" + 1L, DummyPost.class)).thenReturn(sampleDummyPost);
-//
-//            when(restTemplate.getForObject("http://localhost:8082/user/" + 1L, String.class)).thenReturn("userEmail");
-//            when(commentServiceImpl.createComment(any(), anyString(), anyLong())).thenReturn("userEmail");
-//
-//
-//            commentRepository.save(sampleComment);
-//
-//            assertNotNull(userEmail);
-//            assertEquals(userEmail, "userEmail");
-//
+            String userEmail = commentServiceImpl.createComment(sampleComment,"user1",sampleDummyPost.getId());
+
+            DummyPost dummyPost = sampleDummyPost;
+            assertNotNull(dummyPost);
+
+            Comment comment = sampleComment;
+            assertNotNull(comment);
+
+            when(restTemplate.getForObject("http://localhost:8082/post/" + 1L, DummyPost.class)).thenReturn(sampleDummyPost);
+
+            when(restTemplate.getForObject("http://localhost:8082/user/" + 1L, String.class)).thenReturn("userEmail");
+            when(commentServiceImpl.createComment(any(), anyString(), anyLong())).thenReturn("userEmail");
+
+
+            commentRepository.save(sampleComment);
+
+            assertNotNull(userEmail);
+            assertEquals(userEmail, "userEmail");
+
     }
 
     private void updateComment_Comment_Success() throws Exception {

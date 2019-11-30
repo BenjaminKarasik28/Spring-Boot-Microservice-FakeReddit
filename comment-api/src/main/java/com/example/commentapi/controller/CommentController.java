@@ -19,6 +19,7 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
+
     @ApiOperation(value = "Get All Comments", notes = "Returns all comment objects", response = Iterable.class)
     @GetMapping("/list")
     public Iterable<Comment> getAllComments() {
@@ -36,26 +37,31 @@ public class CommentController {
         return commentService.getEmailbyPostId(postId);
     }
 
+    @ApiOperation(value = "Create Comment", notes = "Returns email to alert Post user", response = String.class)
     @PostMapping("/comment/{postId}")
     public String createComment(@RequestBody Comment comment, @RequestHeader("username") String username, @PathVariable Long postId) {
         return commentService.createComment(comment, username, postId);
     }
 
+    @ApiOperation(value = "Update Comment", notes = "Returns comment", response = Comment.class)
     @PutMapping("/{commentId}")
     public Comment updateComment(@PathVariable Long commentId, @RequestBody Comment comment) {
         return commentService.updateComment(comment, commentId);
     }
 
+    @ApiOperation(value = "Delete Comment By commentId", notes = "Void method")
     @DeleteMapping("/{commentId}")
     public void deleteCommentById(@PathVariable Long commentId) {
         commentService.deleteByCommentId(commentId);
     }
 
+    @ApiOperation(value = "Delete Comment By username", notes = "Void method")
     @DeleteMapping("/post/name/{username}")
     public void deleteCommentByUsername(@PathVariable String username){
         commentService.deleteCommentByUsername(username);
     }
 
+    @ApiOperation(value = "Delete Comment By postId", notes = "Void method")
     @DeleteMapping("/post/{postId}")
     public Long deletePostAndComments(@PathVariable Long postId){
         return commentService.deletePostAndComments(postId);
