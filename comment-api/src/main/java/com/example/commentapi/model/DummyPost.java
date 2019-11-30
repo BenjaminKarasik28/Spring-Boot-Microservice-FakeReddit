@@ -6,7 +6,11 @@ public class DummyPost {
     private String username;
     private Long id;
 
-    public DummyPost() {
+    public DummyPost(String title, String description, String username, Long id) {
+        this.title = title;
+        this.description = description;
+        this.username = username;
+        this.id = id;
     }
 
     public String getTitle() {

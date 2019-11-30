@@ -1,6 +1,7 @@
 package com.example.commentapi.service;
 
         import com.example.commentapi.controller.CommentController;
+        import com.example.commentapi.exceptionhandling.BlankCommentException;
         import com.example.commentapi.repository.CommentRepository;
         import com.example.commentapi.service.CommentService;
         import org.junit.Before;
@@ -46,6 +47,8 @@ public class CommentServiceImplTest {
 
     private PostComment samplePostComment;
 
+    private DummyPost sampleDummyPost;
+
     @InjectMocks
     CommentServiceImpl commentServiceImpl;
 
@@ -77,6 +80,14 @@ public class CommentServiceImplTest {
 
         samplePostComment = new PostComment();
         samplePostComment.setPostComment(sampleCommentList);
+
+        sampleDummyPost = new DummyPost(
+                "Dummy Title",
+                "Some Text",
+                "user1",
+                1L
+        );
+
 
     }
 
@@ -161,17 +172,54 @@ public class CommentServiceImplTest {
 
     }
 
-    private void createComment_String_Success() throws Exception {
-            System.out.println("Create Comment");
-    }
-
 //    @Override
-//    public Comment updateComment(Comment comment, Long commentId) {
-//        Comment savedComment = commentRepository.findByCommentId(commentId);
+//    public String createComment(Comment comment, String username, Long postId) throws BlankCommentException {
 //
-//        if(comment.getText() != null) savedComment.setText(comment.getText());
-//        return commentRepository.save(savedComment);
+//        if(comment.getText().isEmpty()) {
+//            throw new BlankCommentException("Please enter text for your comment");
+//        } else {
+//            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
+//
+//
+//            if(dummyPost.getId().equals(postId)) {
+//                comment.setPostId(postId);
+//                comment.setUsername(username);
+//                commentRepository.save(comment);
+//                String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
+//                rabbitTemplate.convertAndSend(queue.getName(), email);
+//                return email;
+//
+//            }
+//            return null;
+//        }
 //    }
+
+
+
+    private void createComment_String_Success() throws Exception {
+
+        System.out.println("Create Comment Test");
+
+//            String userEmail = commentServiceImpl.createComment(sampleComment,"user1",sampleDummyPost.getId());
+//
+//            DummyPost dummyPost = sampleDummyPost;
+//            assertNotNull(dummyPost);
+//
+//            Comment comment = sampleComment;
+//            assertNotNull(comment);
+//
+//            when(restTemplate.getForObject("http://localhost:8082/post/" + 1L, DummyPost.class)).thenReturn(sampleDummyPost);
+//
+//            when(restTemplate.getForObject("http://localhost:8082/user/" + 1L, String.class)).thenReturn("userEmail");
+//            when(commentServiceImpl.createComment(any(), anyString(), anyLong())).thenReturn("userEmail");
+//
+//
+//            commentRepository.save(sampleComment);
+//
+//            assertNotNull(userEmail);
+//            assertEquals(userEmail, "userEmail");
+//
+    }
 
     private void updateComment_Comment_Success() throws Exception {
         when(commentRepository.findByCommentId(anyLong())).thenReturn(sampleComment);
@@ -207,10 +255,6 @@ public class CommentServiceImplTest {
         commentServiceImpl.deleteCommentByUsername(anyString());
     }
 
-    //    @Override
-//    public Long deletePostAndComments(Long postId) {
-//        return commentRepository.deleteByPostId(postId);
-//    }
 
 
     private void deletePostAndComments_Comment_Success() throws Exception {
@@ -221,16 +265,6 @@ public class CommentServiceImplTest {
         commentServiceImpl.deletePostAndComments(anyLong());
     }
 
-    //    private void deleteCommentById_Void_Success() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .delete("/{commentId}", 1);
-//
-//        commentService.deleteByCommentId(anyLong());
-//
-//        verify(commentService, times(1)).deleteByCommentId(anyLong());
-//
-//        commentController.deleteCommentById(anyLong());
-//    }
 
 
 }
