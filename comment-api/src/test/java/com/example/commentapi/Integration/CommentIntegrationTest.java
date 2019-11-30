@@ -55,4 +55,18 @@ public class CommentIntegrationTest {
 
     }
 
+    @Test
+    public void deleteById_Comment_Success() {
+        Comment comment = commentRepository.findByCommentId((long) 1);
+        if(comment == null) {
+            comment = createComment();
+            comment = commentRepository.save(comment);
+        }
+
+        commentRepository.deleteById(comment.getId());
+        Comment foundComment = commentRepository.findById(comment.getId()).orElse(null);
+
+        assertNull(foundComment);
+    }
+
 }
