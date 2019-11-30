@@ -19,22 +19,10 @@ public class ProfileServiceImpl implements ProfileService {
     @Autowired
     UserRepository userRepository;
 
-//    @Override
-//    public Profile createProfile(String email, Profile newProfile) {
-//        User user = userRepository.findByEmail(email);
-//        user.setProfile(newProfile);
-//
-//        return profileRepository.save(newProfile);
-//    }
-
     @Override
     public Profile createProfile(String username, Profile newProfile) {
         String email = userRepository.findByUsername(username).getEmail();
         User user = userRepository.findByEmail(email);
-//        Profile profile = profileRepository.findProfileByEmail(email);
-//        User user = userRepository.findByUsername(username);
-//        Profile profile = profileRepository.findProfileByUsername(username);
-
         if(user.getProfile() == null) {
             user.setProfile(newProfile);
             profileRepository.save(newProfile);
@@ -61,26 +49,5 @@ public class ProfileServiceImpl implements ProfileService {
         user.setProfile(profile);
         return user.getProfile();
     }
-
-//    @Override
-//    public Profile getProfile(String email) {
-//        return profileRepository.findProfileByEmail(email);
-//    }
-
-//    @Override
-//    public Profile updateProfile(String email, Profile updateProfile) {
-//        User user = userRepository.findByEmail(email);
-//        Profile profile = userRepository.findByEmail(email).getProfile();
-//
-//        if(updateProfile.getAddress() != null) profile.setAddress(updateProfile.getAddress());
-//        if(updateProfile.getMobile() != null) profile.setMobile(updateProfile.getMobile());
-//        if(updateProfile.getEmail() != null) profile.setEmail(updateProfile.getEmail());
-//
-//        profileRepository.save(profile);
-//        user.setProfile(profile);
-//
-//        return updateProfile;
-//    }
-
 
 }

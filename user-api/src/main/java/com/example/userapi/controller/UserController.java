@@ -20,11 +20,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/hello")
-    public String test(){
-        return "Hello World!";
-    }
-
     @ApiOperation(value = "User login", notes = "Provide email and password to login", response = ResponseEntity.class)
     @PostMapping("/login")
     public ResponseEntity<?> userLogin(@RequestBody User user) {

@@ -117,3 +117,17 @@
 2019-11-28 08:40:34.815  INFO 38160 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
 2019-11-28 08:41:34.820  INFO 38160 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
 2019-11-28 08:42:34.825  INFO 38160 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-11-28 08:43:34.831  INFO 38160 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-11-28 08:43:44.584  INFO 38160 --- [Thread-33] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2019-11-28 08:43:44.884  INFO 38160 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.0.6:api-gateway with status DOWN (replication=false)
+2019-11-28 08:43:44.889  INFO 38160 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/192.168.0.6:user:8081 with status DOWN (replication=false)
+2019-11-28 08:43:45.166  INFO 38160 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EMAIL-API/192.168.0.6:email-api:8084 with status DOWN (replication=false)
+2019-11-28 08:43:45.231  INFO 38160 --- [Thread-33] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2019-11-28 08:43:45.428  INFO 38160 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.0.6:api-gateway with status DOWN (replication=true)
+2019-11-28 08:43:45.431  INFO 38160 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/192.168.0.6:user:8081 with status DOWN (replication=true)
+2019-11-28 08:43:45.432  INFO 38160 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EMAIL-API/192.168.0.6:email-api:8084 with status DOWN (replication=true)
+2019-11-28 08:43:45.447  INFO 38160 --- [Thread-33] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2019-11-28 08:43:45.561  INFO 38160 --- [Thread-33] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-28 08:43:45.657  INFO 38160 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/192.168.0.6:comment:8083 with status DOWN (replication=false)
+2019-11-28 08:43:45.952  INFO 38160 --- [Thread-33] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-11-28 08:43:45.958  INFO 38160 --- [Thread-33] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -50,7 +50,7 @@ public class UserProfileServiceTest {
     public void createProfile_Profile_Success() {
         when(userRepository.findByUsername(any())).thenReturn(user);
         when(userRepository.findByEmail(any())).thenReturn(user);
-        when(profileRepository.save(any())).thenReturn(profile);
+//        when(profileRepository.save(any())).thenReturn(profile);
         Profile fakeProfile = profileService.createProfile(user.getUsername(), profile);
         System.out.println(user.getUsername());
         assertEquals(fakeProfile.getId(), profile.getId());
@@ -58,7 +58,7 @@ public class UserProfileServiceTest {
 
     @Test
     public void getProfile_Profile_SUCCESS(){
-        when(userRepository.findByUsername(any())).thenReturn(user);
+//        when(userRepository.findByUsername(any())).thenReturn(user);
         when(profileRepository.findProfileByUsername(any())).thenReturn(profile);
         Profile fakeProfile = profileService.getProfile(user.getUsername());
         assertEquals(fakeProfile.getId(), profile.getId());

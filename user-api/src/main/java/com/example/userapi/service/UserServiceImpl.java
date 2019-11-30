@@ -40,7 +40,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     JwtUtil jwtUtil;
 
-
     @Override
     public List<String> userLogin(User user) {
         System.out.println(user.getEmail());
@@ -97,7 +96,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Long deleteUserByUsername(String username) {
-
         restTemplate.delete("http://localhost:8082/post/" + username);
         restTemplate.delete("http://localhost:8083/post/name/" + username);
         User savedUser = userRepository.findByUsername(username);
@@ -108,7 +106,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public User updateUser(String username, User user) {
         User savedUser = userRepository.findByUsername(username);
-
         if(user.getUsername() != null) savedUser.setUsername(user.getUsername());
         if(user.getEmail() != null) savedUser.setEmail(user.getEmail());
         if(user.getPassword() != null) savedUser.setPassword(encoder().encode(user.getPassword()));
@@ -123,6 +120,5 @@ public class UserServiceImpl implements UserService {
         return email;
     }
 }
-
 
 
