@@ -1,4 +1,4 @@
-package com.ga.emailapi.email;
+package com.ga.emailapi.service;
 
 import org.springframework.stereotype.Service;
 
@@ -16,15 +16,16 @@ public class SmtpServerService {
 
     Session session;
 
-    public void setProps(){
+    public String setProps(){
         Properties emailProperties = System.getProperties();
         emailProperties.put("mail.smtp.port", "587");
         emailProperties.put("mail.smtp.auth", "true");
         emailProperties.put("mail.smtp.starttls.enable", "true");
         session = Session.getDefaultInstance(emailProperties, null);
+        return "ok";
     }
 
-    private MimeMessage draft(String targetEmail) throws AddressException, MessagingException {
+    public MimeMessage draft(String targetEmail) throws AddressException, MessagingException {
         String emailSubject = "Notification from FakeReddit";
         String emailBody = "Somebody commented on your post!";
 
@@ -37,7 +38,7 @@ public class SmtpServerService {
 
     }
 
-    public void send(String target) throws AddressException, MessagingException{
+    public String send(String target) throws AddressException, MessagingException{
         String fromUser = "fake.redditga@gmail.com";
         String emailHost = "smtp.gmail.com";
         String pass = "Vpx9yKfc2Z2sF7sw";
@@ -49,7 +50,7 @@ public class SmtpServerService {
 
         transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
         transport.close();
-        System.out.println("Email sent successfully.");
+        return "Email sent successfully.";
     }
 
 

@@ -1,6 +1,6 @@
 package com.ga.emailapi.mq;
 
-import com.ga.emailapi.email.SmtpServerService;
+import com.ga.emailapi.service.SmtpServerService;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +17,8 @@ public class Receiver {
 
     @RabbitHandler
     public void receive(String msg) throws MessagingException {
-        smtpServerService.setProps();
-        smtpServerService.send(msg);
-
+        String s = smtpServerService.setProps();
+        String x = smtpServerService.send(msg);
 
     }
 
