@@ -42,12 +42,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<String> userLogin(User user) {
-        System.out.println(user.getEmail());
         User newUser = userRepository.findByEmail(user.getEmail());
-        System.out.println(user.getPassword() + " " + newUser.getPassword());
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
             return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
-        } else {
+        }
+        else {
             throw new IncorrectLoginException("Incorrect username or password");
         }
     }
@@ -60,7 +59,7 @@ public class UserServiceImpl implements UserService {
             if(!newUser.getEmail().matches(regex)) {
                 throw new EmailSignupException("Please enter a valid email");
             }
-            else if(userRepository.findByEmail(newUser.getEmail()) != null) {
+            else if((userRepository.findByEmail(newUser.getEmail()) != null) || (userRepository.findByUsername(newUser.getUsername()) != null)) {
                 throw new ExistingUserSignupException("User already exists - please login");
             }
             UserRole userRole = userRoleRepository.findByName("ROLE_USER");
