@@ -1,5 +1,6 @@
 package com.example.postapi.controller;
 
+import com.example.postapi.exceptionhandling.BlankPostException;
 import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.service.PostService;
@@ -13,6 +14,7 @@ import org.junit.Before;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -172,10 +174,24 @@ public class PostControllerTest {
                 .andReturn();
     }
 
-
-
-
     private static String createPostInJson(String title, String desc) {
         return "{ \"title\": \"" + title + "\", " + "\"description\":\"" + desc  +"\" }";
     }
+
+    @Test
+    public void blankPostException_400_Fail() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .post("/post")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(createPostInJson("", ""));
+
+//        when(postService.createPost(any(),any())).thenThrow(new BlankPostException("Empty"));
+
+        mockMvc.perform(requestBuilder)
+                .andExpect(status().isBadRequest())
+                .andReturn();
+    }
+
+
 }
+
