@@ -10,12 +10,21 @@ public class ErrorResponse {
         this.message = message;
     }
 
+    public ErrorResponse() {}
+
     public int getStatus() {
         return status;
     }
 
     public String getMessage() {
         return message;
+    }
 
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

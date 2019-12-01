@@ -118,3 +118,63 @@
 2019-12-01 13:27:34.519  INFO 66125 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-12-01 13:27:34.524  INFO 66125 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-12-01 13:27:34.536  INFO 66125 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-01 13:53:23.352  INFO 25507 --- [main] c.e.postapi.PostApiApplicationTests      : The following profiles are active: local
+2019-12-01 13:53:26.325  INFO 25507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-01 13:53:26.619  INFO 25507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 248ms. Found 1 repository interfaces.
+2019-12-01 13:53:27.928  INFO 25507 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=806832c9-7d87-3ea6-9aab-6fe79de05aa0
+2019-12-01 13:53:28.996  INFO 25507 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-01 13:53:29.200  INFO 25507 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$52e1a3c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-01 13:53:30.282  INFO 25507 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-01 13:53:30.713  INFO 25507 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-01 13:53:30.873  INFO 25507 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-01 13:53:31.423  INFO 25507 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-12-01 13:53:33.530  INFO 25507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-01 13:53:34.192  INFO 25507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-01 13:53:34.402  INFO 25507 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-01 13:53:34.437  INFO 25507 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-01 13:53:37.244  WARN 25507 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-01 13:53:39.436  WARN 25507 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-01 13:53:39.438  INFO 25507 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-01 13:53:39.632  WARN 25507 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-01 13:53:39.635  INFO 25507 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-01 13:53:40.590  INFO 25507 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-01 13:53:43.010  INFO 25507 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-01 13:53:43.140  INFO 25507 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-01 13:53:43.220  INFO 25507 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-01 13:53:44.204  INFO 25507 --- [main] c.e.postapi.PostApiApplicationTests      : Started PostApiApplicationTests in 22.835 seconds (JVM running for 38.757)
+2019-12-01 13:53:44.365  INFO 25507 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-01 13:53:44.379  INFO 25507 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application POST with eureka with status DOWN
+2019-12-01 13:53:44.411  INFO 25507 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-01 13:53:44.423  INFO 25507 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-01 13:53:44.428  INFO 25507 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-01 13:53:44.435  INFO 25507 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-01 14:11:20.284  INFO 26069 --- [main] c.e.postapi.PostApiApplicationTests      : The following profiles are active: local
+2019-12-01 14:11:22.840  INFO 26069 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-01 14:11:23.083  INFO 26069 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208ms. Found 1 repository interfaces.
+2019-12-01 14:11:24.101  INFO 26069 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=806832c9-7d87-3ea6-9aab-6fe79de05aa0
+2019-12-01 14:11:25.041  INFO 26069 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-01 14:11:25.199  INFO 26069 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f71063b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-01 14:11:26.381  INFO 26069 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-01 14:11:26.662  INFO 26069 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-01 14:11:26.798  INFO 26069 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-01 14:11:27.110  INFO 26069 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-12-01 14:11:28.656  INFO 26069 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-01 14:11:29.071  INFO 26069 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-01 14:11:29.192  INFO 26069 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-01 14:11:29.217  INFO 26069 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-01 14:11:31.874  WARN 26069 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-01 14:11:33.177  WARN 26069 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-01 14:11:33.182  INFO 26069 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-01 14:11:33.217  WARN 26069 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-01 14:11:33.217  INFO 26069 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-01 14:11:34.256  INFO 26069 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-01 14:11:36.811  INFO 26069 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-01 14:11:36.912  INFO 26069 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-01 14:11:36.975  INFO 26069 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-01 14:11:37.697  INFO 26069 --- [main] c.e.postapi.PostApiApplicationTests      : Started PostApiApplicationTests in 19.388 seconds (JVM running for 37.772)
+2019-12-01 14:11:37.870  INFO 26069 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-01 14:11:37.878  INFO 26069 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application POST with eureka with status DOWN
+2019-12-01 14:11:37.906  INFO 26069 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-01 14:11:37.913  INFO 26069 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-01 14:11:37.918  INFO 26069 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-01 14:11:37.931  INFO 26069 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
