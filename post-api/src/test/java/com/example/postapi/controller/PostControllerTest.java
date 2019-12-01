@@ -183,13 +183,15 @@ public class PostControllerTest {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("/post")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(createPostInJson("", ""));
+                .header("username", "user1")
+                .content(createPostInJson(" ", "something"));
 
-//        when(postService.createPost(any(),any())).thenThrow(new BlankPostException("Empty"));
+        when(postService.createPost(any(), any())).thenThrow(new BlankPostException("Empty"));
 
         mockMvc.perform(requestBuilder)
                 .andExpect(status().isBadRequest())
                 .andReturn();
+
     }
 
 
