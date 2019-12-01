@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
             if (userRole == null) {
                 userRole = new UserRole();
                 userRole.setName("ROLE_USER");
-                userRoleService.createRole(userRole);
+                userRole = userRoleService.createRole(userRole);
             }
             newUser.addRole(userRole);
 

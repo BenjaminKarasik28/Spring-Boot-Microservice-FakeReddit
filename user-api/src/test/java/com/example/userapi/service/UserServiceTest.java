@@ -21,8 +21,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.*;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -42,7 +43,13 @@ public class UserServiceTest {
     UserRoleRepository userRoleRepository;
 
     @Mock
+    UserRoleServiceImpl userRoleService;
+
+    @Mock
     private PasswordEncoder bCryptPasswordEncoder;
+
+    @Mock
+    private PasswordEncoder encoder;
 
     @Mock
     private JwtUtil jwtUtil;
@@ -77,6 +84,35 @@ public class UserServiceTest {
         assertEquals(actualToken.get(0), expectedToken);
     }
 
+    @Test
+    public void AddRole_User_Success(){
+
+        when(userRoleRepository.findById(anyInt())).thenReturn(java.util.Optional.ofNullable(userRole));
+        when(userRepository.findByEmail(anyString())).thenReturn(user);
+        when(userRepository.save(any())).thenReturn(user);
+        User user1 = userService.addRole(user.getEmail(), 1);
+        assertNotNull(user1);
+
+    }
+    @Test
+    public void getUser_User_Success(){
+        when(userRepository.findByEmail(anyString())).thenReturn(user);
+        User user2 = userService.getUser(user.getEmail());
+        assertNotNull(user2);
+
+    }
+
+    @Test
+    public void deleteUserByUsername_User_Success(){
+        restTemplate.delete(anyString());
+        verify(restTemplate, times(1)).delete(anyString());
+        when(userRepository.findByUsername(anyString())).thenReturn(user);
+        userRepository.delete(any());
+        verify(userRepository, times(1)).delete(any());
+        Long id = userService.deleteUserByUsername(user.getUsername());
+        assertNotNull(id);
+    }
+
     @Test(expected = ExistingUserSignupException.class)
     public void userSignUp_Status_ERROR(){
         when(userRepository.findByEmail(any())).thenReturn(user);
@@ -84,23 +120,23 @@ public class UserServiceTest {
         List<String> signup = userService.userSignup(user);
     }
 
-//    @Test
-//    public void login_List_Success() {
-//        String expectedToken = "12345";
-//        when(userRepository.findByEmail(any())).thenReturn(user);
-//        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
-////        when(encoder.matches(any(), any())).thenReturn(true);
-//        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(true);
-//        List<String> actualToken = userService.userLogin(user);
-//        System.out.println(actualToken.get(0) + " " + expectedToken);
-//        assertEquals(actualToken.get(0), expectedToken);
-//    }
+    @Test
+    public void login_List_Success() {
+        String expectedToken = "12345";
+        when(userRepository.findByEmail(any())).thenReturn(user);
+        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
+        //when(encoder.matches(any(), any())).thenReturn(true);
+        when(bCryptPasswordEncoder.matches(anyString(),anyString())).thenReturn(true);
+        List<String> actualToken = userService.userLogin(user);
+        System.out.println(actualToken.get(0) + " " + expectedToken);
+        assertEquals(actualToken.get(0), expectedToken);
+    }
 
     @Test(expected = IncorrectLoginException.class)
     public void login_Status_ERROR(){
         user.setUsername(null);
         when(userRepository.findByEmail(any())).thenReturn(user);
-//        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(false);
+        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(false);
         List<String> actualToken = userService.userLogin(user);
     }
 
