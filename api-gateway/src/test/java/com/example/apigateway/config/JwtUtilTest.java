@@ -1,46 +1,38 @@
-package com.example.userapi.config;
-
-import static org.junit.Assert.assertNotNull;
+package com.example.apigateway.config;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
+import io.jsonwebtoken.Jwts;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
+import org.springframework.security.core.userdetails.UserDetails;
 
 @RunWith(MockitoJUnitRunner.class)
 public class JwtUtilTest {
 
-    private int JTW_TOKEN_VALIDITY = 5 * 60 * 60;
-    private String secret = "pancakes";
-    private String username = "test";
-
     @InjectMocks
     JwtUtil jwtUtil;
+
+    @Mock
+    UserDetails userDetails;
 
     @Before
     public void init() {
 
         jwtUtil.setSecret("pancakes");
     }
-
-
-
     @Test
-    public void generateToken_String_SUCCESS() {
-        String token = jwtUtil.generateToken(username);
+    public void getUserNameFromToken_String_Success(){
+        String token = jwtUtil.getUsernameFromToken("token");
         assertNotNull(token);
 
-    }
-}
 
+    }
+
+}
