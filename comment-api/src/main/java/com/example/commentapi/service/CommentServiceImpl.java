@@ -66,7 +66,7 @@ public class CommentServiceImpl implements CommentService {
         if(comment.getText().isEmpty()) {
             throw new BlankCommentException("Please enter text for your comment");
         } else {
-            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
+           DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
 
 
             if(dummyPost.getId().equals(postId)) {
