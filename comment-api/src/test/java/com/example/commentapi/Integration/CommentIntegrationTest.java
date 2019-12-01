@@ -37,6 +37,13 @@ public class CommentIntegrationTest {
         return comment;
     }
 
+
+    @Test
+    public void getAllComments(){
+        Iterable<Comment> comments = commentRepository.findAll();
+
+    }
+
     @Test
     public void createComment_Comment_success(){
         Comment comment = commentRepository.findByCommentId((long) 1);
@@ -52,8 +59,10 @@ public class CommentIntegrationTest {
         assertEquals(comment.getId(), foundComment.getId());
 
         commentRepository.delete(comment);
-
     }
+
+
+
 
     @Test
     public void deleteById_Comment_Success() {

@@ -33,7 +33,23 @@ package com.example.commentapi.service;
         import java.util.Arrays;
         import java.util.Collections;
         import java.util.List;
-        import java.util.Queue;
+//        import java.util.Queue;
+        import org.springframework.amqp.core.Queue;
+
+
+
+//    @Before
+//    public void init(){
+//        //    import org.springframework.amqp.core.Queue;
+////private Queue queue;
+//
+////    @Before
+////    public void init(){
+////        queue = new Queue("queue1", false, false, false);
+////
+////    }
+//
+//    }
 
         import static org.junit.Assert.*;
         import static org.mockito.ArgumentMatchers.*;
@@ -69,10 +85,6 @@ public class CommentServiceImplTest {
     @Mock
     CommentRepository commentRepository;
 
-    @MockBean
-    Queue queue;
-//    @Mock
-//    RabbitTemplate rabbitTemplate;
 
     @Before
     public void init() {
@@ -104,9 +116,7 @@ public class CommentServiceImplTest {
                 1L
         );
 
-//        sampleQue = new Queue<>(
-//
-//        );
+        sampleQue = new Queue("queue1", false, false, false);
 
 
     }
@@ -222,15 +232,10 @@ public class CommentServiceImplTest {
 //
 //        when(restTemplate.getForObject("http://localhost:8082/post/" + 1L, DummyPost.class)).thenReturn(sampleDummyPost);
 //
-//        when(commentServiceImpl.createComment(sampleComment, "user1", sampleDummyPost.getId())).thenReturn("userEmail");
-//
-////        when(rabbitTemplate.convertAndSend(any(),anyString())).thenReturn()
-////        verify(rabbitTemplate.convertAndSend(any(),anyString()));
-//
-//        rabbitTemplate.convertAndSend(any(),anyString());
-//
-//        String userEmail = commentServiceImpl.createComment(sampleComment,"user1",sampleDummyPost.getId());
-//
+//        when(commentServiceImpl.createComment(sampleComment, "user1", 1L)).thenReturn("userEmail");
+
+//        rabbitTemplate.convertAndSend(sampleQue.getName(), "userEmail");
+
 //        commentRepository.save(sampleComment);
 
         when(restTemplate.getForObject(anyString(), any())).thenReturn(sampleDummyPost, "email");
@@ -238,7 +243,7 @@ public class CommentServiceImplTest {
         RabbitTemplate rabbitTemplate = new RabbitTemplate();
         RabbitTemplate spy = Mockito.spy(rabbitTemplate);
         Mockito.doNothing().when(spy).convertAndSend(any(), anyString());
-        String email = commentServiceImpl.createComment(sampleComment, "username", 1L);
+        String email = commentServiceImpl.createComment(sampleComment, "user1", sampleDummyPost.getId());
         assertNotNull(email);
 
     }

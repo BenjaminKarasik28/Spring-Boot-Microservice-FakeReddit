@@ -32,6 +32,8 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     RestTemplate restTemplate;
 
+
+
     //    getAllComments - CR.findAll()
     // *    getAllCommentsByPostId - CR.findAllByPostId
     //    getEmailByPostId - RT.getForObject
