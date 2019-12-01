@@ -4,13 +4,13 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents user of the application.
+ * A user can have multiple roles but only one profile.
+ */
 @Entity
 @Table(name = "users")
 public class User {
-    /**
-     * Test
-     * @author Tracy
-     */
 
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {CascadeType.DETACH,
@@ -67,36 +67,62 @@ public class User {
 
     /**
      * Gets the ID
-     * @return the auto-generated ID for this book
+     * @return the auto-generated ID for this user
      */
     public Long getId() {
         return id;
     }
 
+    /**
+     * Sets the ID
+     */
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * Gets the username.
+     * @return the username of user.
+     */
     public String getUsername() {
         return username;
     }
 
+    /**
+     * Sets the username.
+     * Username should be unique.
+     */
     public void setUsername(String username) {
         this.username = username;
     }
 
+    /**
+     * Gets the password.
+     * @return the password of user.
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Sets the password
+     */
     public void setPassword(String password) {
         this.password = password;
     }
 
+    /**
+     * Gets the email.
+     * @return the email of user.
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Sets the email.
+     * Email should be unique.
+     */
     public void setEmail(String email) {
         this.email = email;
     }

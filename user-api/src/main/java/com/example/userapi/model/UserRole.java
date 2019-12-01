@@ -9,15 +9,9 @@ import java.util.List;
 @Table(name = "role")
 public class UserRole {
 
-//    @JsonIgnore
-//    @ManyToMany(fetch = FetchType.LAZY,
-//            cascade = {CascadeType.DETACH,
-//                    CascadeType.MERGE, CascadeType.REFRESH})
     @JsonIgnore
     @ManyToMany(mappedBy="roles")
-//    @JoinTable(name = "user_role",
-//            joinColumns = {@JoinColumn(name = "role_id")},
-//            inverseJoinColumns = @JoinColumn(name = "user_id"))
+
     private List<User> users;
 
     public List<User> getUsers(){ return users; }
@@ -32,20 +26,37 @@ public class UserRole {
     @Column(unique = true, nullable = true)
     private String name;
 
+    /**
+     * The default constructor.
+     */
     public UserRole() {}
 
+    /**
+     * Gets the ID
+     * @return the auto-generated ID for this role
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets the ID
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets name of a role.
+     * @return the role name.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets the name of the role
+     */
     public void setName(String name) {
         this.name = name;
     }
