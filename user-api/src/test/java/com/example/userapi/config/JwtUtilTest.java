@@ -1,5 +1,10 @@
 package com.example.userapi.config;
 
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -11,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class JwtUtilTest {
@@ -22,12 +28,19 @@ public class JwtUtilTest {
     @InjectMocks
     JwtUtil jwtUtil;
 
+    @Before
+    public void init() {
+
+        jwtUtil.setSecret("pancakes");
+    }
+
+
+
     @Test
     public void generateToken_String_SUCCESS() {
-        Map<String, Object> claims = new HashMap<>();
-        String expectedToken = "1234";
-        String actualToken = jwtUtil.generateToken(username);
-        assertEquals(expectedToken, actualToken);
+        String token = jwtUtil.generateToken(username);
+        assertNotNull(token);
+
     }
 }
 

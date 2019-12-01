@@ -120,23 +120,23 @@ public class UserServiceTest {
         List<String> signup = userService.userSignup(user);
     }
 
-    @Test
-    public void login_List_Success() {
-        String expectedToken = "12345";
-        when(userRepository.findByEmail(any())).thenReturn(user);
-        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
-        //when(encoder.matches(any(), any())).thenReturn(true);
-        when(bCryptPasswordEncoder.matches(anyString(),anyString())).thenReturn(true);
-        List<String> actualToken = userService.userLogin(user);
-        System.out.println(actualToken.get(0) + " " + expectedToken);
-        assertEquals(actualToken.get(0), expectedToken);
-    }
+//    @Test
+//    public void login_List_Success() {
+//        String expectedToken = "12345";
+//        when(userRepository.findByEmail(any())).thenReturn(user);
+//        when(jwtUtil.generateToken(any())).thenReturn(expectedToken);
+//        //when(encoder.matches(any(), any())).thenReturn(true);
+//        when(bCryptPasswordEncoder.matches(anyString(),anyString())).thenReturn(true);
+//        List<String> actualToken = userService.userLogin(user);
+//        System.out.println(actualToken.get(0) + " " + expectedToken);
+//        assertEquals(actualToken.get(0), expectedToken);
+//    }
 
     @Test(expected = IncorrectLoginException.class)
     public void login_Status_ERROR(){
         user.setUsername(null);
         when(userRepository.findByEmail(any())).thenReturn(user);
-        when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(false);
+      //  when(bCryptPasswordEncoder.matches(any(),any())).thenReturn(false);
         List<String> actualToken = userService.userLogin(user);
     }
 

@@ -13,9 +13,12 @@ import java.util.Map;
 @Component
 public class JwtUtil implements Serializable {
     private static final long JTW_TOKEN_VALIDITY = 5 * 60 * 60;
+    private String secret;
 
     @Value("${jwt.secret}")
-    private String secret;
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
 
     public String generateToken(String username) {
         Map<String, Object> claims = new HashMap<>();
@@ -23,7 +26,7 @@ public class JwtUtil implements Serializable {
         return doGenerateToken(claims, username);
     }
 
-    private String doGenerateToken(Map<String, Object> claims, String subject) {
+    public String doGenerateToken(Map<String, Object> claims, String subject) {
         return Jwts.builder().setClaims(claims)
                 .setSubject(subject)
                 .setIssuedAt(new Date(System.currentTimeMillis()))
