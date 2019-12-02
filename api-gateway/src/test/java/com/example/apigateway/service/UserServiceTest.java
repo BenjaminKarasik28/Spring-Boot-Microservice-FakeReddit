@@ -11,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import static org.junit.Assert.assertEquals;
@@ -46,5 +47,11 @@ public class UserServiceTest {
         when(bCryptPasswordEncoder.encode(any())).thenReturn("1d4f");
         userDetails = userService.loadUserByUsername(user.getUsername());
         assertEquals(user.getUsername(), userDetails.getUsername());
+    }
+
+    @Test(expected = UsernameNotFoundException.class)
+    public void loadUserByUsernameNull_Error_FAIL() {
+        when(userRepository.findByUsername(any())).thenReturn(null);
+        userDetails = userService.loadUserByUsername(user.getUsername());
     }
 }
