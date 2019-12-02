@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef99c6a4-1a0c-42d9-bb4b-d6120695d2ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApiApplication">
+  <component name="RunManager" selected="Spring Boot.PostApiApplication">
     <configuration name="All in api-gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="PACKAGE_NAME" value="" />
@@ -212,7 +210,7 @@
       <workItem from="1574363686312" duration="37189000" />
       <workItem from="1574694164083" duration="62372000" />
       <workItem from="1575225795827" duration="1035000" />
-      <workItem from="1575296725389" duration="3549000" />
+      <workItem from="1575296725389" duration="4396000" />
     </task>
     <servers />
   </component>

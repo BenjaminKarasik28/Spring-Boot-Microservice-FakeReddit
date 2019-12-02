@@ -340,3 +340,8 @@
 2019-12-02 10:21:30.008  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-02 10:26:30.029  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-02 10:31:30.055  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 10:35:49.460 ERROR 4660 --- [http-nio-8081-exec-6] c.e.userapi.service.UserServiceImpl      : User already exists email3@email.com
+2019-12-02 10:35:57.314  INFO 4660 --- [http-nio-8081-exec-9] c.e.userapi.service.UserServiceImpl      : User signed up email4@email.com
+2019-12-02 10:36:30.053  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 10:41:30.072  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 10:46:30.091  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
