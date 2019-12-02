@@ -10,8 +10,8 @@
         <module name="eureka-server" />
         <module name="user-api" />
         <module name="api-gateway" />
-        <module name="email-api" />
         <module name="post-api" />
+        <module name="email-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
