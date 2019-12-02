@@ -1,217 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-    <component name="ChangeListManager">
-        <list default="true" id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="">
-            <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/bean/UserBeanTest.java" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/service/UserServiceTest.java" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-11-30.0.gz" afterDir="false" />
-            <change afterPath="$PROJECT_DIR$/user-api/user-api.log.2019-11-29.0.gz" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ZuulGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ZuulGatewayApplicationTests.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/comment-api/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/comment-api.log" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/email-api/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/email-api.log" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/post-api/post-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/post-api.log" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" afterDir="false" />
-            <change beforePath="$PROJECT_DIR$/user-api/user-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/user-api.log" afterDir="false" />
-        </list>
-        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-        <option name="SHOW_DIALOG" value="false" />
-        <option name="HIGHLIGHT_CONFLICTS" value="true" />
-        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-        <option name="LAST_RESOLUTION" value="IGNORE" />
-    </component>
-    <component name="CoverageViewManager">
-        <option name="myElementSize" value="250" />
-    </component>
-    <component name="Git.Settings">
-        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
-    </component>
-    <component name="MavenImportPreferences">
-        <option name="importingSettings">
-            <MavenImportingSettings>
-                <option name="jdkForImporter" value="1.8" />
-                <option name="lookForNested" value="true" />
-            </MavenImportingSettings>
-        </option>
-    </component>
-    <component name="ProjectId" id="1UQpM0inXOHdhzZrwSAnqcSSM3x" />
-    <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-    <component name="PropertiesComponent">
-        <property name="RequestMappingsPanelOrder0" value="0" />
-        <property name="RequestMappingsPanelOrder1" value="1" />
-        <property name="RequestMappingsPanelWidth0" value="75" />
-        <property name="RequestMappingsPanelWidth1" value="75" />
-        <property name="WebServerToolWindowFactoryState" value="false" />
-        <property name="aspect.path.notification.shown" value="true" />
-        <property name="project.structure.last.edited" value="Modules" />
-        <property name="project.structure.proportion" value="0.0" />
-        <property name="project.structure.side.proportion" value="0.0" />
-    </component>
-    <component name="RunDashboard">
-        <option name="ruleStates">
-            <list>
-                <RuleState>
-                    <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-                </RuleState>
-                <RuleState>
-                    <option name="name" value="StatusDashboardGroupingRule" />
-                </RuleState>
-            </list>
-        </option>
-    </component>
-    <component name="RunManager" selected="JUnit.JwtUtilTest.getUserNameFromToken_String_Success">
-        <configuration name="All in email-api (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-            <module name="email-api" />
-            <option name="PACKAGE_NAME" value="" />
-            <option name="TEST_OBJECT" value="package" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="All in post-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-            <module name="post-api" />
-            <option name="PACKAGE_NAME" value="" />
-            <option name="TEST_OBJECT" value="package" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="JwtUtilTest.getUserNameFromToken_String_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-            <module name="api-gateway" />
-            <extension name="coverage">
-                <pattern>
-                    <option name="PATTERN" value="com.example.apigateway.config.*" />
-                    <option name="ENABLED" value="true" />
-                </pattern>
-            </extension>
-            <option name="PACKAGE_NAME" value="com.example.apigateway.config" />
-            <option name="MAIN_CLASS_NAME" value="com.example.apigateway.config.JwtUtilTest" />
-            <option name="METHOD_NAME" value="getUserNameFromToken_String_Success" />
-            <option name="TEST_OBJECT" value="method" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="SmtpServerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-            <module name="email-api" />
-            <extension name="coverage">
-                <pattern>
-                    <option name="PATTERN" value="com.ga.emailapi.service.*" />
-                    <option name="ENABLED" value="true" />
-                </pattern>
-            </extension>
-            <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
-            <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
-            <option name="TEST_OBJECT" value="class" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="SmtpServerServiceTest.send_SmtpServerServiceTest_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-            <module name="email-api" />
-            <extension name="coverage">
-                <pattern>
-                    <option name="PATTERN" value="com.ga.emailapi.service.*" />
-                    <option name="ENABLED" value="true" />
-                </pattern>
-            </extension>
-            <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
-            <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
-            <option name="METHOD_NAME" value="send_SmtpServerServiceTest_Success" />
-            <option name="TEST_OBJECT" value="method" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="CommentApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-            <module name="comment-api" />
-            <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commentapi.CommentApiApplication" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-            <module name="eureka-server" />
-            <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekaserver.EurekaServerApplication" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="PostApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-            <module name="post-api" />
-            <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.postapi.PostApiApplication" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <configuration name="UserApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-            <module name="user-api" />
-            <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userapi.UserApiApplication" />
-            <method v="2">
-                <option name="Make" enabled="true" />
-            </method>
-        </configuration>
-        <recent_temporary>
-            <list>
-                <item itemvalue="JUnit.JwtUtilTest.getUserNameFromToken_String_Success" />
-                <item itemvalue="JUnit.All in email-api (1)" />
-                <item itemvalue="JUnit.SmtpServerServiceTest.send_SmtpServerServiceTest_Success" />
-                <item itemvalue="JUnit.SmtpServerServiceTest" />
-                <item itemvalue="JUnit.All in post-api" />
-            </list>
-        </recent_temporary>
-    </component>
-    <component name="SvnConfiguration">
-        <configuration />
-    </component>
-    <component name="TaskManager">
-        <task active="true" id="Default" summary="Default task">
-            <changelist id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="" />
-            <created>1575298621875</created>
-            <option name="number" value="Default" />
-            <option name="presentableId" value="Default" />
-            <updated>1575298621875</updated>
-            <workItem from="1575298623191" duration="3386000" />
-        </task>
-        <servers />
-    </component>
-    <component name="TypeScriptGeneratedFilesManager">
-        <option name="version" value="1" />
-    </component>
-    <component name="Vcs.Log.Tabs.Properties">
-        <option name="TAB_STATES">
-            <map>
-                <entry key="MAIN">
-                    <value>
-                        <State />
-                    </value>
-                </entry>
-            </map>
-        </option>
-    </component>
-    <component name="com.intellij.coverage.CoverageDataManagerImpl">
-        <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api.ic" NAME="All in email-api Coverage Results" MODIFIED="1575298886944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-        <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api__1_.ic" NAME="All in email-api (1) Coverage Results" MODIFIED="1575301078127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-        <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_getUserNameFromToken_String_Success.ic" NAME="JwtUtilTest.getUserNameFromToken_String_Success Coverage Results" MODIFIED="1575302087755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-            <FILTER>com.example.apigateway.config.*</FILTER>
-        </SUITE>
-        <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_post_api.ic" NAME="All in post-api Coverage Results" MODIFIED="1575299550738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-11-30.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/user-api.log.2019-11-29.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/comment-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/email-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/post-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/post-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/user-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/user-api.log" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="29" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UQpM0inXOHdhzZrwSAnqcSSM3x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.JwtUtilTest.istokenExpired_Boolean_Success">
+    <configuration name="All in email-api (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtUtilTest.getUserNameFromToken_String_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apigateway.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apigateway.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.config.JwtUtilTest" />
+      <option name="METHOD_NAME" value="getUserNameFromToken_String_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtUtilTest.istokenExpired_Boolean_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apigateway.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apigateway.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.config.JwtUtilTest" />
+      <option name="METHOD_NAME" value="istokenExpired_Boolean_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtUtilTest.validateToken_Boolean_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apigateway.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.apigateway.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.config.JwtUtilTest" />
+      <option name="METHOD_NAME" value="validateToken_Boolean_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmtpServerServiceTest.send_SmtpServerServiceTest_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ga.emailapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
+      <option name="METHOD_NAME" value="send_SmtpServerServiceTest_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="comment-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commentapi.CommentApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="post-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.postapi.PostApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userapi.UserApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JwtUtilTest.istokenExpired_Boolean_Success" />
+        <item itemvalue="JUnit.JwtUtilTest.validateToken_Boolean_Success" />
+        <item itemvalue="JUnit.JwtUtilTest.getUserNameFromToken_String_Success" />
+        <item itemvalue="JUnit.All in email-api (1)" />
+        <item itemvalue="JUnit.SmtpServerServiceTest.send_SmtpServerServiceTest_Success" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="" />
+      <created>1575298621875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575298621875</updated>
+      <workItem from="1575298623191" duration="3386000" />
+      <workItem from="1575304023825" duration="915000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_istokenExpired_Boolean_Success.ic" NAME="JwtUtilTest.istokenExpired_Boolean_Success Coverage Results" MODIFIED="1575305122754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.apigateway.config.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api.ic" NAME="All in email-api Coverage Results" MODIFIED="1575298886944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api__1_.ic" NAME="All in email-api (1) Coverage Results" MODIFIED="1575301078127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_validateToken_Boolean_Success.ic" NAME="JwtUtilTest.validateToken_Boolean_Success Coverage Results" MODIFIED="1575304870501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.apigateway.config.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_getUserNameFromToken_String_Success.ic" NAME="JwtUtilTest.getUserNameFromToken_String_Success Coverage Results" MODIFIED="1575304236947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.apigateway.config.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_post_api.ic" NAME="All in post-api Coverage Results" MODIFIED="1575299550738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
 </project>
