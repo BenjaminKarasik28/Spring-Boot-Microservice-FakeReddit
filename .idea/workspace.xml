@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/repository/UserRepositoryTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-11-30.0.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/user-api/user-api.log.2019-11-29.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comment-api/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/comment-api.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/email-api/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/email-api.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" afterDir="false" />
@@ -30,7 +31,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="29" />
+    <option name="myElementSize" value="19" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
@@ -68,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JwtUtilTest.istokenExpired_Boolean_Success">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.getUserByUsername_UserRepository_Success">
     <configuration name="All in email-api (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="email-api" />
       <option name="PACKAGE_NAME" value="" />
@@ -125,17 +133,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmtpServerServiceTest.send_SmtpServerServiceTest_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="email-api" />
+    <configuration name="UserRepositoryTest.getUserByUsername_UserRepository_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ga.emailapi.service.*" />
+          <option name="PATTERN" value="com.example.apigateway.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
-      <option name="METHOD_NAME" value="send_SmtpServerServiceTest_Success" />
+      <option name="PACKAGE_NAME" value="com.example.apigateway.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getUserByUsername_UserRepository_Success" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.getUserByUsername_UserRepository_Success" />
         <item itemvalue="JUnit.JwtUtilTest.istokenExpired_Boolean_Success" />
         <item itemvalue="JUnit.JwtUtilTest.validateToken_Boolean_Success" />
         <item itemvalue="JUnit.JwtUtilTest.getUserNameFromToken_String_Success" />
         <item itemvalue="JUnit.All in email-api (1)" />
-        <item itemvalue="JUnit.SmtpServerServiceTest.send_SmtpServerServiceTest_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575298621875</updated>
       <workItem from="1575298623191" duration="3386000" />
-      <workItem from="1575304023825" duration="915000" />
+      <workItem from="1575304023825" duration="2603000" />
     </task>
     <servers />
   </component>
