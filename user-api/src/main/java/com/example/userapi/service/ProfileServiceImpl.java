@@ -6,9 +6,13 @@ import com.example.userapi.repository.ProfileRepository;
 import com.example.userapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class ProfileServiceImpl implements ProfileService {
+
+    private static Logger logger = LoggerFactory.getLogger(ProfileServiceImpl.class.getName());
 
     @Autowired
     ProfileRepository profileRepository;
@@ -27,6 +31,7 @@ public class ProfileServiceImpl implements ProfileService {
             user.setProfile(newProfile);
             profileRepository.save(newProfile);
         }
+        logger.info("Post created: " + newProfile);
         return userRepository.findByUsername(username).getProfile();
     }
 
@@ -47,6 +52,7 @@ public class ProfileServiceImpl implements ProfileService {
 
         profileRepository.save(profile);
         user.setProfile(profile);
+        logger.info("Post updated: " + user.getProfile());
         return user.getProfile();
     }
 

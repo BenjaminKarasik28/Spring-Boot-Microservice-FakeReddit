@@ -15,6 +15,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -37,6 +40,8 @@ public class UserServiceImpl implements UserService {
 
     private RestTemplate restTemplate = new RestTemplate();
 
+    private static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class.getName());
+
     @Autowired
     JwtUtil jwtUtil;
 
@@ -47,6 +52,7 @@ public class UserServiceImpl implements UserService {
             return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
         }
         else {
+            logger.error("User tried to sign up with incorrect username or password");
             throw new IncorrectLoginException("Incorrect username or password");
         }
     }
@@ -57,9 +63,11 @@ public class UserServiceImpl implements UserService {
         String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
         try {
             if(!newUser.getEmail().matches(regex)) {
+                logger.error("Attempted to sign up with the following email " + newUser.getEmail());
                 throw new EmailSignupException("Please enter a valid email");
             }
             else if((userRepository.findByEmail(newUser.getEmail()) != null) || (userRepository.findByUsername(newUser.getUsername()) != null)) {
+                logger.error("User tried to sign up with existing email " + newUser.getEmail());
                 throw new ExistingUserSignupException("User already exists - please login");
             }
             UserRole userRole = userRoleRepository.findByName("ROLE_USER");
@@ -72,6 +80,7 @@ public class UserServiceImpl implements UserService {
 
             newUser.setPassword(encoder().encode(newUser.getPassword()));
             if (userRepository.save(newUser) != null) {
+                logger.info("User signed up" + " " + newUser.getEmail());
                 return Arrays.asList(jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
             }
         } finally {
