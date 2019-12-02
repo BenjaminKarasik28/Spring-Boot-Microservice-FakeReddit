@@ -33,16 +33,6 @@ public class CommentServiceImpl implements CommentService {
     RestTemplate restTemplate;
 
 
-
-    //    getAllComments - CR.findAll()
-    // *    getAllCommentsByPostId - CR.findAllByPostId
-    //    getEmailByPostId - RT.getForObject
-    //    createComment - RT.getForObject
-    //*    updateComment - CR.findByCommentId
-    //*    deleteCommentById - CR.deleteByPostId
-    //*   deleteCommentByUsername - CR.deleteByUsername
-    //*    deletePostAndComments - CR.deleteByPostId
-
     @Override
     public Iterable<Comment> getAllComments() {
         return commentRepository.findAll();
