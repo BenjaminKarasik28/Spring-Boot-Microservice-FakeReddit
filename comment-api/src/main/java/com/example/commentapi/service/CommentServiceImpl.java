@@ -60,7 +60,6 @@ public class CommentServiceImpl implements CommentService {
         } else {
            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
 
-
             if(dummyPost.getId().equals(postId)) {
                 comment.setPostId(postId);
                 comment.setUsername(username);
@@ -73,6 +72,7 @@ public class CommentServiceImpl implements CommentService {
             return null;
         }
     }
+
 
     @Override
     public Comment updateComment(Comment comment, Long commentId) {

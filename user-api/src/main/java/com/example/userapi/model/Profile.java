@@ -5,8 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 /**
- * Represents user profile.
- * A user can only have one profile.
+ * Represents user profile. A user can only have one profile.
  */
 @Entity
 @Table(name = "profile")
@@ -17,10 +16,18 @@ public class Profile {
             CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private User user;
 
+    /**
+     * Get user
+     * @return user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Set user
+     * @return list of user
+     */
     public void setUser(User user) {
         this.user = user;
     }

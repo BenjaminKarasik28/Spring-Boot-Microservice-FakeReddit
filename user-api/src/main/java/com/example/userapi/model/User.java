@@ -20,10 +20,22 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<UserRole> roles;
 
+    /**
+     * Gets all roles
+     * @return list of all roles
+     */
     public List<UserRole> getRoles(){ return roles; }
 
+    /**
+     * Set roles
+     * @return list of roles
+     */
     public void setRoles(List<UserRole> roles) { this.roles = roles; }
 
+    /**
+     * Add role to user
+     * @return list of user roles
+     */
     public List<UserRole> addRole(UserRole userRole){
         if(roles == null)
             roles = new ArrayList<>();
@@ -37,10 +49,18 @@ public class User {
     @JoinColumn(name="profile_id")
     private Profile profile;
 
+    /**
+     * Get user profile
+     * @return user profile
+     */
     public Profile getProfile() {
         return profile;
     }
 
+    /**
+     * Set user profile
+     * @return user profile
+     */
     public void setProfile(Profile profile) {
         this.profile = profile;
     }
