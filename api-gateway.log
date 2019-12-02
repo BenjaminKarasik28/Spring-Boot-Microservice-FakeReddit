@@ -165,3 +165,8 @@ java.lang.NoSuchMethodError: com.netflix.servo.monitor.Monitors.isObjectRegister
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
 
 2019-12-02 10:31:43.553  INFO 1469 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 14:18:26.937  INFO 45772 --- [main] c.e.apigateway.ZuulGatewayApplication    : The following profiles are active: local
+2019-12-02 14:18:29.014  INFO 45772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 14:18:29.075  INFO 45772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-12-02 14:18:29.323  WARN 45772 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-02 14:18:29.338  WARN 45772 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
