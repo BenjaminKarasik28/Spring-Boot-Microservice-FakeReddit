@@ -30,7 +30,6 @@ public class JwtUtilTest {
 
     @Before
     public void init() {
-
         jwtUtil.setSecret("pancakes");
     }
 
