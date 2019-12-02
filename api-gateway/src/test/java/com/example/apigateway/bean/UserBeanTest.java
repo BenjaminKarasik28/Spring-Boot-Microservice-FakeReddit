@@ -17,7 +17,7 @@ public class UserBeanTest {
     @Before
     public void initialize() {
         userBean.setId(1L);
-        userBean.setEmail("test@test.com");
+
         userBean.setUsername("test");
         userBean.setPassword("tester");
     }
@@ -27,10 +27,7 @@ public class UserBeanTest {
         assertEquals(1L, (long) userBean.getId());
     }
 
-    @Test
-    public void getEmail_Success(){
-        assertEquals("test@test.com", userBean.getEmail());
-    }
+
 
     @Test
     public void getUsername_Success(){

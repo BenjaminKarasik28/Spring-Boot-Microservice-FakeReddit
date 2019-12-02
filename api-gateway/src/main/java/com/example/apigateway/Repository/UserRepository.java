@@ -16,7 +16,6 @@ public class UserRepository {
         return jdbcTemplate.queryForObject(sql, new Object[]{username}, (rs, rowNum) ->
                 new UserBean(
                         rs.getLong("id"),
-                        rs.getString("email"),
                         rs.getString("username"),
                         rs.getString("password")
                 ));

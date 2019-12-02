@@ -38,7 +38,7 @@ public class UserServiceTest {
 
     @Before
     public void initialize() {
-        user = new UserBean(1L, "test@test.com", "test", "tester");
+        user = new UserBean(1L, "testuser", "testpass");
     }
 
     @Test

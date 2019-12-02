@@ -56,7 +56,6 @@ public class AuthenticationFilterTest {
     @Test
     public void doRun_Success() {
         user.setUsername("user");
-        user.setEmail("email");
         user.setPassword("password");
         user.setId(1L);
         when(ctx.getAuthentication()).thenReturn(authentication);

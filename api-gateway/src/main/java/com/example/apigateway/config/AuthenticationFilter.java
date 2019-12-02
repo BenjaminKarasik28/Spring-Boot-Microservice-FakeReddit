@@ -44,8 +44,6 @@ public class AuthenticationFilter extends ZuulFilter {
         if (userRepository.findByUsername(
                 username) !=null) {
             user = userRepository.findByUsername(username);
-            String email = String.valueOf(user.getEmail());
-            ctx.addZuulRequestHeader("email", email);
             ctx.addZuulRequestHeader("username", username);
         }
 
