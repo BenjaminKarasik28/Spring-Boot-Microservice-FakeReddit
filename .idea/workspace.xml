@@ -34,7 +34,12 @@
 =======
     <list default="true" id="ef99c6a4-1a0c-42d9-bb4b-d6120695d2ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> 622967fd62fd333043f47586582edbcf99982c66
+=======
+      <change beforePath="$PROJECT_DIR$/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
+>>>>>>> parent of 622967f... custom logging added for comment api
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,11 +145,15 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.JwtUtilTest.getUserNameFromToken_String_Success">
     <configuration name="All in email-api (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="email-api" />
 =======
   <component name="RunManager" selected="Spring Boot.PostApiApplication">
+=======
+  <component name="RunManager" selected="Spring Boot.UserApiApplication">
+>>>>>>> parent of 622967f... custom logging added for comment api
     <configuration name="All in api-gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
 >>>>>>> 622967fd62fd333043f47586582edbcf99982c66
@@ -333,8 +342,12 @@
       <workItem from="1574363686312" duration="37189000" />
       <workItem from="1574694164083" duration="62372000" />
       <workItem from="1575225795827" duration="1035000" />
+<<<<<<< HEAD
       <workItem from="1575296725389" duration="4396000" />
 >>>>>>> 622967fd62fd333043f47586582edbcf99982c66
+=======
+      <workItem from="1575296725389" duration="3549000" />
+>>>>>>> parent of 622967f... custom logging added for comment api
     </task>
     <servers />
   </component>

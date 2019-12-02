@@ -31,7 +31,7 @@ public class ProfileServiceImpl implements ProfileService {
             user.setProfile(newProfile);
             profileRepository.save(newProfile);
         }
-        logger.info("Profile created: " + newProfile);
+        logger.info("Post created: " + newProfile);
         return userRepository.findByUsername(username).getProfile();
     }
 

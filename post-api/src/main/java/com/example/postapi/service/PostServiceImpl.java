@@ -31,7 +31,6 @@ public class PostServiceImpl implements PostService {
             throw new BlankPostException("Please enter both a title and description");
         } else {
             post.setUsername(username);
-        logger.info("Post created:" + post);
         return postRepository.save(post);
         }
     }

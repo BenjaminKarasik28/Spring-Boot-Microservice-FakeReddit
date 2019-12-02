@@ -7,8 +7,6 @@ import com.example.commentapi.model.DummyPost;
 import com.example.commentapi.model.PostComment;
 import com.example.commentapi.repository.CommentRepository;
 import com.netflix.discovery.converters.Auto;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +19,6 @@ import java.util.Optional;
 
 @Service
 public class CommentServiceImpl implements CommentService {
-
-    private static Logger logger = LoggerFactory.getLogger(CommentServiceImpl.class.getName());
 
     @Autowired
     CommentRepository commentRepository;
@@ -60,7 +56,6 @@ public class CommentServiceImpl implements CommentService {
     public String createComment(Comment comment, String username, Long postId) throws BlankCommentException {
 
         if(comment.getText().isEmpty()) {
-            logger.error(username + " tried to create a blank comment");
             throw new BlankCommentException("Please enter text for your comment");
         } else {
            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
@@ -69,7 +64,6 @@ public class CommentServiceImpl implements CommentService {
             if(dummyPost.getId().equals(postId)) {
                 comment.setPostId(postId);
                 comment.setUsername(username);
-                logger.info("Comment successfully created for " + username);
                 commentRepository.save(comment);
                 String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
                 rabbitTemplate.convertAndSend(queue.getName(), email);
@@ -85,13 +79,11 @@ public class CommentServiceImpl implements CommentService {
         Comment savedComment = commentRepository.findByCommentId(commentId);
 
         if(comment.getText() != null) savedComment.setText(comment.getText());
-        logger.info("Comment id: " + commentId + "has been updated");
         return commentRepository.save(savedComment);
     }
 
     @Override
     public void deleteByCommentId(Long commentId) {
-        logger.info("Comment id: " + commentId + "has been deleted");
         commentRepository.deleteById(commentId);
     }
 
