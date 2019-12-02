@@ -28,7 +28,7 @@ public class User {
 
     /**
      * Set roles
-     * @return list of roles
+     * @param roles type roles
      */
     public void setRoles(List<UserRole> roles) { this.roles = roles; }
 
@@ -59,7 +59,7 @@ public class User {
 
     /**
      * Set user profile
-     * @return user profile
+     * @param profile type profile
      */
     public void setProfile(Profile profile) {
         this.profile = profile;
@@ -81,7 +81,7 @@ public class User {
 
 
     /**
-     * The default constructor.
+     * The default constructor
      */
     public User() {}
 
@@ -95,30 +95,32 @@ public class User {
 
     /**
      * Sets the ID
+     * @param id type id
      */
     public void setId(Long id) {
         this.id = id;
     }
 
     /**
-     * Gets the username.
-     * @return the username of user.
+     * Gets the username
+     * @return the username of user
      */
     public String getUsername() {
         return username;
     }
 
     /**
-     * Sets the username.
-     * Username should be unique.
+     * Sets the username
+     * Username should be unique
+     * @param username type username
      */
     public void setUsername(String username) {
         this.username = username;
     }
 
     /**
-     * Gets the password.
-     * @return the password of user.
+     * Gets the password
+     * @return the password of user
      */
     public String getPassword() {
         return password;
@@ -126,22 +128,24 @@ public class User {
 
     /**
      * Sets the password
+     * @param password type password
      */
     public void setPassword(String password) {
         this.password = password;
     }
 
     /**
-     * Gets the email.
-     * @return the email of user.
+     * Gets the email
+     * @return the email of user
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the email.
-     * Email should be unique.
+     * Sets the email
+     * Email should be unique
+     * @param email type email
      */
     public void setEmail(String email) {
         this.email = email;

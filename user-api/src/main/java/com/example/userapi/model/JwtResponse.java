@@ -2,6 +2,9 @@ package com.example.userapi.model;
 
 import java.util.List;
 
+/**
+ * JWT object returned with valid credentials.
+ */
 public class JwtResponse {
 
     private String jwt;

@@ -5,7 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 /**
- * Represents user profile. A user can only have one profile.
+ * Represents user profile.
+ * A user can only have one profile.
  */
 @Entity
 @Table(name = "profile")
@@ -26,7 +27,7 @@ public class Profile {
 
     /**
      * Set user
-     * @return list of user
+     * @param user type user
      */
     public void setUser(User user) {
         this.user = user;
@@ -47,7 +48,7 @@ public class Profile {
     private String address;
 
     /**
-     * The default constructor.
+     * The default constructor
      */
     public Profile() {}
 
@@ -61,29 +62,31 @@ public class Profile {
 
     /**
      * Sets the ID
+     * @param id type id
      */
     public void setId(Long id) {
         this.id = id;
     }
 
     /**
-     * Gets an additional email.
-     * @return the additional email of user.
+     * Gets an additional email
+     * @return the additional email of user
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Sets the addtional email
+     * Sets the additional email
+     * @param email type email
      */
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     * Gets the mobile number.
-     * @return the mobile of user.
+     * Gets the mobile number
+     * @return the mobile of user
      */
     public String getMobile() {
         return mobile;
@@ -91,14 +94,15 @@ public class Profile {
 
     /**
      * Sets mobile number
+     * @param mobile type mobile number
      */
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
     /**
-     * Gets the address.
-     * @return the address of user.
+     * Gets the address
+     * @return the address of user
      */
     public String getAddress() {
         return address;
@@ -106,6 +110,7 @@ public class Profile {
 
     /**
      * Sets address
+     * @param address type address
      */
     public void setAddress(String address) {
         this.address = address;

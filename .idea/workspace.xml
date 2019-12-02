@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/post-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-api.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +32,7 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="jdkForImporter" value="1.8" />
         <option name="lookForNested" value="true" />
       </MavenImportingSettings>
@@ -179,7 +185,7 @@
       <updated>1575298621875</updated>
       <workItem from="1575298623191" duration="3386000" />
       <workItem from="1575304023825" duration="8607000" />
-      <workItem from="1575317128444" duration="4746000" />
+      <workItem from="1575317128444" duration="6308000" />
     </task>
     <servers />
   </component>
