@@ -32,7 +32,8 @@ public class JwtUtilTest {
     public void init() {
 
         jwtUtil.setSecret("pancakes");
-        jwtToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaHJpcyIsImV4cCI6MTU3NTMxNzY1OSwiaWF0IjoxNTc1Mjk5NjU5fQ.PV9ZCc6KU8gSlUt4cBfEdTITPnWq-qAViv6M5KXgryWCsyfUC9CdH3xnbEtWFfzagn4-vvAphIQAvVinY8F3Yw";
+        when(userDetails.getUsername()).thenReturn("ben");
+        jwtToken = jwtUtil.generateToken(userDetails);
         date = new Date();
         username = "username";
     }
@@ -48,7 +49,7 @@ public class JwtUtilTest {
     }
     @Test
     public void istokenExpired_Boolean_Success(){
-        Date date1 = jwtUtil.getExpirationDateFromToken(jwtToken);
+        jwtUtil.getExpirationDateFromToken(jwtToken);
         Boolean isExpired = jwtUtil.isTokenExpired(jwtToken);
         assertNotNull(isExpired);
     }
