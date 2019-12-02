@@ -11,10 +11,7 @@ class EmailApiApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-	@Test
-	public void testTest(){
-		assertEquals(1, 1);
 
-	}
+
 
 }

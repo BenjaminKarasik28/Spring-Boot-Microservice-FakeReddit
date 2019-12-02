@@ -10,12 +10,9 @@ public class RabbitMQConfigTest {
 
     private Queue queue;
 
-
-
     @Before
     public void init(){
         queue = new Queue("queue1", false, false, false);
-
     }
 
     @Test

@@ -29,7 +29,7 @@ public class JwtUtilTest {
     }
     @Test
     public void getUserNameFromToken_String_Success(){
-        String token = jwtUtil.getUsernameFromToken("token");
+        String token = jwtUtil.getUsernameFromToken("eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjaHJpcyIsImV4cCI6MTU3NTMxNzY1OSwiaWF0IjoxNTc1Mjk5NjU5fQ.PV9ZCc6KU8gSlUt4cBfEdTITPnWq-qAViv6M5KXgryWCsyfUC9CdH3xnbEtWFfzagn4-vvAphIQAvVinY8F3Yw");
         assertNotNull(token);
 
 

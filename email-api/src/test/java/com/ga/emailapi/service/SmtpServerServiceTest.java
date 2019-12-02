@@ -14,9 +14,12 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import javax.mail.MessagingException;
 
+import javax.mail.NoSuchProviderException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.MimeMessage;
+
+import java.util.Properties;
 
 import static org.junit.Assert.*;
 import static org.powermock.api.mockito.PowerMockito.mockStatic;
@@ -29,6 +32,9 @@ public class SmtpServerServiceTest {
 
     private String ok;
     private String success;
+    private Session session;
+    private Transport transport;
+    private Properties props;
 
 
     @InjectMocks
@@ -37,9 +43,15 @@ public class SmtpServerServiceTest {
 
 
     @Before
-    public void init(){
+    public void init() throws NoSuchProviderException {
         ok = "ok";
         success = "Email sent successfully.";
+        props = System.getProperties();
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        session = Session.getDefaultInstance(props, null);
+        transport = session.getTransport("smtp");
     }
 
     @Test
@@ -56,20 +68,12 @@ public class SmtpServerServiceTest {
 
 //    @Test
 //    public void send_SmtpServerServiceTest_Success() throws MessagingException {
-//        String target = "email";
-//
-//        mockStatic(System.class);
-//        Session session = null;
-//
-//        assert session != null;
-//        expect(session.getTransport()).andReturn(transport);
-//        assertNotNull(String.valueOf(transport), new SmtpServerServiceTest());
+//        String s = smtpServerService.send("targetemail");
+//        assertNotNull(s);
 //
 //
-////        String success2 = smtpServerService.send(target);
-////        assertEquals(success2, success);
-
-    //}
+//
+//    }
 
 
 }
