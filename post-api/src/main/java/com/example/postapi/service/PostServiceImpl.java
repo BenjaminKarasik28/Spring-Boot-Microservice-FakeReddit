@@ -4,6 +4,8 @@ import com.example.postapi.exceptionhandling.BlankPostException;
 import com.example.postapi.model.Post;
 import com.example.postapi.model.PostComment;
 import com.example.postapi.repository.PostRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,6 +18,8 @@ public class PostServiceImpl implements PostService {
 
     RestTemplate restTemplate = new RestTemplate();
 
+    private static Logger logger = LoggerFactory.getLogger(PostServiceImpl.class.getName());
+
     @Autowired
     PostRepository postRepository;
 
@@ -23,6 +27,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public Post createPost(Post post, String username) throws BlankPostException {
         if(post.getTitle().isEmpty() || post.getDescription().isEmpty()) {
+            logger.error(username + " user tried to create a blank post");
             throw new BlankPostException("Please enter both a title and description");
         } else {
             post.setUsername(username);
@@ -46,6 +51,7 @@ public class PostServiceImpl implements PostService {
     public Long deletePostbyId(Long postId) {
         restTemplate.delete("http://localhost:8083/post/" + postId);
         postRepository.deleteById(postId);
+        logger.info("Post id: " + postId + "this post has been deleted");
         return postId;
 
     }
@@ -75,6 +81,7 @@ public class PostServiceImpl implements PostService {
         if(post.getTitle() != null) savedPost.setTitle(post.getTitle());
         if(post.getDescription() != null) savedPost.setDescription(post.getDescription());
 
+        logger.info("Post id " + postId + "has been updated");
         return postRepository.save(savedPost);
     }
 

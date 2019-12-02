@@ -338,3 +338,5 @@
 2019-12-02 10:17:01.493 ERROR 4660 --- [http-nio-8081-exec-3] c.e.userapi.service.UserServiceImpl      : User already exists email3@email.com
 2019-12-02 10:17:50.772 ERROR 4660 --- [http-nio-8081-exec-5] c.e.userapi.service.UserServiceImpl      : Attempted to sign up with the following email email3@.com
 2019-12-02 10:21:30.008  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 10:26:30.029  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 10:31:30.055  INFO 4660 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
