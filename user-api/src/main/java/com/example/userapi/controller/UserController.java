@@ -44,7 +44,7 @@ public class UserController {
         return userService.updateUser(username, user);
     }
 
-
+    @ApiOperation(value = "Get email", notes = "Get email from username", response = User.class)
     @GetMapping("/post/{username}")
     public String getEmailFromUsername(@PathVariable String username){
         return userService.getEmailByUsername(username);

@@ -7,8 +7,6 @@
       <change beforePath="$PROJECT_DIR$/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/post-api.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-api.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PostApiApplication">
+  <component name="RunManager" selected="Spring Boot.UserApiApplication">
     <configuration name="All in api-gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="PACKAGE_NAME" value="" />
@@ -185,7 +183,7 @@
       <updated>1575298621875</updated>
       <workItem from="1575298623191" duration="3386000" />
       <workItem from="1575304023825" duration="8607000" />
-      <workItem from="1575317128444" duration="6308000" />
+      <workItem from="1575317128444" duration="6967000" />
     </task>
     <servers />
   </component>

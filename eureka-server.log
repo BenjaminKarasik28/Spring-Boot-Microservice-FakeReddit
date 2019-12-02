@@ -437,3 +437,33 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2019-12-02 17:02:32.426  INFO 13964 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
 2019-12-02 17:02:32.878  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2019-12-02 17:03:32.882  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-02 17:04:32.885  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-02 17:05:32.889  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-02 17:06:32.892  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-02 17:07:32.893  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-02 17:08:32.899  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-02 17:08:56.025  INFO 13964 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.2.116:comment:8083 with status DOWN (replication=false)
+2019-12-02 17:08:56.555  INFO 13964 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.2.116:comment:8083 with status DOWN (replication=true)
+2019-12-02 17:08:59.136  INFO 13964 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance COMMENT/172.16.2.116:comment:8083 (replication=false)
+2019-12-02 17:08:59.645  WARN 13964 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: COMMENT/172.16.2.116:comment:8083
+2019-12-02 17:08:59.648  INFO 13964 --- [http-nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): COMMENT - 172.16.2.116:comment:8083
+2019-12-02 17:08:59.650  WARN 13964 --- [TaskBatchingWorker-target_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task COMMENT/172.16.2.116:comment:8083:Cancel@localhost failed with response code 404
+2019-12-02 17:08:59.651  WARN 13964 --- [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : COMMENT/172.16.2.116:comment:8083:Cancel@localhost: missing entry.
+2019-12-02 17:09:18.466  INFO 13964 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.2.116:comment:8083 with status UP (replication=false)
+2019-12-02 17:09:18.998  INFO 13964 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.2.116:comment:8083 with status UP (replication=true)
+2019-12-02 17:09:32.905  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-02 17:10:32.907  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-02 17:11:32.917  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-12-02 17:12:32.919  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-02 17:13:32.922  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-02 17:14:26.254  INFO 13964 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.2.116:user:8081 with status DOWN (replication=false)
+2019-12-02 17:14:26.770  INFO 13964 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.2.116:user:8081 with status DOWN (replication=true)
+2019-12-02 17:14:29.552  INFO 13964 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER/172.16.2.116:user:8081 (replication=false)
+2019-12-02 17:14:30.064  WARN 13964 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USER/172.16.2.116:user:8081
+2019-12-02 17:14:30.065  INFO 13964 --- [http-nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USER - 172.16.2.116:user:8081
+2019-12-02 17:14:30.065  WARN 13964 --- [TaskBatchingWorker-target_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task USER/172.16.2.116:user:8081:Cancel@localhost failed with response code 404
+2019-12-02 17:14:30.066  WARN 13964 --- [TaskBatchingWorker-target_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : USER/172.16.2.116:user:8081:Cancel@localhost: missing entry.
+2019-12-02 17:14:32.929  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-12-02 17:14:47.537  INFO 13964 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.2.116:user:8081 with status UP (replication=false)
+2019-12-02 17:14:48.050  INFO 13964 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.2.116:user:8081 with status UP (replication=true)
+2019-12-02 17:15:32.935  INFO 13964 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms

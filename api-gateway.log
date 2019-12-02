@@ -1806,3 +1806,849 @@ java.lang.NoSuchMethodError: com.netflix.servo.monitor.Monitors.isObjectRegister
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
 
 2019-12-02 16:59:19.829  INFO 17517 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 17:04:19.850  INFO 17517 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 17:08:12.601  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.757  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.781  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.795  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.798  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.805  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.807  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.811  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.826  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.844  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.845  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.853  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.875  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.886  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.886  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.904  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.945  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.979  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.979  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:12.988  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.001  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.159  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.221  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.221  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.329  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.371  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:13.586  INFO 17517 --- [http-nio-8080-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-02 17:08:13.604  INFO 17517 --- [http-nio-8080-exec-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-user
+2019-12-02 17:08:13.605  INFO 17517 --- [http-nio-8080-exec-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-02 17:08:13.612  INFO 17517 --- [http-nio-8080-exec-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-02 17:08:13.616  INFO 17517 --- [http-nio-8080-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-02 17:08:13.622  INFO 17517 --- [http-nio-8080-exec-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user,current list of Servers=[172.16.2.116:8081],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.16.2.116:8081;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 19:00:00 EST 1969;	First connection made: Wed Dec 31 19:00:00 EST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@36ea418f
+2019-12-02 17:08:14.616  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:14.618  INFO 17517 --- [PollingServerListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-02 17:08:14.744  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:31.206  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:34.778  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:35.461  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:59.193  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:08:59.346  WARN 17517 --- [http-nio-8080-exec-3] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:198) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:173) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:119) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45) [spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.example.apigateway.config.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62) [classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.netflix.client.ClientException: null
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:118) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:221) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:55) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:167) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 106 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.SocketException: Connection reset
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:57) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:463) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	... 168 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_221]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_221]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.11.jar:4.4.11]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:83) ~[spring-cloud-netflix-ribbon-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:45) ~[spring-cloud-netflix-ribbon-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	... 170 common frames omitted
+
+2019-12-02 17:09:11.412  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.465  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.466  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.466  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.469  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.482  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.479  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.500  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.508  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.521  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.529  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.529  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.537  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.539  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.542  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.551  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.554  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.567  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.568  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.595  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.614  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.864  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.885  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.885  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.908  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:11.954  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:12.347  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:19.873  INFO 17517 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 17:09:22.190  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:22.195  WARN 17517 --- [http-nio-8080-exec-6] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /comment/v2/api-docs
+2019-12-02 17:09:27.599  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:27.749  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:29.308  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:29.313  WARN 17517 --- [http-nio-8080-exec-4] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /comment/v2/api-docs
+2019-12-02 17:09:36.243  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:36.379  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:37.841  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:37.842  WARN 17517 --- [http-nio-8080-exec-8] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /comment/v2/api-docs
+2019-12-02 17:09:39.905  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:39.999  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:42.143  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:42.147  WARN 17517 --- [http-nio-8080-exec-2] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /comment/v2/api-docs
+2019-12-02 17:09:44.709  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:44.876  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:46.139  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:09:46.142  WARN 17517 --- [http-nio-8080-exec-9] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /comment/v2/api-docs
+2019-12-02 17:10:01.251  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:10:01.384  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:10:04.190  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:01.824  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:01.963  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:03.329  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:05.295  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:05.450  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:08.150  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:15.510  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:15.524  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:15.525  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:15.534  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:48.789  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:11:48.970  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:12:07.292  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:13:21.566 ERROR 17517 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/172.16.2.116:api-gateway - was unable to send heartbeat!
+
+java.lang.NoSuchMethodError: com.netflix.servo.monitor.Monitors.isObjectRegistered(Ljava/lang/String;Ljava/lang/Object;)Z
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.shutdown(RetryableEurekaHttpClient.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.TransportUtils.shutdown(TransportUtils.java:40) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:70) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) [eureka-client-1.9.13.jar:1.9.13]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2019-12-02 17:14:19.887  INFO 17517 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-02 17:15:17.802  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.955  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.960  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.965  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.964  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.965  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:17.963  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.026  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.030  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.106  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.136  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.137  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.138  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.149  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.153  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.166  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.174  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.175  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.224  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.228  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.230  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.680  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.735  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.735  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.796  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.831  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:18.838  WARN 17517 --- [http-nio-8080-exec-3] o.s.c.n.z.f.pre.PreDecorationFilter      : No route found for uri: /user/v2/api-docs
+2019-12-02 17:15:35.111  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.167  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.181  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.188  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.193  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.201  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.204  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.207  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.208  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.217  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.218  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.235  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.251  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.262  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.281  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.298  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.332  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.356  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.356  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.369  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.376  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.623  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.651  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.659  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.719  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.750  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:35.773  WARN 17517 --- [http-nio-8080-exec-5] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:198) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:173) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:119) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45) [spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.example.apigateway.config.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62) [classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: user
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:221) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:55) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:167) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 106 common frames omitted
+
+2019-12-02 17:15:40.398  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.465  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.474  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.474  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.477  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.483  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.494  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.502  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.508  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.518  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.545  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.550  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.565  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.569  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.594  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.619  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.622  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.653  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.670  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.672  WARN 17517 --- [http-nio-8080-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.675  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.874  WARN 17517 --- [http-nio-8080-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.912  WARN 17517 --- [http-nio-8080-exec-2] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.919  WARN 17517 --- [http-nio-8080-exec-6] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:40.973  WARN 17517 --- [http-nio-8080-exec-5] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:41.009  WARN 17517 --- [http-nio-8080-exec-4] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:41.018  WARN 17517 --- [http-nio-8080-exec-4] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:198) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:173) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:119) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) ~[zuul-core-1.3.1.jar:1.3.1]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) ~[zuul-core-1.3.1.jar:1.3.1]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:165) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45) [spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.example.apigateway.config.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62) [classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104) [spring-boot-actuator-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: user
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:221) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:55) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:410) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344) ~[hystrix-core-1.5.18.jar:1.5.18]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:167) ~[spring-cloud-netflix-zuul-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 106 common frames omitted
+
+2019-12-02 17:15:43.213  WARN 17517 --- [http-nio-8080-exec-7] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:43.463  WARN 17517 --- [http-nio-8080-exec-9] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:45.239  WARN 17517 --- [http-nio-8080-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-02 17:15:45.691  WARN 17517 --- [http-nio-8080-exec-3] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
