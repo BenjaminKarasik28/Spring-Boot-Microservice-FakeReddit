@@ -25,6 +25,7 @@
 - Maven
 - Docker
 - Spring-Boot
+- RabbitMQ
 
 Refer to the dependencies in the pom.xml file for the following:
 - Spring Boot
