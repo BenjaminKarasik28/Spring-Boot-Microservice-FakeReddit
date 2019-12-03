@@ -11,6 +11,7 @@
 * [Swagger](#swagger)
 * [Javadoc](#javadoc)
 * [Kibana](#kibana)
+* [Jenkins](#jenkins)
 
 ## Technologies Used
 - Java / IntelliJ
@@ -84,7 +85,7 @@ Configuration of most DevOps tools/services (such as Jenkins / ELK) were very di
 ![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%202.png)
 
 ## Swagger
-We utilized Swagger to document all of our endpoints. See screenshot below:
+We utilized Swagger to document all of our endpoints. See screenshot below for user-api:
 
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Swagger.png)
 
@@ -93,6 +94,9 @@ We utilized Swagger to document all of our endpoints. See screenshot below:
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Javadoc.png)
 
 ## Kibana
-There is ELK logging set up on our application. We implemented custom monitoring on the service layer so that we are able to more closely observe any potential issues. See screenshot below:
+There is ELK logging set up on our application. We implemented custom monitoring on the service layer so that we are able to more closely observe any potential issues. See screenshot below for user-api:
 
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Kibana.png)
+
+## Jenkins
+We were able to accomplish over 80% test of application collectively through unit and integration tests. We monitored the test coverage using Jacoco. See screenshot below: 
