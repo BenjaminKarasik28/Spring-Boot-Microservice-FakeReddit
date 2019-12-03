@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="">
+    <list default="true" id="91bcbc46-04d1-42fa-b912-8759c0bd2b7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-api.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/CommentApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/CommentApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/UserApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/UserApiApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,28 +17,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="15" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+    <option name="myElementSize" value="91" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
         <option name="lookForNested" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1UQpM0inXOHdhzZrwSAnqcSSM3x" />
+  <component name="ProjectId" id="1UQnJL1cdXU0StQOBAOClAuUMRH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -49,7 +53,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
@@ -64,42 +68,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in api-gateway">
-    <configuration name="All in api-gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
+  <component name="RunManager" selected="Spring Boot.UserApiApplication">
+    <configuration name="All in comment-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-api" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtRequestFilterTest.doFilterInternal_SUCCESS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.apigateway.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.apigateway.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.config.JwtRequestFilterTest" />
-      <option name="METHOD_NAME" value="doFilterInternal_SUCCESS" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="All in email-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.apigateway.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.apigateway.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.example.apigateway.repository.UserRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="All in post-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="post-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in api-gateway" />
-        <item itemvalue="JUnit.JwtRequestFilterTest.doFilterInternal_SUCCESS" />
-        <item itemvalue="Spring Boot.ZuulGatewayApplication" />
         <item itemvalue="Spring Boot.EmailApiApplication" />
-        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="Spring Boot.ZuulGatewayApplication" />
+        <item itemvalue="JUnit.All in email-api" />
+        <item itemvalue="JUnit.All in post-api" />
+        <item itemvalue="JUnit.All in comment-api" />
       </list>
     </recent_temporary>
   </component>
@@ -173,14 +162,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="72f0778a-717f-40e9-bd6b-515a4f1316c1" name="Default Changelist" comment="" />
-      <created>1575298621875</created>
+      <changelist id="91bcbc46-04d1-42fa-b912-8759c0bd2b7b" name="Default Changelist" comment="" />
+      <created>1575297613524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575298621875</updated>
-      <workItem from="1575298623191" duration="3386000" />
-      <workItem from="1575304023825" duration="8607000" />
-      <workItem from="1575317128444" duration="12576000" />
+      <updated>1575297613524</updated>
+      <workItem from="1575297615215" duration="573000" />
+      <workItem from="1575298730134" duration="30000" />
+      <workItem from="1575298780258" duration="4478000" />
+      <workItem from="1575310696519" duration="8700000" />
+      <workItem from="1575335106812" duration="586000" />
+      <workItem from="1575386196104" duration="5677000" />
     </task>
     <servers />
   </component>
@@ -201,67 +193,21 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$ZuulGatewayApplicationTests_contextLoads.ic" NAME="ZuulGatewayApplicationTests.contextLoads Coverage Results" MODIFIED="1575314341476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.*</FILTER>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentServiceImplTest.ic" NAME="CommentServiceImplTest Coverage Results" MODIFIED="1575298853533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.commentapi.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api__1_.ic" NAME="All in email-api (1) Coverage Results" MODIFIED="1575301078127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api.ic" NAME="All in email-api Coverage Results" MODIFIED="1575298886944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$ZuulGatewayApplication.ic" NAME="ZuulGatewayApplication Coverage Results" MODIFIED="1575314289054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.*</FILTER>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api.ic" NAME="All in email-api Coverage Results" MODIFIED="1575391931948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentIntegrationTest.ic" NAME="CommentIntegrationTest Coverage Results" MODIFIED="1575312394329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.commentapi.Integration.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_post_api.ic" NAME="All in post-api Coverage Results" MODIFIED="1575299550738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$ZuulGatewayApplicationTests_testTest.ic" NAME="ZuulGatewayApplicationTests.testTest Coverage Results" MODIFIED="1575314328643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.*</FILTER>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_ga_emailapi_in_email_api.ic" NAME="com.ga.emailapi in email-api Coverage Results" MODIFIED="1575386879246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_getUserNameFromToken_String_Success.ic" NAME="JwtUtilTest.getUserNameFromToken_String_Success Coverage Results" MODIFIED="1575304236947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_api_gateway.ic" NAME="All in api-gateway Coverage Results" MODIFIED="1575387362663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$SmtpServerServiceTest.ic" NAME="SmtpServerServiceTest Coverage Results" MODIFIED="1575386840712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$UserRepositoryTest_getUserByUserName_SUCCESS.ic" NAME="UserRepositoryTest.getUserByUserName_SUCCESS Coverage Results" MODIFIED="1575316042771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_example_commentapi_config_in_comment_api.ic" NAME="com.example.commentapi.config in comment-api Coverage Results" MODIFIED="1575314972132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.commentapi.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$UserRepositoryTest_getUserByUsername_UserRepository_Success.ic" NAME="UserRepositoryTest.getUserByUsername_UserRepository_Success Coverage Results" MODIFIED="1575313887055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_example_apigateway_Repository_in_api_gateway.ic" NAME="com.example.apigateway.Repository in api-gateway Coverage Results" MODIFIED="1575313864683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.Repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$UserRepositoryTest.ic" NAME="UserRepositoryTest Coverage Results" MODIFIED="1575316972124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_api_gateway.ic" NAME="All in api-gateway Coverage Results" MODIFIED="1575317026973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$AuthenticationFilterTest.ic" NAME="AuthenticationFilterTest Coverage Results" MODIFIED="1575314528276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_validateToken_Boolean_Success.ic" NAME="JwtUtilTest.validateToken_Boolean_Success Coverage Results" MODIFIED="1575304870501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$AuthenticationFilterTest_shouldFilter_Boolean_Success.ic" NAME="AuthenticationFilterTest.shouldFilter_Boolean_Success Coverage Results" MODIFIED="1575313384573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_microservice_fakereddit$JwtRequestFilterTest_doFilterInternal_SUCCESS.ic" NAME="JwtRequestFilterTest.doFilterInternal_SUCCESS Coverage Results" MODIFIED="1575391084275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest.ic" NAME="JwtUtilTest Coverage Results" MODIFIED="1575315646500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$JwtUtilTest_istokenExpired_Boolean_Success.ic" NAME="JwtUtilTest.istokenExpired_Boolean_Success Coverage Results" MODIFIED="1575305122754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_example_apigateway_in_api_gateway.ic" NAME="com.example.apigateway in api-gateway Coverage Results" MODIFIED="1575314770285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$AuthenticationFilterTest_filterType_String_Success.ic" NAME="AuthenticationFilterTest.filterType_String_Success Coverage Results" MODIFIED="1575310925049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_microservice_fakereddit$All_in_api_gateway.ic" NAME="All in api-gateway Coverage Results" MODIFIED="1575391668543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$AuthenticationFilterTest_filterOrder_Int_Success.ic" NAME="AuthenticationFilterTest.filterOrder_Int_Success Coverage Results" MODIFIED="1575311258651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.config.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_example_apigateway_controller_in_api_gateway.ic" NAME="com.example.apigateway.controller in api-gateway Coverage Results" MODIFIED="1575315726931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.apigateway.controller.*</FILTER>
-    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_comment_api.ic" NAME="All in comment-api Coverage Results" MODIFIED="1575388966459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_post_api.ic" NAME="All in post-api Coverage Results" MODIFIED="1575389633592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

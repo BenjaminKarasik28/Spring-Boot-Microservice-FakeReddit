@@ -559,3 +559,114 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2019-12-02 20:16:02.757  INFO 82333 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
 2019-12-02 20:17:02.758  INFO 82333 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2019-12-02 20:18:02.762  INFO 82333 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-03 13:49:56.514  INFO 60241 --- [main] c.e.e.EurekaServerApplication            : The following profiles are active: dev
+2019-12-03 13:49:57.997  WARN 60241 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-03 13:49:58.453  INFO 60241 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5f27086-661f-34d3-8c0d-6129cbadf6e8
+2019-12-03 13:49:58.613  INFO 60241 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b6f4a445] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 13:49:59.262  INFO 60241 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2019-12-03 13:49:59.315  INFO 60241 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 13:49:59.316  INFO 60241 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-03 13:49:59.324  INFO 60241 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/benjamin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-03 13:49:59.532  INFO 60241 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 13:49:59.532  INFO 60241 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2989 ms
+2019-12-03 13:49:59.714  WARN 60241 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:49:59.714  INFO 60241 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:49:59.730  INFO 60241 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@43a0a32d
+2019-12-03 13:50:00.772  INFO 60241 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-03 13:50:00.935  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-03 13:50:00.937  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-03 13:50:01.239  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-03 13:50:01.240  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-03 13:50:01.780  WARN 60241 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2019-12-03 13:50:01.780  WARN 60241 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:50:01.780  INFO 60241 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:50:02.034  INFO 60241 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 13:50:02.931  INFO 60241 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-03 13:50:03.023  INFO 60241 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-03 13:50:03.024  INFO 60241 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-12-03 13:50:03.048  INFO 60241 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575399003044 with initial instances count: 0
+2019-12-03 13:50:03.125  INFO 60241 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-12-03 13:50:03.129  INFO 60241 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-03 13:50:03.432  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-03 13:50:03.432  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-03 13:50:03.432  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-03 13:50:03.432  INFO 60241 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-03 13:50:08.653  INFO 60241 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2019-12-03 13:50:08.675  INFO 60241 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-12-03 13:50:08.677  INFO 60241 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-12-03 13:50:08.720  INFO 60241 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-03 13:50:08.923  INFO 60241 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2019-12-03 13:50:08.929  INFO 60241 --- [Thread-41] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-12-03 13:50:08.935  INFO 60241 --- [Thread-41] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-03 13:50:08.937  INFO 60241 --- [Thread-41] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-03 13:50:08.991  INFO 60241 --- [Thread-41] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-12-03 13:50:08.993  INFO 60241 --- [Thread-41] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-12-03 13:50:08.993  INFO 60241 --- [Thread-41] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-12-03 13:50:08.993  INFO 60241 --- [Thread-41] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-12-03 13:50:08.993  INFO 60241 --- [Thread-41] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-12-03 13:50:09.021  INFO 60241 --- [Thread-41] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-03 13:50:09.241  INFO 60241 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2019-12-03 13:50:09.243  INFO 60241 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-03 13:50:09.251  INFO 60241 --- [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 14.501 seconds (JVM running for 18.362)
+2019-12-03 13:50:09.669  INFO 60241 --- [RMI TCP Connection(2)-172.16.3.248] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 13:50:09.669  INFO 60241 --- [RMI TCP Connection(2)-172.16.3.248] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 13:50:09.691  INFO 60241 --- [RMI TCP Connection(2)-172.16.3.248] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-12-03 13:51:09.008  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 13:51:46.447  INFO 60241 --- [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status UP (replication=false)
+2019-12-03 13:51:46.851  INFO 60241 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status DOWN (replication=false)
+2019-12-03 13:51:47.732  INFO 60241 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status DOWN (replication=true)
+2019-12-03 13:51:49.911  INFO 60241 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/172.16.3.248:api-gateway (replication=false)
+2019-12-03 13:51:50.420  WARN 60241 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/172.16.3.248:api-gateway
+2019-12-03 13:51:50.421  INFO 60241 --- [http-nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 172.16.3.248:api-gateway
+2019-12-03 13:51:50.423  WARN 60241 --- [TaskBatchingWorker-target_localhost-7] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/172.16.3.248:api-gateway:Cancel@localhost failed with response code 404
+2019-12-03 13:51:50.424  WARN 60241 --- [TaskBatchingWorker-target_localhost-7] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/172.16.3.248:api-gateway:Cancel@localhost: missing entry.
+2019-12-03 13:52:09.011  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-03 13:52:35.391  INFO 60241 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.3.248:comment:8083 with status UP (replication=false)
+2019-12-03 13:52:35.908  INFO 60241 --- [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance COMMENT/172.16.3.248:comment:8083 with status UP (replication=true)
+2019-12-03 13:53:05.099  INFO 60241 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status UP (replication=false)
+2019-12-03 13:53:05.485  INFO 60241 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status DOWN (replication=false)
+2019-12-03 13:53:06.000  INFO 60241 --- [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status DOWN (replication=true)
+2019-12-03 13:53:08.534  INFO 60241 --- [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/172.16.3.248:api-gateway (replication=false)
+2019-12-03 13:53:09.016  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-03 13:53:09.046  WARN 60241 --- [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/172.16.3.248:api-gateway
+2019-12-03 13:53:09.047  INFO 60241 --- [http-nio-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): API-GATEWAY - 172.16.3.248:api-gateway
+2019-12-03 13:53:09.049  WARN 60241 --- [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/172.16.3.248:api-gateway:Cancel@localhost failed with response code 404
+2019-12-03 13:53:09.050  WARN 60241 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : API-GATEWAY/172.16.3.248:api-gateway:Cancel@localhost: missing entry.
+2019-12-03 13:53:55.024  INFO 60241 --- [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status UP (replication=false)
+2019-12-03 13:53:55.537  INFO 60241 --- [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/172.16.3.248:api-gateway with status UP (replication=true)
+2019-12-03 13:54:09.019  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 13:54:14.062  INFO 60241 --- [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EMAIL-API/172.16.3.248:email-api:8084 with status UP (replication=false)
+2019-12-03 13:54:14.575  INFO 60241 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EMAIL-API/172.16.3.248:email-api:8084 with status UP (replication=true)
+2019-12-03 13:55:09.025  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-03 13:55:23.174  INFO 60241 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance POST/172.16.3.248:post:8082 with status UP (replication=false)
+2019-12-03 13:55:23.686  INFO 60241 --- [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance POST/172.16.3.248:post:8082 with status UP (replication=true)
+2019-12-03 13:55:40.127  INFO 60241 --- [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.3.248:user:8081 with status UP (replication=false)
+2019-12-03 13:55:40.641  INFO 60241 --- [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER/172.16.3.248:user:8081 with status UP (replication=true)
+2019-12-03 13:56:09.030  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-03 13:57:09.036  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-03 13:58:09.043  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-12-03 13:59:09.048  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-03 14:00:09.051  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-03 14:01:09.054  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:02:09.056  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:03:09.061  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-03 14:04:09.067  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-03 14:05:08.703  INFO 60241 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2019-12-03 14:05:09.070  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-03 14:06:09.073  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-03 14:07:09.079  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-03 14:08:09.081  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:09:09.082  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:10:09.093  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:11:09.098  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-03 14:12:09.100  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:13:09.107  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-03 14:14:09.108  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:15:09.113  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-03 14:16:09.116  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:17:09.118  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-03 14:18:09.125  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-12-03 14:19:09.129  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-03 14:20:08.743  INFO 60241 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2019-12-03 14:20:09.133  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-03 14:21:09.135  INFO 60241 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

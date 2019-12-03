@@ -547,3 +547,68 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2019-12-02 20:09:02.020  INFO 82601 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
 2019-12-02 20:12:12.154  INFO 82601 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-02 20:17:12.164  INFO 82601 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 13:55:11.398  INFO 60887 --- [main] com.example.postapi.PostApiApplication   : The following profiles are active: local
+2019-12-03 13:55:13.080  INFO 60887 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 13:55:13.172  INFO 60887 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 1 repository interfaces.
+2019-12-03 13:55:13.635  INFO 60887 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d7a4c13a-789b-3176-9c79-a46ac31627a4
+2019-12-03 13:55:14.048  INFO 60887 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 13:55:14.135  INFO 60887 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$135b8961] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 13:55:14.715  INFO 60887 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-12-03 13:55:14.742  INFO 60887 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 13:55:14.746  INFO 60887 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 13:55:15.432  INFO 60887 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 13:55:15.432  INFO 60887 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3999 ms
+2019-12-03 13:55:16.420  INFO 60887 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 13:55:16.673  INFO 60887 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 13:55:16.870  INFO 60887 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 13:55:17.223  INFO 60887 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-12-03 13:55:18.804  INFO 60887 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 13:55:19.030  INFO 60887 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 13:55:19.120  INFO 60887 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 13:55:19.148  INFO 60887 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 13:55:20.639  WARN 60887 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 13:55:20.825  WARN 60887 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:55:20.825  INFO 60887 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:55:20.830  WARN 60887 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:55:20.831  INFO 60887 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:55:20.990  INFO 60887 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 13:55:22.064  INFO 60887 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-03 13:55:22.156  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-03 13:55:22.395  INFO 60887 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-03 13:55:22.398  INFO 60887 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-03 13:55:22.763  INFO 60887 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-03 13:55:22.764  INFO 60887 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-03 13:55:22.942  INFO 60887 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 13:55:22.960  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-03 13:55:22.961  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-03 13:55:22.961  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-03 13:55:22.961  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-03 13:55:22.961  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-03 13:55:22.962  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-03 13:55:22.962  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-03 13:55:23.109  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-03 13:55:23.112  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-03 13:55:23.115  INFO 60887 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-03 13:55:23.122  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575399323120 with initial instances count: 3
+2019-12-03 13:55:23.126  INFO 60887 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application POST with eureka with status UP
+2019-12-03 13:55:23.127  INFO 60887 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575399323127, current=UP, previous=STARTING]
+2019-12-03 13:55:23.130  INFO 60887 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_POST/172.16.3.248:post:8082: registering service...
+2019-12-03 13:55:23.133  INFO 60887 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-03 13:55:23.159  INFO 60887 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-03 13:55:23.176  INFO 60887 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_POST/172.16.3.248:post:8082 - registration status: 204
+2019-12-03 13:55:23.178  INFO 60887 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-03 13:55:23.463  INFO 60887 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-12-03 13:55:23.464  INFO 60887 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2019-12-03 13:55:23.469  INFO 60887 --- [main] com.example.postapi.PostApiApplication   : Started PostApiApplication in 23.694 seconds (JVM running for 29.659)
+2019-12-03 14:00:22.976  INFO 60887 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:05:22.997  INFO 60887 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:10:23.027  INFO 60887 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:14:22.972  INFO 60887 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 14:14:22.974  INFO 60887 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 14:14:23.023  INFO 60887 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 48 ms
+2019-12-03 14:15:06.245 ERROR 60887 --- [http-nio-8082-exec-3] c.e.postapi.service.PostServiceImpl      : test user tried to create a blank post
+2019-12-03 14:15:23.046  INFO 60887 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:15:58.522 ERROR 60887 --- [http-nio-8082-exec-4] c.e.postapi.service.PostServiceImpl      : test user tried to create a blank post
+2019-12-03 14:15:59.526 ERROR 60887 --- [http-nio-8082-exec-5] c.e.postapi.service.PostServiceImpl      : test user tried to create a blank post
+2019-12-03 14:16:00.358 ERROR 60887 --- [http-nio-8082-exec-6] c.e.postapi.service.PostServiceImpl      : test user tried to create a blank post
+2019-12-03 14:20:23.058  INFO 60887 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
