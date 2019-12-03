@@ -27,11 +27,12 @@ public class PostServiceImpl implements PostService {
     @Override
     public Post createPost(Post post, String username) throws BlankPostException {
         if(post.getTitle().isEmpty() || post.getDescription().isEmpty()) {
-            logger.error(username + " user tried to create a blank post");
+            logger.error(username + " tried to create a blank post");
             throw new BlankPostException("Please enter both a title and description");
         } else {
             post.setUsername(username);
-        return postRepository.save(post);
+            logger.info(username + " created a post");
+            return postRepository.save(post);
         }
     }
 

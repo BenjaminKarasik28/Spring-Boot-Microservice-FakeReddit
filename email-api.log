@@ -186,3 +186,46 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2019-12-03 14:09:13.778  INFO 60531 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-03 14:14:13.810  INFO 60531 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-03 14:19:13.828  INFO 60531 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 15:04:02.031  INFO 50029 --- [main] com.ga.emailapi.EmailApiApplication      : The following profiles are active: local
+2019-12-03 15:04:03.191  INFO 50029 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5f47c6d6-ba11-3f33-b69c-7540d82df12d
+2019-12-03 15:04:03.354  INFO 50029 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b6f4a445] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 15:04:03.675  INFO 50029 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2019-12-03 15:04:03.688  INFO 50029 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 15:04:03.689  INFO 50029 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 15:04:03.832  INFO 50029 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 15:04:03.832  INFO 50029 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1778 ms
+2019-12-03 15:04:03.908  WARN 50029 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 15:04:03.908  INFO 50029 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 15:04:03.913  WARN 50029 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 15:04:03.914  INFO 50029 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 15:04:04.082  INFO 50029 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 15:04:04.872  INFO 50029 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-03 15:04:04.911  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-03 15:04:05.149  INFO 50029 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-03 15:04:05.150  INFO 50029 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-03 15:04:05.276  INFO 50029 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-03 15:04:05.277  INFO 50029 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-03 15:04:05.492  INFO 50029 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 15:04:05.509  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-03 15:04:05.509  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-03 15:04:05.510  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-03 15:04:05.510  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-03 15:04:05.510  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-03 15:04:05.510  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-03 15:04:05.510  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-03 15:04:05.685  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-03 15:04:05.688  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-03 15:04:05.691  INFO 50029 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-03 15:04:05.697  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575403445695 with initial instances count: 4
+2019-12-03 15:04:05.699  INFO 50029 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMAIL-API with eureka with status UP
+2019-12-03 15:04:05.700  INFO 50029 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575403445700, current=UP, previous=STARTING]
+2019-12-03 15:04:05.703  INFO 50029 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-API/172.16.2.116:email-api:8084: registering service...
+2019-12-03 15:04:05.708  INFO 50029 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2019-12-03 15:04:05.804  INFO 50029 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-API/172.16.2.116:email-api:8084 - registration status: 204
+2019-12-03 15:04:05.815  INFO 50029 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1fcf9739:0/SimpleConnection@7792d851 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50370]
+2019-12-03 15:04:05.823  INFO 50029 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (queue1) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2019-12-03 15:04:05.942  INFO 50029 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-03 15:04:05.943  INFO 50029 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2019-12-03 15:04:05.951  INFO 50029 --- [main] com.ga.emailapi.EmailApiApplication      : Started EmailApiApplication in 5.535 seconds (JVM running for 6.672)
+2019-12-03 15:09:05.567  INFO 50029 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 15:14:05.587  INFO 50029 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

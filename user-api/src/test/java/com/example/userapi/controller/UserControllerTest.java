@@ -114,43 +114,6 @@ public class UserControllerTest {
 
     }
 
-
-//    @Test
-//    public void EmailSignupException_401_Fail() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .post("/signup")
-//                .contentType(MediaType.APPLICATION_JSON);
-////                .content(createUserWithEmailInJson("test", "test@test", "tester"));
-//
-//        when(userService.userSignup(any())).thenThrow(new EmailSignupException("Fail"));
-//
-//        MvcResult result = mockMvc.perform(requestBuilder)
-//                .andExpect(status().isUnauthorized())
-//                .andReturn();
-//
-//    }
-//
-//    //This converts to JSON object
-//    private static String createUserWithEmailInJson(String username, String email, String password) {
-//        return "{ \"username\": \"" + username + "\", " + "\"password\":\"" + password + "\", \"email\": \"" + email + "\"}";
-//    }
-//
-//    @Test
-//    public void ExistingUserSignupException_401_Fail() throws Exception {
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .post("/signup")
-//                .contentType(MediaType.APPLICATION_JSON)
-//                .content(createUserWithEmailInJson("test", "test@test.com", "tester"));
-//
-//        when(userService.userSignup(any())).thenThrow(new ExistingUserSignupException("Fail"));
-//
-//        MvcResult result = mockMvc.perform(requestBuilder)
-//                .andExpect(status().isUnauthorized())
-//                .andReturn();
-//
-//    }
-
-    //TODO: test restTemplate calls
     @Test
     public void deleteUser_Success() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders

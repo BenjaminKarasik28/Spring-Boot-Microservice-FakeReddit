@@ -14,11 +14,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
-import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class CommentServiceImpl implements CommentService {
+
+    private static Logger logger = LoggerFactory.getLogger(CommentServiceImpl.class.getName());
 
     @Autowired
     CommentRepository commentRepository;
@@ -56,6 +59,7 @@ public class CommentServiceImpl implements CommentService {
     public String createComment(Comment comment, String username, Long postId) throws BlankCommentException {
 
         if(comment.getText().isEmpty()) {
+            logger.error(username + " attempted to create an empty text");
             throw new BlankCommentException("Please enter text for your comment");
         } else {
            DummyPost dummyPost = restTemplate.getForObject("http://localhost:8082/post/" + postId, DummyPost.class);
@@ -66,6 +70,7 @@ public class CommentServiceImpl implements CommentService {
                 commentRepository.save(comment);
                 String email = restTemplate.getForObject("http://localhost:8082/user/" + postId, String.class);
                 rabbitTemplate.convertAndSend(queue.getName(), email);
+                logger.info(username + " created a comment and email has been sent to post owner at " + email);
                 return email;
 
             }

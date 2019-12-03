@@ -49,6 +49,7 @@ public class UserServiceImpl implements UserService {
     public List<String> userLogin(User user) {
         User newUser = userRepository.findByEmail(user.getEmail());
         if( newUser != null && encoder().matches(user.getPassword(), newUser.getPassword())) {
+            logger.info("User has logged into the system: " + newUser.getUsername());
             return Arrays.asList( jwtUtil.generateToken(newUser.getUsername()), newUser.getUsername());
         }
         else {
