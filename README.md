@@ -68,7 +68,7 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 - Testing of applications
 
 ## General Approach
-We worked collaboratively to ensure that all project deliverables would be met. Starting with the planning phase, we developed a list of user stories to help guide the development process, discussed the system architecture design and created a deliverables timeline. 
+We worked collaboratively to ensure that all project deliverables would be met. Starting with the planning phase, we developed a list of user stories to help guide the development process and created a deliverables timeline. 
 
 A few challenging implementation aspects of this project:
 
