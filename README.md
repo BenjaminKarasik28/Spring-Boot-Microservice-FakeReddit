@@ -71,6 +71,8 @@ We worked collaboratively to ensure that all project deliverables would be met. 
 
 A few challenging implementation aspects of this project:
 
+Configuration of most DevOps tools/services (such as Jenkins / ELK) were very difficult to set up. Even with the most minor of changes there was the potential to crash the whole application.
+
 
 ## System Architecture
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%201.png)
@@ -81,7 +83,7 @@ A few challenging implementation aspects of this project:
 ![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%202.png)
 
 ## Swagger
-We utilized Swagger to document all of our endpoints. See snapshot below:
+We utilized Swagger to document all of our endpoints. See screenshot below:
 
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Swagger.png)
 
@@ -90,3 +92,4 @@ We utilized Swagger to document all of our endpoints. See snapshot below:
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Javadoc.png)
 
 ## Kibana
+There is ELK logging set up on our application. We implemented custom monitoring on the service layer so that we are able to more closely observe any potential issues. See screenshot below:
