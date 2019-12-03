@@ -1,10 +1,14 @@
 package com.example.commentapi.model;
 
 public class DummyPost {
+
     private String title;
     private String description;
     private String username;
     private Long id;
+
+
+    public DummyPost() {}
 
     public DummyPost(String title, String description, String username, Long id) {
         this.title = title;
