@@ -77,7 +77,7 @@ Configuration of most DevOps tools/services (such as Jenkins / ELK) were very di
 
 
 ## System Architecture
-![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%201.png)
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%202.png)
 
 
 ## ERD 
