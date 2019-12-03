@@ -23,6 +23,13 @@ public class Comment {
 
     public Comment() {}
 
+    public Comment(Long commentId, Long postId, String text, String username) {
+        this.commentId = commentId;
+        this.postId = postId;
+        this.text = text;
+        this.username = username;
+    }
+
     public Long getId() {
         return commentId;
     }

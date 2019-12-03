@@ -19,20 +19,14 @@ public class UserService implements UserDetailsService {
     PasswordEncoder bCryptPasswordEncoder;
     @Autowired
     UserRepository userRepository;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println("loadUser");
         UserBean user = userRepository.findByUsername(username);
 
-        if(user==null)
+        if (user == null)
             throw new UsernameNotFoundException("User null");
         return new org.springframework.security.core.userdetails.User(user.getUsername(), bCryptPasswordEncoder.encode(user.getPassword()),
                 true, true, true, true, new ArrayList<>());
-    }
-    private List<GrantedAuthority> getGrantedAuthorities(UserBean user){
-        List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
-//    TODO : add this back in for user roles
-//    authorities.add(new SimpleGrantedAuthority(user.getUserRole().getName()));
-        return authorities;
     }
 }

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91bcbc46-04d1-42fa-b912-8759c0bd2b7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.app.log.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.email-api.log.icloud" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/controller/DocumentationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/bean/UserBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/AuthenticationFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/controller/DocumentationControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/repository/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/comment-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/comment-api.log.2019-11-28.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/comment-api.log.2019-11-29.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/comment-api.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/comment-api.log.2019-12-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/exceptionhandling/BlankCommentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/exceptionhandling/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/Integration/CommentIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/controller/CommentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/model/DummyPostTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/service/CommentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api 2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-11-30.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-12-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/EmailApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/mq/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/service/SmtpServerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/mq/ReceiverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-api/src/test/resources/mockito-extensions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/post-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/post-api.log.2019-11-30.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/post-api.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/post-api.log.2019-12-02.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/exceptionhandling/BlankPostException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/exceptionhandling/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/test/java/com/example/postapi/controller/PostControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/test/java/com/example/postapi/model/DummyCommentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/test/java/com/example/postapi/model/ErrorResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-api/src/test/java/com/example/postapi/service/PostServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api.log.2019-12-01.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/exceptionhandling/EmailSignupException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/exceptionhandling/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/exceptionhandling/ExistingUserSignupException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/exceptionhandling/IncorrectLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/config/JwtUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/controller/ProfileControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/controller/UserRoleControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/service/UserProfileServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/service/UserRoleServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/example/userapi/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/user-api.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/user-api.log.2019-11-29.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/user-api.log.2019-12-01.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Bean/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/ZuulGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/ZuulGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ZuulGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/ZuulGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/CommentApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/CommentApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/DummyPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/DummyPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/PostComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/PostComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/CommentApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/CommentApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/PostApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/PostApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/model/DummyComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/model/DummyComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/UserApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/UserApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/ProfileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="91" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UQnJL1cdXU0StQOBAOClAuUMRH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApiApplication">
+    <configuration name="All in comment-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in email-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in post-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="post-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="comment-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commentapi.CommentApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ga.emailapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ga.emailapi.EmailApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="post-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.postapi.PostApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userapi.UserApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ZuulGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EmailApiApplication" />
+        <item itemvalue="Spring Boot.ZuulGatewayApplication" />
+        <item itemvalue="JUnit.All in email-api" />
+        <item itemvalue="JUnit.All in post-api" />
+        <item itemvalue="JUnit.All in comment-api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91bcbc46-04d1-42fa-b912-8759c0bd2b7b" name="Default Changelist" comment="" />
+      <created>1575297613524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575297613524</updated>
+      <workItem from="1575297615215" duration="573000" />
+      <workItem from="1575298730134" duration="30000" />
+      <workItem from="1575298780258" duration="4478000" />
+      <workItem from="1575310696519" duration="8700000" />
+      <workItem from="1575335106812" duration="586000" />
+      <workItem from="1575386196104" duration="6032000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentServiceImplTest.ic" NAME="CommentServiceImplTest Coverage Results" MODIFIED="1575298853533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.commentapi.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_email_api.ic" NAME="All in email-api Coverage Results" MODIFIED="1575391931948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentIntegrationTest.ic" NAME="CommentIntegrationTest Coverage Results" MODIFIED="1575312394329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.commentapi.Integration.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_ga_emailapi_in_email_api.ic" NAME="com.ga.emailapi in email-api Coverage Results" MODIFIED="1575386879246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_api_gateway.ic" NAME="All in api-gateway Coverage Results" MODIFIED="1575387362663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$SmtpServerServiceTest.ic" NAME="SmtpServerServiceTest Coverage Results" MODIFIED="1575386840712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_comment_api.ic" NAME="All in comment-api Coverage Results" MODIFIED="1575388966459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_post_api.ic" NAME="All in post-api Coverage Results" MODIFIED="1575389633592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

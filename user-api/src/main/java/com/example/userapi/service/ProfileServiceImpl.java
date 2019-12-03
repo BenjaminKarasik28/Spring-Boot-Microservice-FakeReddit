@@ -6,9 +6,13 @@ import com.example.userapi.repository.ProfileRepository;
 import com.example.userapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class ProfileServiceImpl implements ProfileService {
+
+    private static Logger logger = LoggerFactory.getLogger(ProfileServiceImpl.class.getName());
 
     @Autowired
     ProfileRepository profileRepository;
@@ -19,26 +23,15 @@ public class ProfileServiceImpl implements ProfileService {
     @Autowired
     UserRepository userRepository;
 
-//    @Override
-//    public Profile createProfile(String email, Profile newProfile) {
-//        User user = userRepository.findByEmail(email);
-//        user.setProfile(newProfile);
-//
-//        return profileRepository.save(newProfile);
-//    }
-
     @Override
     public Profile createProfile(String username, Profile newProfile) {
         String email = userRepository.findByUsername(username).getEmail();
         User user = userRepository.findByEmail(email);
-//        Profile profile = profileRepository.findProfileByEmail(email);
-//        User user = userRepository.findByUsername(username);
-//        Profile profile = profileRepository.findProfileByUsername(username);
-
         if(user.getProfile() == null) {
             user.setProfile(newProfile);
             profileRepository.save(newProfile);
         }
+        logger.info("Post created: " + newProfile);
         return userRepository.findByUsername(username).getProfile();
     }
 
@@ -59,28 +52,8 @@ public class ProfileServiceImpl implements ProfileService {
 
         profileRepository.save(profile);
         user.setProfile(profile);
+        logger.info("Post updated: " + user.getProfile());
         return user.getProfile();
     }
-
-//    @Override
-//    public Profile getProfile(String email) {
-//        return profileRepository.findProfileByEmail(email);
-//    }
-
-//    @Override
-//    public Profile updateProfile(String email, Profile updateProfile) {
-//        User user = userRepository.findByEmail(email);
-//        Profile profile = userRepository.findByEmail(email).getProfile();
-//
-//        if(updateProfile.getAddress() != null) profile.setAddress(updateProfile.getAddress());
-//        if(updateProfile.getMobile() != null) profile.setMobile(updateProfile.getMobile());
-//        if(updateProfile.getEmail() != null) profile.setEmail(updateProfile.getEmail());
-//
-//        profileRepository.save(profile);
-//        user.setProfile(profile);
-//
-//        return updateProfile;
-//    }
-
 
 }

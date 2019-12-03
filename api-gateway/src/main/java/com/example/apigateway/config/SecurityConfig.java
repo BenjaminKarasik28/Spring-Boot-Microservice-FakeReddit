@@ -20,6 +20,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
+
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Autowired
@@ -40,18 +41,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http.csrf().disable()
+
         http.cors().and()
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/user/signup/**", "/user/login/**").permitAll()
+                .antMatchers("/user/signup/**", "/user/login/**", "/user/v2/api-docs", "/comment/v2/api-docs", "/post/v2/api-docs").permitAll()
+                .antMatchers("/user/post/**").permitAll()
+                .antMatchers("/post/user/**").permitAll()
                 .antMatchers("/user/**").authenticated()
                 .antMatchers("/post/list/**").permitAll()
                 .antMatchers("/post/comment/**").permitAll()
                 .antMatchers("/post/**").authenticated()
                 .antMatchers("/comment/list/**").authenticated()
                 .antMatchers("/comment/**").authenticated()
-//        .antMatchers("/role/**").hasRole("DBA")
+//                .antMatchers("/user/v2/api-docs").permitAll()
+//                .antMatchers("/user/**").permitAll()
+//                .antMatchers("/user/v2/api-docs").permitAll()
                 .and()
                 .httpBasic()
                 .and()

@@ -9,6 +9,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 @Component
 public class AuthenticationFilter extends ZuulFilter {
+
+    @Autowired
+    UserRepository userRepository;
+
+
     @Override
     public String filterType() {
         return "pre";
@@ -19,19 +24,29 @@ public class AuthenticationFilter extends ZuulFilter {
         return 1;
     }
 
+
     @Override
     public boolean shouldFilter() {
-//        String username = SecurityContextHolder.getContext().getAuthentication().getName();
-//        if(username.equals("anonymousUser"))
-//            return false;
-        return true;
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        if (username !="anonymousUser") {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        ctx.addZuulRequestHeader("username", username);
+        UserBean user = null;
+
+        if (userRepository.findByUsername(
+                username) !=null) {
+            user = userRepository.findByUsername(username);
+            ctx.addZuulRequestHeader("username", username);
+        }
+
         return null;
     }
 }

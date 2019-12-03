@@ -10,7 +10,11 @@ import javax.transaction.Transactional;
 
 @Repository
 public interface PostRepository extends CrudRepository<Post, Long> {
-    public Iterable<Post> findAllByUsername(String username);
+
     @Transactional
     public void deleteByUsername(String username);
+
+    public Iterable<Post> findAllByUsername(String username);
+
+    public Post findByPostId(Long postId);
 }

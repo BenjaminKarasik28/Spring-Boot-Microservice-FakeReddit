@@ -1,0 +1,183 @@
+2019-12-02 09:46:51.096  INFO 33157 --- [main] c.e.c.I.CommentIntegrationTest           : The following profiles are active: qa
+2019-12-02 09:46:54.210  INFO 33157 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 09:46:54.440  INFO 33157 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199ms. Found 1 repository interfaces.
+2019-12-02 09:46:55.961  INFO 33157 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0795043-91ce-3a26-b2a9-11a54ba5adfa
+2019-12-02 09:46:57.049  INFO 33157 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:46:57.308  INFO 33157 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5a8e858c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:46:58.565  INFO 33157 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-02 09:47:00.132  INFO 33157 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-02 09:47:00.470  INFO 33157 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-02 09:47:00.945  INFO 33157 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-02 09:47:01.163  INFO 33157 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-02 09:47:01.815  INFO 33157 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-02 09:47:05.427  INFO 33157 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-02 09:47:05.456  INFO 33157 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:47:10.672  WARN 33157 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-02 09:47:12.694  WARN 33157 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2019-12-02 09:47:12.715  WARN 33157 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:47:12.716  INFO 33157 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:47:12.748  WARN 33157 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:47:12.749  INFO 33157 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:47:14.182  INFO 33157 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:47:17.753  INFO 33157 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1ed28f15-34be-4408-b201-af263d424cfe
+
+2019-12-02 09:47:19.221  INFO 33157 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f113867, org.springframework.security.web.context.SecurityContextPersistenceFilter@639c5ab4, org.springframework.security.web.header.HeaderWriterFilter@48463900, org.springframework.security.web.csrf.CsrfFilter@5d00241b, org.springframework.security.web.authentication.logout.LogoutFilter@7df994ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@581f1f40, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@326489c4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72cf159f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65689000, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12e8ea81, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c50503e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54af9cce, org.springframework.security.web.session.SessionManagementFilter@7c070e78, org.springframework.security.web.access.ExceptionTranslationFilter@4b0df349, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11b234aa]
+2019-12-02 09:47:20.480  INFO 33157 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-02 09:47:20.587  INFO 33157 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-02 09:47:20.651  INFO 33157 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-02 09:47:21.346  INFO 33157 --- [main] c.e.c.I.CommentIntegrationTest           : Started CommentIntegrationTest in 42.743 seconds (JVM running for 54.815)
+2019-12-02 09:47:22.866  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:22.866  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:22.867  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:47:23.320  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:23.321  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:23.322  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:47:23.421  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:23.422  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:23.422  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:47:23.708  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:23.709  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:23.710  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:47:23.746  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:23.746  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:23.746  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:47:24.277  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:24.278  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:24.278  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:47:24.456  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:24.457  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:24.457  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:47:24.525  INFO 33157 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:47:24.526  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:47:24.526  INFO 33157 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:47:24.678  INFO 33157 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-02 09:47:24.685  INFO 33157 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2019-12-02 09:47:24.709  INFO 33157 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:47:24.718  INFO 33157 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:47:24.722  INFO 33157 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-02 09:47:24.752  INFO 33157 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-02 09:47:24.761  INFO 33157 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-02 09:49:30.363  INFO 33231 --- [main] c.e.c.I.CommentIntegrationTest           : The following profiles are active: qa
+2019-12-02 09:49:32.425  INFO 33231 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 09:49:32.582  INFO 33231 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136ms. Found 1 repository interfaces.
+2019-12-02 09:49:33.619  INFO 33231 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0795043-91ce-3a26-b2a9-11a54ba5adfa
+2019-12-02 09:49:34.414  INFO 33231 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:49:34.557  INFO 33231 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a5f28600] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:49:35.236  INFO 33231 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-02 09:49:35.916  INFO 33231 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-02 09:49:36.122  INFO 33231 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-02 09:49:36.335  INFO 33231 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-02 09:49:36.437  INFO 33231 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-02 09:49:36.786  INFO 33231 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-02 09:49:38.508  INFO 33231 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-02 09:49:38.520  INFO 33231 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:49:41.052  WARN 33231 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-02 09:49:41.983  WARN 33231 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2019-12-02 09:49:41.996  WARN 33231 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:49:41.997  INFO 33231 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:49:42.015  WARN 33231 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:49:42.016  INFO 33231 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:49:42.623  INFO 33231 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:49:43.758  INFO 33231 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 295cd59d-71fd-4e0b-bce3-178811fc9911
+
+2019-12-02 09:49:44.350  INFO 33231 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10ecf244, org.springframework.security.web.context.SecurityContextPersistenceFilter@149fab7f, org.springframework.security.web.header.HeaderWriterFilter@6e2764c9, org.springframework.security.web.csrf.CsrfFilter@4bf6bc2d, org.springframework.security.web.authentication.logout.LogoutFilter@1e8c9083, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77eb0e47, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e417628, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@28592982, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@174e5929, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5702232d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ba90170, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@caee26e, org.springframework.security.web.session.SessionManagementFilter@70199db0, org.springframework.security.web.access.ExceptionTranslationFilter@39d4f046, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5834298c]
+2019-12-02 09:49:45.512  INFO 33231 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-02 09:49:45.586  INFO 33231 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-02 09:49:45.649  INFO 33231 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-02 09:49:46.314  INFO 33231 --- [main] c.e.c.I.CommentIntegrationTest           : Started CommentIntegrationTest in 27.866 seconds (JVM running for 38.774)
+2019-12-02 09:49:47.474  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.475  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.475  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:47.536  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.536  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.537  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:49:47.588  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.588  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.588  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:47.740  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.740  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.741  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:47.791  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.791  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.791  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:47.943  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:47.944  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:47.944  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:48.089  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:48.090  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:48.090  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:49:48.143  INFO 33231 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:49:48.144  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:49:48.145  INFO 33231 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:49:48.304  INFO 33231 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-02 09:49:48.314  INFO 33231 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2019-12-02 09:49:48.335  INFO 33231 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:49:48.344  INFO 33231 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:49:48.345  INFO 33231 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-02 09:49:48.359  INFO 33231 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-02 09:49:48.365  INFO 33231 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-02 09:54:25.090  INFO 33413 --- [main] c.e.c.I.CommentIntegrationTest           : The following profiles are active: qa
+2019-12-02 09:54:27.422  INFO 33413 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-02 09:54:27.593  INFO 33413 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143ms. Found 1 repository interfaces.
+2019-12-02 09:54:28.577  INFO 33413 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0795043-91ce-3a26-b2a9-11a54ba5adfa
+2019-12-02 09:54:29.365  INFO 33413 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:54:29.516  INFO 33413 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a5f28600] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-02 09:54:30.412  INFO 33413 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-02 09:54:31.276  INFO 33413 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-02 09:54:31.489  INFO 33413 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-02 09:54:31.841  INFO 33413 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-02 09:54:31.971  INFO 33413 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-02 09:54:32.464  INFO 33413 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-02 09:54:34.796  INFO 33413 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-02 09:54:34.835  INFO 33413 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:54:37.698  WARN 33413 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-02 09:54:38.700  WARN 33413 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2019-12-02 09:54:38.713  WARN 33413 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:54:38.713  INFO 33413 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:54:38.734  WARN 33413 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-02 09:54:38.735  INFO 33413 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-02 09:54:39.291  INFO 33413 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:54:40.461  INFO 33413 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7cfecc08-8480-47c1-901a-30d04880118b
+
+2019-12-02 09:54:41.064  INFO 33413 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10ecf244, org.springframework.security.web.context.SecurityContextPersistenceFilter@149fab7f, org.springframework.security.web.header.HeaderWriterFilter@6e2764c9, org.springframework.security.web.csrf.CsrfFilter@4bf6bc2d, org.springframework.security.web.authentication.logout.LogoutFilter@1e8c9083, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77eb0e47, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e417628, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@28592982, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@174e5929, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5702232d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ba90170, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@caee26e, org.springframework.security.web.session.SessionManagementFilter@70199db0, org.springframework.security.web.access.ExceptionTranslationFilter@39d4f046, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5834298c]
+2019-12-02 09:54:42.154  INFO 33413 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-02 09:54:42.239  INFO 33413 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-02 09:54:42.287  INFO 33413 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-02 09:54:42.977  INFO 33413 --- [main] c.e.c.I.CommentIntegrationTest           : Started CommentIntegrationTest in 29.663 seconds (JVM running for 39.573)
+2019-12-02 09:54:44.072  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.073  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.074  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.145  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.145  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.146  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:54:44.182  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.183  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.183  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.330  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.330  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.330  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.365  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.366  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.366  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.540  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.540  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.541  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.658  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.658  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.659  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2019-12-02 09:54:44.705  INFO 33413 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2019-12-02 09:54:44.706  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-02 09:54:44.706  INFO 33413 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-12-02 09:54:44.826  INFO 33413 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-02 09:54:44.833  INFO 33413 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2019-12-02 09:54:44.856  INFO 33413 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-02 09:54:44.876  INFO 33413 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-02 09:54:44.880  INFO 33413 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-02 09:54:44.903  INFO 33413 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-02 09:54:44.911  INFO 33413 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

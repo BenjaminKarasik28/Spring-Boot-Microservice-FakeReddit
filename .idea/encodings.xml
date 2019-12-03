@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/comment-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/email-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/post-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-api" charset="UTF-8" />
