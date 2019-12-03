@@ -14,10 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 public class UserApiApplication {
 
-	@RequestMapping("/")
-	public String home() {
-		return "some users";
-	}
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserApiApplication.class, args);

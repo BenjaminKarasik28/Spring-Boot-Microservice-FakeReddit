@@ -1001,3 +1001,77 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 2019-12-02 20:18:16.362  INFO 84301 --- [http-nio-8083-exec-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
 2019-12-02 20:18:16.419  INFO 84301 --- [http-nio-8083-exec-5] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#64dfb31d:0/SimpleConnection@32e48fbb [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50622]
 2019-12-02 20:18:16.425  INFO 84301 --- [http-nio-8083-exec-5] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (queue1) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2019-12-03 13:52:22.266  INFO 60400 --- [main] c.e.commentapi.CommentApiApplication     : The following profiles are active: local
+2019-12-03 13:52:23.831  INFO 60400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 13:52:23.989  INFO 60400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128ms. Found 1 repository interfaces.
+2019-12-03 13:52:24.410  INFO 60400 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6570bbce-ef5f-3e15-9b08-8afd681a1e5e
+2019-12-03 13:52:24.654  INFO 60400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 13:52:24.721  INFO 60400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d4245eb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 13:52:25.128  INFO 60400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-12-03 13:52:25.148  INFO 60400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 13:52:25.149  INFO 60400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 13:52:25.396  INFO 60400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 13:52:25.396  INFO 60400 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3089 ms
+2019-12-03 13:52:25.803  INFO 60400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 13:52:26.181  INFO 60400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 13:52:26.701  INFO 60400 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 13:52:27.028  INFO 60400 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-12-03 13:52:28.637  INFO 60400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 13:52:28.840  INFO 60400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 13:52:28.954  INFO 60400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 13:52:28.974  INFO 60400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 13:52:31.199  WARN 60400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 13:52:31.439  WARN 60400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:52:31.440  INFO 60400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:52:31.446  WARN 60400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-03 13:52:31.447  INFO 60400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-03 13:52:31.686  INFO 60400 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 13:52:32.273  INFO 60400 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 92919776-dbab-4cf7-a07a-4f06ac86bb77
+
+2019-12-03 13:52:32.592  INFO 60400 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e5ebdfe, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c31de5d, org.springframework.security.web.header.HeaderWriterFilter@4e756867, org.springframework.security.web.csrf.CsrfFilter@6d4502ca, org.springframework.security.web.authentication.logout.LogoutFilter@26a33cf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47e60b71, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c87e851, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71668a67, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49a06087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@772cf46b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d230cff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ff26c9, org.springframework.security.web.session.SessionManagementFilter@6adcf059, org.springframework.security.web.access.ExceptionTranslationFilter@62360a68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dd23809]
+2019-12-03 13:52:33.155  INFO 60400 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-03 13:52:33.212  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-03 13:52:34.048  INFO 60400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-03 13:52:34.049  INFO 60400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-03 13:52:34.551  INFO 60400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-03 13:52:34.552  INFO 60400 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-03 13:52:34.941  INFO 60400 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 13:52:34.960  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-03 13:52:34.960  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-03 13:52:34.961  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-03 13:52:34.961  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-03 13:52:34.961  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-03 13:52:34.962  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-03 13:52:34.962  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-03 13:52:35.245  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-03 13:52:35.249  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-03 13:52:35.252  INFO 60400 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-03 13:52:35.257  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575399155255 with initial instances count: 0
+2019-12-03 13:52:35.261  INFO 60400 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMMENT with eureka with status UP
+2019-12-03 13:52:35.263  INFO 60400 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575399155263, current=UP, previous=STARTING]
+2019-12-03 13:52:35.266  INFO 60400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMMENT/172.16.3.248:comment:8083: registering service...
+2019-12-03 13:52:35.270  INFO 60400 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-03 13:52:35.321  INFO 60400 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-03 13:52:35.369  INFO 60400 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-03 13:52:35.397  INFO 60400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMMENT/172.16.3.248:comment:8083 - registration status: 204
+2019-12-03 13:52:35.888  INFO 60400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-12-03 13:52:35.890  INFO 60400 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2019-12-03 13:52:35.897  INFO 60400 --- [main] c.e.commentapi.CommentApiApplication     : Started CommentApiApplication in 25.318 seconds (JVM running for 31.775)
+2019-12-03 13:53:05.251  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-03 13:53:05.253  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-03 13:53:05.358  INFO 60400 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-03 13:57:34.979  INFO 60400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:02:34.999  INFO 60400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:07:35.019  INFO 60400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:12:35.049  INFO 60400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-03 14:16:51.236  INFO 60400 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 14:16:51.239  INFO 60400 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 14:16:51.424  INFO 60400 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 179 ms
+2019-12-03 14:17:35.070  INFO 60400 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -13,10 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 public class CommentApiApplication {
 
-	@RequestMapping("/")
-	public String home() {
-		return "some comments";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CommentApiApplication.class, args);
