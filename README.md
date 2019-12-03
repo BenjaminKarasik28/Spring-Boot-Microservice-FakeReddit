@@ -81,10 +81,12 @@ A few challenging implementation aspects of this project:
 ![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%202.png)
 
 ## Swagger
+We utilized Swagger to document all of our endpoints. See snapshot below:
 
 ![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Swagger.png)
 
 ## Javadoc
 
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Javadoc.png)
 
 ## Kibana
