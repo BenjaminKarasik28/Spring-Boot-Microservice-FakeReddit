@@ -40,7 +40,7 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 - RabbitMQ
 - CRUD
 
-**11/22 & 11/25 **
+**11/22 & 11/25**
 - RabbitMQ
 - Swagger
 - Exception handling and input validation
@@ -82,6 +82,7 @@ A few challenging implementation aspects of this project:
 
 ## Swagger
 
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Swagger.png)
 
 ## Javadoc
 
