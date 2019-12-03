@@ -28,9 +28,6 @@ public class UserServiceTest {
     UserService userService;
 
     @Mock
-    UserBean userBean;
-
-    @Mock
     PasswordEncoder bCryptPasswordEncoder;
 
     @Mock

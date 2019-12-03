@@ -14,7 +14,7 @@ import java.util.Properties;
 @Service
 public class SmtpServerService {
 
-    Session session;
+    private Session session;
 
     public String setProps(){
         Properties emailProperties = System.getProperties();

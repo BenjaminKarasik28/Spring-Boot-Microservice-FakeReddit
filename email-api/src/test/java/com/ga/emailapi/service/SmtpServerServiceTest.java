@@ -26,7 +26,7 @@ import static org.powermock.api.mockito.PowerMockito.mockStatic;
 
 
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(SmtpServerService.class)
+//@PrepareForTest(SmtpServerService.class)
 public class SmtpServerServiceTest {
 
 
@@ -65,7 +65,7 @@ public class SmtpServerServiceTest {
         MimeMessage emailTarget = smtpServerService.draft(target);
         assertNotNull(emailTarget);
     }
-
+//
 //    @Test
 //    public void send_SmtpServerServiceTest_Success() throws MessagingException {
 //        String s = smtpServerService.send("targetemail");

@@ -2,8 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91bcbc46-04d1-42fa-b912-8759c0bd2b7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/email-api/email-api.log.2019-11-30.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway.log.2019-12-01.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Bean/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/bean/UserBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/bean/UserBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/AuthenticationFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/AuthenticationFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtRequestFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/config/JwtUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/example/apigateway/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/comment-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/comment-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/DummyPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/model/DummyPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/main/java/com/example/commentapi/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/Integration/CommentIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-api/src/test/java/com/example/commentapi/Integration/CommentIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/email-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/email-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/service/SmtpServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/main/java/com/ga/emailapi/service/SmtpServerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/EmailApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/config/RabbitMQConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-api/src/test/java/com/ga/emailapi/service/SmtpServerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/post-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/post-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-api/src/main/java/com/example/postapi/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api.log.2019-12-01.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/example/userapi/model/UserRole.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +53,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="69" />
+    <option name="myElementSize" value="183" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api-gateway" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -47,6 +88,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,41 +104,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApiApplication">
-    <configuration name="All in api-gateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <option name="PACKAGE_NAME" value="" />
+  <component name="RunManager" selected="JUnit.com.ga.emailapi in email-api">
+    <configuration name="SmtpServerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ga.emailapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmtpServerServiceTest.send_SmtpServerServiceTest_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ga.emailapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ga.emailapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ga.emailapi.service.SmtpServerServiceTest" />
+      <option name="METHOD_NAME" value="send_SmtpServerServiceTest_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ga.emailapi in email-api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="email-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ga.emailapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ga.emailapi" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="comment-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.commentapi.Integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.commentapi.Integration" />
-      <option name="MAIN_CLASS_NAME" value="com.example.commentapi.Integration.CommentIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="comment-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.commentapi.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.commentapi.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.commentapi.service.CommentServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.ga.emailapi in email-api" />
+        <item itemvalue="JUnit.SmtpServerServiceTest" />
+        <item itemvalue="JUnit.SmtpServerServiceTest.send_SmtpServerServiceTest_Success" />
         <item itemvalue="Spring Boot.EmailApiApplication" />
         <item itemvalue="Spring Boot.ZuulGatewayApplication" />
-        <item itemvalue="JUnit.CommentIntegrationTest" />
-        <item itemvalue="JUnit.All in api-gateway" />
-        <item itemvalue="JUnit.CommentServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +229,7 @@
       <workItem from="1575298780258" duration="4478000" />
       <workItem from="1575310696519" duration="8700000" />
       <workItem from="1575335106812" duration="586000" />
+      <workItem from="1575386196104" duration="842000" />
     </task>
     <servers />
   </component>
@@ -198,12 +250,18 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentIntegrationTest.ic" NAME="CommentIntegrationTest Coverage Results" MODIFIED="1575312394329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.commentapi.Integration.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_comment_api.ic" NAME="All in comment-api Coverage Results" MODIFIED="1575298147170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentServiceImplTest.ic" NAME="CommentServiceImplTest Coverage Results" MODIFIED="1575298853533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.commentapi.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$CommentIntegrationTest.ic" NAME="CommentIntegrationTest Coverage Results" MODIFIED="1575312394329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.commentapi.Integration.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$com_ga_emailapi_in_email_api.ic" NAME="com.ga.emailapi in email-api Coverage Results" MODIFIED="1575386879246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$SmtpServerServiceTest.ic" NAME="SmtpServerServiceTest Coverage Results" MODIFIED="1575386840712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ga.emailapi.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Boot_Microservice_FakeReddit$All_in_comment_api.ic" NAME="All in comment-api Coverage Results" MODIFIED="1575298147170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
