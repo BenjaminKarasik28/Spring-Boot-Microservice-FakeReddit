@@ -82,7 +82,7 @@ Configuration of most DevOps tools/services (such as Jenkins / ELK) were very di
 
 ## ERD 
 
-![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%202.png)
+![ERD](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/ERD%202.png)
 
 ## Swagger
 We utilized Swagger to document all of our endpoints. See screenshot below for user-api:
