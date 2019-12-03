@@ -94,3 +94,5 @@ We utilized Swagger to document all of our endpoints. See screenshot below:
 
 ## Kibana
 There is ELK logging set up on our application. We implemented custom monitoring on the service layer so that we are able to more closely observe any potential issues. See screenshot below:
+
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Kibana.png)
