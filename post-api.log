@@ -58,3 +58,4 @@
 2019-12-04 11:43:34.353  INFO 3125 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
 2019-12-04 11:43:34.428  INFO 3125 --- [http-nio-8082-exec-1] c.e.postapi.service.PostServiceImpl      : user2 created a post
 2019-12-04 11:48:17.463  INFO 3125 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 11:53:17.470  INFO 3125 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

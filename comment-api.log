@@ -62,3 +62,4 @@
 2019-12-04 11:46:14.888  INFO 3206 --- [http-nio-8083-exec-3] c.e.c.service.CommentServiceImpl         : user2 created a comment and email has been sent to post owner at user2@mail.com
 2019-12-04 11:46:23.516  INFO 3206 --- [http-nio-8083-exec-4] c.e.c.service.CommentServiceImpl         : user2 created a comment and email has been sent to post owner at user2@mail.com
 2019-12-04 11:48:34.476  INFO 3206 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 11:53:34.481  INFO 3206 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
