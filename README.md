@@ -102,3 +102,5 @@ There is ELK logging set up on our application. We implemented custom monitoring
 
 ## Jenkins
 We were able to accomplish over 80% test of application collectively through unit and integration tests. We monitored the test coverage using Jacoco. See screenshot below: 
+
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/Jenkins.png)
