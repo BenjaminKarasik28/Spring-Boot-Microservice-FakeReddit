@@ -69,15 +69,17 @@ Link:   https://www.pivotaltracker.com/n/projects/2416891
 - Testing of applications
 
 ## General Approach
-We worked collaboratively to ensure that all project deliverables would be met. Starting with the planning phase, we developed a list of user stories to help guide the development process and created a deliverables timeline. 
+We worked collaboratively to ensure that all project deliverables would be met. Starting with the planning phase, we developed a list of user stories to help guide the development process and created a deliverables timeline. Pivotal tracker and the deliverables timeline helped with prioritization so that we could allocate a larger portion of time to the more complex features. Our approach was to try to spend the initial few days of the project tackling RabbitMQ and handling all the configs needed for Jenkins, ELK and Swagger so that we can spend the latter half of the project working on testing.
 
 A few challenging implementation aspects of this project:
 
-Configuration of most DevOps tools/services (such as Jenkins / ELK) were very difficult to set up. Even with the most minor of changes there was the potential to crash the whole application.
+Generally, configuration of all the DevOps tools/services required for this project (such as Jenkins / Swagger / ELK) were difficult to set up. We spent a lot of time researching how to troubleshoot various issues. 
+
+Testing API Gateway was also challenging since there were many complex methods.
 
 
 ## System Architecture
-![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%202.png)
+![erd](https://github.com/BenjaminKarasik28/Spring-Boot-Microservice-FakeReddit/blob/master/System%20Architecture%20updated.png)
 
 
 ## ERD 

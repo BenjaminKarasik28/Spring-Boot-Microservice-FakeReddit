@@ -270,3 +270,4 @@ java.lang.NoSuchMethodError: com.netflix.servo.monitor.Monitors.isObjectRegister
 2019-12-04 11:47:41.682  WARN 2897 --- [http-nio-8085-exec-10] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
 2019-12-04 11:47:45.945  WARN 2897 --- [http-nio-8085-exec-1] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
 2019-12-04 11:47:46.164  WARN 2897 --- [http-nio-8085-exec-8] c.e.apigateway.config.JwtRequestFilter   : JWT Token does not begin with Bearer String
+2019-12-04 11:52:30.387  INFO 2897 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

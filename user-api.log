@@ -70,3 +70,4 @@
 2019-12-04 11:42:49.185  INFO 2958 --- [http-nio-8081-exec-10] c.e.userapi.service.ProfileServiceImpl   : Post created: com.example.userapi.model.Profile@1a5ea02c
 2019-12-04 11:45:16.643  INFO 2958 --- [http-nio-8081-exec-5] c.e.userapi.service.ProfileServiceImpl   : Post updated: com.example.userapi.model.Profile@3ca50aca
 2019-12-04 11:47:41.487  INFO 2958 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 11:52:41.495  INFO 2958 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
