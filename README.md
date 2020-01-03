@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Technologies Used](#technologies-used)
 * [Dependencies and Installation](#dependencies-and-installation)
+* [How to Run](#how-to-run)
 * [User Stories](#user-stories)
 * [Project Deliverables and Timeline](#project-deliverables-and-timeline)
 * [General Approach](#general-approach)
@@ -32,6 +33,16 @@ Refer to the dependencies in the pom.xml file for the following:
 - Spring Boot
 - Hibernate
 - Postgres
+
+## How to Run
+- Clone the project on your local machine
+- Open it in your preferred IDE (We used Intellij Ultimate-Edition && Eclipse)
+- Turn on Postgres (if downloaded form site) / Run Postgres (if downloaded with Brew)
+- Run "rabbitmq-server" in Terminal
+- Run each Microservice Spring project by clicking the run button ( Run Eureka-Server first followed by API-Gateway and then the rest in any order)
+- Go to www.http://localhost:8761 to check if all servers are up; all but Eureka Client should be listed
+- Open Postman and run endpoints to test functionality (Endpoints listed in SwaggerDocs) 
+- Bonus: Try using our tool to send yourself an email: Create an account with your real email, create a post, comment on that post! (Certain functionality requires authentication. If you recieve a 401 HTTP response message, this means for this HTTP request you must use the JWT-token returned on either login or signup. Copy the token, go to the HTTP function you want to run, for example: create a post, click on authentication, for "Type", select bearer and then paste the token 
 
 ## User Stories
 Link:   https://www.pivotaltracker.com/n/projects/2416891
